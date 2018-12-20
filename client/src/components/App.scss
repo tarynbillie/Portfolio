@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../typography/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../typography/Roboto/Roboto-Medium.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../typography/Roboto/Roboto-Black.ttf');
+  font-weight: bolder;
+}
+
+@font-face {
+ font-family: 'Georgia';
+ src: url('../typography/Georgia/georgia\ regular\ font.ttf');
+ font-weight: normal;
+}
+
+@font-face {
+ font-family: 'Open Sans';
+ src: url('../typography/OpenSans/OpenSans-Regular.ttf');
+ font-weight: normal;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  // text-align: center;
+}

@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-content: center;
+    width: 100vw;
+    
+    font-family: 'Open Sans';
+    margin: 2rem 10rem;
+    &__me {
+        display: flex;
+        flex-direction: column;
+        padding-right: 8rem;
+        h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+        h2 {
+            margin: 0;
+            font-weight: normal;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        h3 {
+            font-weight: normal;
+            cursor: pointer;
+        }
+    }
+}
