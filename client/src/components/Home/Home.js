@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import '../Home/home.scss';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header.js';
+import Footer from '../Footer/Footer.js';
+import '../Home/home.scss';
 
 
 export default class Home extends Component {
@@ -18,11 +20,15 @@ export default class Home extends Component {
         return (
             <div className='home'>
                 <section className='hero'>
-                    <Header/>
+                    <Header />
                     <div className='blurb'>
                         <h2>Hello, my name is Taryn Li</h2>
                         <h3>I am a Jr. Full Stack Developer from Toronto, Ontario.</h3>
-                        <button className='project'>Checkout my recent work</button>
+                        <Link to={'/projects'}>
+                            <button className='project'>
+                                Checkout my recent work
+                            </button>
+                        </Link>
                     </div>
                 </section>
                 <section className='about' ref={this.aboutRef}>
@@ -36,31 +42,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </section>
-                <section className='footer'>
-                    <div className='footer__left'>
-                        <h1>Get in touch</h1>
-                        <h2>tarynli@hotmail.com</h2>
-                        <h2>519 212 2052</h2>
-                    </div>
-                    <div className='footer__right'>
-                        <h1>Leave a message</h1>
-                        <form>
-                            <label>
-                                Name
-                            <input type='text' />
-                            </label>
-                            <label>
-                                Email
-                            <input type='email' />
-                            </label>
-                            <label>
-                                Message
-                            <textarea type='text' />
-                            </label>
-                            <button>Send</button>
-                        </form>
-                    </div>
-                </section>
+                <Footer/>
             </div>
         )
     }

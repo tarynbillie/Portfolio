@@ -13,14 +13,16 @@ export default class Header extends Component {
     scroll(ref) {
         ref.current.scrollIntoView({ behavior: 'smooth' })
     }
-    
+
     render() {
         return (
             <div>
                 <div className='header'>
-                    <div className='logo'>
-                        <h1>Taryn Li</h1>
-                    </div>
+                    <Link to={'/home'} className='link'>
+                        <div className='logo'>
+                            <h1>Taryn Li</h1>
+                        </div>
+                    </Link>
                     <div className='rectangle' />
                     <div className='nav'>
                         <h3 onClick={() => { this.state.scroll(this.aboutRef) }}>About</h3>

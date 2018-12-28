@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=farmr.css.map */
+.project .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #121212;
+}
+
+.project .title h1 {
+  margin-bottom: 1rem;
+  font-family: Georgia;
+  font-size: 40px;
+  line-height: 68px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 8rem;
+  font-size: 60px;
+}
+
+.project .title h2 {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.project section {
+  margin: 2rem 0 2rem 22rem;
+  width: 50%;
+}
+
+.project section h1 {
+  margin-bottom: 1rem;
+  font-family: Georgia;
+  font-size: 40px;
+  line-height: 68px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.project section p {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 32px;
+  color: #121212;
+  text-align: justify;
+}
+
+.project button {
+  height: 2rem;
+}
+/*# sourceMappingURL=farmr.css.map */

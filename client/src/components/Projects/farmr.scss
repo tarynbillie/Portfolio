@@ -7,3 +7,54 @@ $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
 
+@mixin header {
+    margin-bottom: 1rem;
+    font-family: Georgia;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: center;
+    font-weight: normal;
+}
+
+@mixin text {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 32px;
+    color: $burnt;
+    text-align: justify;
+}
+
+.project {
+    .title {
+        display: flex;
+        flex-direction: column;
+        color: $burnt;
+        h1 {
+            @include header();
+            margin-top: 8rem;
+            font-size: 60px;
+        }
+        h2 {
+            margin: 0;
+            font-family: 'Open Sans';
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+            font-weight: normal;
+        }
+    }
+    section {
+        margin: 2rem 0 2rem 22rem;
+        width: 50%;
+        h1 {
+            @include header();
+        }
+        p {
+            @include text();
+        }
+    }
+    button {
+        height: 2rem;
+    }
+    
+}

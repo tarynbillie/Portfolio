@@ -1,0 +1,90 @@
+$primary: #CDDCE0;
+$accent: #C24B0C;
+
+$rare: #FFF;
+$mediumRare:#D3D3D3;
+$mediumWell: #808080;
+$well: #484848;
+$burnt: #121212;
+
+@mixin btn {
+    background-color: $rare;
+    border: 1.5px solid $primary;
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@mixin input {
+    font-size: 14px;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+.footer {
+    display: flex;
+    height: 90vh;
+    margin: 7rem 5rem;
+    color: $burnt;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        h1 {
+            font-family: 'Georgia';
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 46px;
+            margin: 0;
+        }
+        h2 {
+            font-family: 'Open Sans';
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        h1 {
+            font-family: 'Georgia';
+            font-size: 30px;
+            font-weight: normal;
+            margin-top: 0.7rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            label {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                input {
+                    @include input();
+                    width: 50%;
+                    height: 2rem;
+                    margin-bottom: 2rem;                   
+                }
+                textarea {
+                    @include input();
+                    height: 8rem;
+                    resize: none;
+                }
+            }
+            button {
+                margin-top: 2rem;
+                width: 20%;
+                height: 2.5rem;
+                @include btn();
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}

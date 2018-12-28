@@ -22,12 +22,17 @@ $burnt: #121212;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    .logo {
-        h1 {
-            font-family: 'Georgia';
-            font-weight: normal;
-            font-size: 40px;
-            z-index: 100 !important;
+    margin: 1.5rem 5rem 0 5rem;
+    .link {
+        color: $burnt;
+        text-decoration: none;
+        .logo {
+            h1 {
+                font-family: 'Georgia';
+                font-weight: normal;
+                font-size: 40px;
+                z-index: 100 !important;
+            }
         }
     }
     .rectangle {

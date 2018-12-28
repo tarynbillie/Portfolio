@@ -9,9 +9,15 @@
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+  margin: 1.5rem 5rem 0 5rem;
 }
 
-.header .logo h1 {
+.header .link {
+  color: #121212;
+  text-decoration: none;
+}
+
+.header .link .logo h1 {
   font-family: 'Georgia';
   font-weight: normal;
   font-size: 40px;
