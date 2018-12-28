@@ -1,0 +1,65 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.header .logo h1 {
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: 40px;
+  z-index: 100 !important;
+}
+
+.header .rectangle {
+  position: absolute;
+  top: 4.5rem;
+  left: 7.8rem;
+  width: 134px;
+  height: 64px;
+  background-color: #CDDCE0;
+  z-index: 0 !important;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.header .nav h3 {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header .nav .link {
+  text-decoration: none;
+  color: #121212;
+}
+
+.header .nav .contact {
+  background-color: #FFF;
+  border: 1.5px solid #CDDCE0;
+  border-radius: 3px;
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=header.css.map */

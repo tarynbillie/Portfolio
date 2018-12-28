@@ -1,0 +1,157 @@
+$primary: #CDDCE0;
+$accent: #C24B0C;
+
+$rare: #FFF;
+$mediumRare:#D3D3D3;
+$mediumWell: #808080;
+$well: #484848;
+$burnt: #121212;
+
+@mixin contactBtn {
+    background-color: $rare;
+    border: 1.5px solid $primary;
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@mixin input {
+    font-size: 14px;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+.home {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        color: $burnt;
+        width: 100%;
+        height: 100vh;
+        margin: 1.5rem 5rem 0 5rem;
+      
+        .blurb {
+            display: flex;
+            flex-direction: column;
+            padding-top: 13rem;
+            h2 {
+                font-family: 'Georgia';
+                font-size: 60px;
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+            h3 {
+                font-family: 'Open Sans';
+                font-size: 20px;
+                font-weight: normal;
+            }
+            button {
+                width: 15rem;
+                height: 2rem;
+                background-color: $rare;
+                border: thin solid $burnt;
+                border-radius: 3px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+    .about {
+        height: 100vh;
+        background-color: $primary;
+        margin: 0;
+        color: $burnt;
+        .info {
+            display: flex;
+            padding: 7rem 5rem;
+            img {
+                object-position: 50 100%;
+                object-fit: cover;
+                height: 500px;
+                width: 500px;
+                padding-right: 3rem;
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-family: 'Georgia';
+                    font-size: 40px;
+                    font-weight: normal;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-family: 'Open Sans'
+                }
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        height: 70vh;
+        margin: 7rem 5rem;
+        color: $burnt;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            h1 {
+                font-family: 'Georgia';
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 46px;
+                margin: 0;
+            }
+            h2 {
+                font-family: 'Open Sans';
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+        &__right {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            h1 {
+                font-family: 'Georgia';
+                font-size: 30px;
+                font-weight: normal;
+                margin-top: 0.7rem;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    input {
+                        @include input();
+                        width: 50%;
+                        height: 2rem;
+                        margin-bottom: 2rem;                   
+                    }
+                    textarea {
+                        @include input();
+                        height: 8rem;
+                        resize: none;
+                    }
+                }
+                button {
+                    margin-top: 2rem;
+                    width: 20%;
+                    height: 2.5rem;
+                    @include contactBtn();
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
