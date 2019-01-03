@@ -33,16 +33,16 @@ export default class Home extends Component {
                 </section>
                 <section className='about' ref={this.aboutRef}>
                     <div className='info'>
-                        <img src='./assets/DSC_2366-2.jpg' alt='Taryn Li' />
+                        <img className='portrait' src='./assets/DSC_2366-2.jpg' alt='Taryn Li' />
                         <div className='text'>
                             <h1>About</h1>
                             <p>Hi! I'm a recent graduate of BrainStation, located in Toronto, On.
                                 Ready to contribute to this hell hole we call society.
-                        </p>
+                            </p>
                         </div>
                     </div>
                 </section>
-                <Footer/>
+                <Footer />
             </div>
         )
     }

@@ -25,7 +25,6 @@ $burnt: #121212;
 
 .footer {
     display: flex;
-    height: 90vh;
     margin: 7rem 5rem;
     color: $burnt;
     &__left {
@@ -33,17 +32,28 @@ $burnt: #121212;
         flex-direction: column;
         width: 40%;
         h1 {
+            margin-top: 0;
             font-family: 'Georgia';
             font-weight: normal;
             font-size: 40px;
             line-height: 46px;
-            margin: 0;
         }
         h2 {
+            margin: 0.5rem 0;
             font-family: 'Open Sans';
             font-weight: normal;
             font-size: 20px;
             line-height: 27px;
+        }
+        .icons {
+            margin-top: 0.5rem;
+            display: flex;
+            width: 15%;
+            justify-content: space-between;
+            cursor: pointer;
+            &:hover {
+                color: $primary;
+            }
         }
     }
     &__right {
@@ -51,10 +61,10 @@ $burnt: #121212;
         flex-direction: column;
         width: 60%;
         h1 {
+            margin-top: 0.5rem;
             font-family: 'Georgia';
             font-size: 30px;
             font-weight: normal;
-            margin-top: 0.7rem;
         }
         form {
             display: flex;

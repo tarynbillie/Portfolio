@@ -67,7 +67,7 @@
   padding: 7rem 5rem;
 }
 
-.home .about .info img {
+.home .about .info .portrait {
   -o-object-position: 50 100%;
      object-position: 50 100%;
   -o-object-fit: cover;

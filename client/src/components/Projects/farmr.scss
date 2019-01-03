@@ -24,37 +24,71 @@ $burnt: #121212;
     text-align: justify;
 }
 
+@mixin btn {
+    background-color: $rare;
+    border: 1.5px solid $primary;
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@keyframes fadein {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
+}
+
 .project {
-    .title {
+    animation: fadein 1.5s;
+    .farmr {
         display: flex;
         flex-direction: column;
-        color: $burnt;
-        h1 {
-            @include header();
-            margin-top: 8rem;
-            font-size: 60px;
+        align-items: center;
+        .title {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            color: $burnt;
+            h1 {
+                @include header();
+                margin-top: 8rem;
+                font-size: 60px;
+            }
+            h2 {
+                margin: 0;
+                font-family: 'Open Sans';
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                font-weight: normal;
+            }
+            img {
+                margin: 2rem 17.6rem;
+                height: 30rem;
+                width: 55rem;
+            }
         }
-        h2 {
-            margin: 0;
-            font-family: 'Open Sans';
-            font-size: 20px;
-            line-height: 27px;
-            text-align: center;
-            font-weight: normal;
+        section {
+            margin: 2rem 23.3rem;
+            h1 {
+                @include header();
+            }
+            p {
+                @include text();
+            }
+        }
+        img {
+            height: 29rem;
+            width: 50rem;
+        }
+        button {
+            @include btn();
+            height: 2.5rem;
+            align-content: center;
+            &:hover {
+                background-color: $primary;
+            }
         }
     }
-    section {
-        margin: 2rem 0 2rem 22rem;
-        width: 50%;
-        h1 {
-            @include header();
-        }
-        p {
-            @include text();
-        }
-    }
-    button {
-        height: 2rem;
-    }
-    
 }
