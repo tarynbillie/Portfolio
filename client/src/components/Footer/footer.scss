@@ -81,6 +81,7 @@ $burnt: #121212;
                 }
                 textarea {
                     @include input();
+                    border-color: $mediumRare;
                     height: 8rem;
                     resize: none;
                 }

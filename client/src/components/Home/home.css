@@ -43,14 +43,38 @@
   border: thin solid #121212;
   border-radius: 3px;
   font-size: 16px;
-  cursor: pointer;
-  background: url(../../assets/ArrowRight.svg) no-repeat;
-  background-size: 13px;
-  background-position: 97%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 0.8rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.home .hero .blurb button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.home .hero .blurb button span:after {
+  content: '\2192';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.home .hero .blurb button:hover span {
+  padding-right: 25px;
+}
+
+.home .hero .blurb button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .home .about {

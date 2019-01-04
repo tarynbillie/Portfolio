@@ -49,12 +49,32 @@ $burnt: #121212;
                 border: thin solid $burnt;
                 border-radius: 3px;
                 font-size: 16px;
-                cursor: pointer;
-                background: url(../../assets/ArrowRight.svg) no-repeat;
-                background-size: 13px;
-                background-position: 97%;
                 appearance: none;
-                padding: 0 0.8rem;
+                outline: none;
+                cursor: pointer;
+
+            }
+            button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+              button span:after {
+                content: '\2192';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+              
+            button:hover span {
+                padding-right: 25px;
+            }
+            button:hover span:after {
+                opacity: 1;
+                right: 0;
             }
         }
     }

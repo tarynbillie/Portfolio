@@ -28,10 +28,11 @@ $burnt: #121212;
         text-decoration: none;
         .logo {
             h1 {
+                position: relative;
                 font-family: 'Georgia';
                 font-weight: normal;
                 font-size: 40px;
-                z-index: 100 !important;
+                z-index: 1;
             }
         }
     }
@@ -42,7 +43,7 @@ $burnt: #121212;
         width: 134px;
         height: 64px;
         background-color: $primary;
-        z-index: 0 !important;
+        z-index: 0;
     }
     .nav {
         display: flex;
@@ -55,12 +56,22 @@ $burnt: #121212;
             font-size: 16px;
             cursor: pointer;
         }
-        .link {
-            text-decoration: none;
-            color: $burnt;
+        h3::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $primary;
+            transition: width .5s;
+        }
+        h3:hover::after {
+            width: 100%;
         }
         .contact {
             @include contactBtn();
+            &:hover {
+                background-color: $primary;
+            }
         }
     }
 }

@@ -1,21 +1,53 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+import { animateScroll as scroll } from "react-scroll";
+import upArrow from '../../assets/round-expand_less.svg';
 import './farmr.scss';
-import Header from '../Header/Header.js';
+import '../Header/header.scss';
 import Footer from '../Footer/Footer';
 
 
 export default class Farmr extends Component {
+
+    constructor() {
+        super()
+        this.aboutRef = React.createRef();
+        this.challengeRef = React.createRef();
+        this.codeRef = React.createRef();
+        this.conclusionRef = React.createRef();
+    }
+    scroll(ref) {
+        ref.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     render() {
         return (
             <div className='project'>
-                <Header />
+                <div className='header'>
+                    <Link to={'/home'} className='link'>
+                        <div className='logo'>
+                            <h1>Taryn Li</h1>
+                        </div>
+                    </Link>
+                    <div className='rectangle' />
+                    <div className='nav'>
+                        <h3 onClick={() => { this.scroll(this.aboutRef) }}>About</h3>
+                        <h3 onClick={() => { this.scroll(this.challengeRef) }}>Challenges</h3>
+                        <h3 onClick={() => { this.scroll(this.codeRef) }}>Code</h3>
+                        <h3 onClick={() => { this.scroll(this.conclusionRef) }}>Conclusion</h3>
+                    </div>
+                </div>
                 <div className='farmr'>
                     <div className='title'>
                         <h1>Farmr</h1>
                         <h2>BrainStation final project - 2018</h2>
                         <img src='./assets/Farmr-macbook.png' />
                     </div>
-                    <section>
+                    <section ref={this.aboutRef}>
                         <h1>About the project</h1>
                         <p>
                             Directly connecting you to your farm supplier. Making "farm to table"
@@ -31,7 +63,7 @@ export default class Farmr extends Component {
                             ther user to log in.
                         </p>
                     </section>
-                    <section>
+                    <section ref={this.challengeRef}>
                         <h1>Challenges</h1>
                         <p>
                             While attending school I was given 1 1/2 weeks to work on this final project.
@@ -41,7 +73,7 @@ export default class Farmr extends Component {
                             By doing this I was able to time managment more effectivly.
                         </p>
                     </section>
-                    <section>
+                    <section ref={this.codeRef}>
                         <h1>Code</h1>
                         <p>
                             MERN Stack - MongoDb, Express, React, Node.
@@ -51,13 +83,15 @@ export default class Farmr extends Component {
                         </p>
                     </section>
                     <img src='./assets/Bitmap.png' alt='code' />
-                    <section>
+                    <section ref={this.conclusionRef}>
                         <h1>Project Conclusion</h1>
                         <p>
                             In conclusion, this project was very fun and rewarding.
                         </p>
                     </section>
-                    <button>Back to top</button>
+                    <button onClick={this.scrollToTop}>
+                    <img className='' src={upArrow}/>
+                    </button>
                 </div>
                 <Footer />
             </div>

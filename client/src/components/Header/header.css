@@ -18,10 +18,11 @@
 }
 
 .header .link .logo h1 {
+  position: relative;
   font-family: 'Georgia';
   font-weight: normal;
   font-size: 40px;
-  z-index: 100 !important;
+  z-index: 1;
 }
 
 .header .rectangle {
@@ -31,7 +32,7 @@
   width: 134px;
   height: 64px;
   background-color: #CDDCE0;
-  z-index: 0 !important;
+  z-index: 0;
 }
 
 .header .nav {
@@ -54,9 +55,18 @@
   cursor: pointer;
 }
 
-.header .nav .link {
-  text-decoration: none;
-  color: #121212;
+.header .nav h3::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #CDDCE0;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.header .nav h3:hover::after {
+  width: 100%;
 }
 
 .header .nav .contact {
@@ -67,5 +77,9 @@
   width: 9rem;
   font-size: 16px;
   cursor: pointer;
+}
+
+.header .nav .contact:hover {
+  background-color: #CDDCE0;
 }
 /*# sourceMappingURL=header.css.map */

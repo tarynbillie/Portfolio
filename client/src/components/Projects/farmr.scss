@@ -27,9 +27,9 @@ $burnt: #121212;
 @mixin btn {
     background-color: $rare;
     border: 1.5px solid $primary;
-    border-radius: 3px;
+    border-radius: 15px;
     height: 2.5rem;
-    width: 9rem;
+    width: 3rem;
     font-size: 16px;
     cursor: pointer;
 }
@@ -52,7 +52,7 @@ $burnt: #121212;
             color: $burnt;
             h1 {
                 @include header();
-                margin-top: 8rem;
+                margin-top: 5rem;
                 font-size: 60px;
             }
             h2 {
@@ -84,8 +84,15 @@ $burnt: #121212;
         }
         button {
             @include btn();
-            height: 2.5rem;
+            position: fixed;
+            top: 40rem;
+            right: 4rem;
             align-content: center;
+            outline: none;
+            img {
+                height: 2rem;
+                width: 2rem;
+            }
             &:hover {
                 background-color: $primary;
             }
