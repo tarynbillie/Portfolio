@@ -1,0 +1,45 @@
+.about {
+  height: 100vh;
+  margin: 0;
+  color: #121212;
+}
+
+.about .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .info .portrait {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  width: 800px;
+  z-index: 0;
+  -webkit-clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
+          clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
+}
+
+.about .info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 6.7rem 5rem;
+}
+
+.about .info .text h1 {
+  font-family: 'Georgia';
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.about .info .text p {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'Open Sans';
+}
+/*# sourceMappingURL=about.css.map */

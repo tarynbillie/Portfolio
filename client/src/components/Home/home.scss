@@ -29,7 +29,7 @@ $burnt: #121212;
         .blurb {
             display: flex;
             flex-direction: column;
-            padding-top: 6rem;
+            padding-top: 15rem;
             margin: 1.5rem 5rem 0 5rem;
             h2 {
                 font-family: 'Georgia';
@@ -60,7 +60,7 @@ $burnt: #121212;
                 position: relative;
                 transition: 0.5s;
             }
-              button span:after {
+            button span:after {
                 content: '\2192';
                 position: absolute;
                 opacity: 0;
@@ -75,37 +75,6 @@ $burnt: #121212;
             button:hover span:after {
                 opacity: 1;
                 right: 0;
-            }
-        }
-    }
-    .about {
-        height: 100vh;
-        background-color: $primary;
-        margin: 0;
-        color: $burnt;
-        .info {
-            display: flex;
-            padding: 7rem 5rem;
-            .portrait {
-                object-position: 50 100%;
-                object-fit: cover;
-                height: 500px;
-                width: 500px;
-                padding-right: 3rem;
-            }
-            .text {
-                display: flex;
-                flex-direction: column;
-                h1 {
-                    font-family: 'Georgia';
-                    font-size: 40px;
-                    font-weight: normal;
-                }
-                p {
-                    font-size: 20px;
-                    line-height: 32px;
-                    font-family: 'Open Sans'
-                }
             }
         }
     }

@@ -19,7 +19,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 6rem;
+  padding-top: 15rem;
   margin: 1.5rem 5rem 0 5rem;
 }
 
@@ -75,51 +75,5 @@
 .home .hero .blurb button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-.home .about {
-  height: 100vh;
-  background-color: #CDDCE0;
-  margin: 0;
-  color: #121212;
-}
-
-.home .about .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 7rem 5rem;
-}
-
-.home .about .info .portrait {
-  -o-object-position: 50 100%;
-     object-position: 50 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 500px;
-  width: 500px;
-  padding-right: 3rem;
-}
-
-.home .about .info .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.home .about .info .text h1 {
-  font-family: 'Georgia';
-  font-size: 40px;
-  font-weight: normal;
-}
-
-.home .about .info .text p {
-  font-size: 20px;
-  line-height: 32px;
-  font-family: 'Open Sans';
 }
 /*# sourceMappingURL=home.css.map */

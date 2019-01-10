@@ -1,0 +1,41 @@
+$primary: #CDDCE0;
+$accent: #C24B0C;
+
+$rare: #FFF;
+$mediumRare:#D3D3D3;
+$mediumWell: #808080;
+$well: #484848;
+$burnt: #121212;
+
+.about {
+    height: 100vh;
+    margin: 0;
+    color: $burnt;
+    .info {
+        display: flex;
+        .portrait {
+            // object-position: 50 100%;
+            object-fit: cover;
+            height: 100vh;
+            width: 800px;
+            z-index: 0;
+            clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
+            
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            padding: 6.7rem 5rem;
+            h1 {
+                font-family: 'Georgia';
+                font-size: 40px;
+                font-weight: normal;
+            }
+            p {
+                font-size: 20px;
+                line-height: 32px;
+                font-family: 'Open Sans'
+            }
+        }
+    }
+}

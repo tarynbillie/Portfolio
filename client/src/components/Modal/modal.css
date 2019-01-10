@@ -1,0 +1,145 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fadein 0.5s;
+          animation: fadein 0.5s;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Georgia';
+  font-size: 34px;
+}
+
+.form-container__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+}
+
+.form-container__close img {
+  padding: 0.5rem 0.8rem;
+  width: 4%;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.form-container__close img:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Open Sans';
+  margin-left: 2rem;
+  color: #121212;
+  font-size: 18px;
+  padding-top: 1rem;
+}
+
+.form-container form label input {
+  width: 91%;
+  fill: #C24B0C;
+  border-radius: 3px;
+  border: 1px solid #D3D3D3;
+  outline: none;
+  font-size: 16px;
+  margin-top: 0.3rem;
+  padding-left: 0.8rem;
+  height: 2.5rem;
+}
+
+.form-container form label textarea {
+  width: 91%;
+  fill: #C24B0C;
+  border-radius: 3px;
+  border: 1px solid #D3D3D3;
+  outline: none;
+  font-size: 16px;
+  margin-top: 0.3rem;
+  padding-left: 0.8rem;
+  height: 5rem;
+  resize: none;
+  overflow-y: scroll;
+}
+
+.form-container form .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.form-container form .btn button {
+  margin-top: 1.5rem;
+  background-color: #CDDCE0;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: normal;
+  outline: none;
+  cursor: pointer;
+  height: 38px;
+  width: 85%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-container form .btn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form-container form .error {
+  text-align: right;
+  font-size: 14px;
+  color: #C24B0C;
+}
+/*# sourceMappingURL=modal.css.map */

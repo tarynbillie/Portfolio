@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from "react-scroll";
 import upArrow from '../../assets/round-expand_less.svg';
 import './farmr.scss';
-import '../Header/header.scss';
 import Footer from '../Footer/Footer';
 
 
@@ -90,7 +89,7 @@ export default class Farmr extends Component {
                         </p>
                     </section>
                     <button onClick={this.scrollToTop}>
-                    <img className='' src={upArrow}/>
+                        <img className='' src={upArrow} />
                     </button>
                 </div>
                 <Footer />
