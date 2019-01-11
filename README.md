@@ -1,5 +1,5 @@
-#Portfolio - Taryn Li
+# Portfolio - Taryn Li
 
-##Currently under construction 🚧
+## Currently under construction 🚧
 
-###Projected to be up in running by Jan 2019
+### Projected to be up in running by Jan 2019
