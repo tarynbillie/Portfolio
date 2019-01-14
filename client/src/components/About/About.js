@@ -19,7 +19,7 @@ export default class About extends Component {
                             Known as a self-starter with a take-charge attitude; highly motivated to work in a fast paced,
                             innovative environment. A creative, resourceful developer with good interpersonal and organizational skills.
                             </p>
-                            <span>Women in Development Recipient (2018)</span>
+                            <span> Women in Development Recipient (2018)</span>
                             <div className='text__focus'>
                                 <h3>Current focus:</h3>
                                 <a href='https://reactjs.org/'>
