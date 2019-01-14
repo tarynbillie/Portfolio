@@ -14,7 +14,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 100vh;
-  width: 800px;
+  width: 40%;
   z-index: 0;
   -webkit-clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
           clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
@@ -28,7 +28,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 6.7rem 5rem;
+  text-align: justify;
+  width: 60%;
+  padding: 6rem 5rem;
 }
 
 .about .info .text h1 {
@@ -41,5 +43,57 @@
   font-size: 20px;
   line-height: 32px;
   font-family: 'Open Sans';
+}
+
+.about .info .text p span {
+  font-weight: bold;
+}
+
+.about .info .text span {
+  font-style: italic;
+}
+
+.about .info .text__focus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.about .info .text__focus h3 {
+  padding-right: 0.3rem;
+  font-size: 18px;
+}
+
+.about .info .text__focus a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  color: #C24B0C;
+}
+
+.about .info .text__focus a img {
+  width: 15%;
+  margin: 0;
+}
+
+.about .info .text__focus a h4 {
+  padding-right: 0.3rem;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.about .info .text__focus a:hover {
+  color: #3d7e9a;
+}
+
+.about .info .text__focus span {
+  padding-right: 0.3rem;
 }
 /*# sourceMappingURL=about.css.map */

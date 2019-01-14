@@ -7,7 +7,7 @@ export default class Footer extends Component {
             <div className='footer'>
                 <div className='footer__left'>
                     <h1>Get in touch</h1>
-                    <h2>tarynli@hotmail.com</h2>
+                    <h2>tarynbillie@gmail.com</h2>
                     <h2>519 212 2052</h2>
                     <div className='icons'>
                         <a href='https://github.com/tarynbillie'>

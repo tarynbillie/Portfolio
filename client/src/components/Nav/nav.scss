@@ -19,9 +19,11 @@ $burnt: #121212;
 }
 
 .header {
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
     position: fixed;
     // background-color: $mediumRare;
     // opacity: 0.4;
@@ -58,6 +60,7 @@ $burnt: #121212;
         align-items: center;
         margin-top: 1.5rem;
         width: 40%;
+
         h3 {
             font-family: 'Open Sans';
             font-weight: normal;

@@ -17,7 +17,7 @@ $burnt: #121212;
             // object-position: 50 100%;
             object-fit: cover;
             height: 100vh;
-            width: 800px;
+            width: 40%;
             z-index: 0;
             clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
             
@@ -25,7 +25,9 @@ $burnt: #121212;
         .text {
             display: flex;
             flex-direction: column;
-            padding: 6.7rem 5rem;
+            text-align: justify;
+            width: 60%;
+            padding: 6rem 5rem;
             h1 {
                 font-family: 'Georgia';
                 font-size: 40px;
@@ -34,7 +36,44 @@ $burnt: #121212;
             p {
                 font-size: 20px;
                 line-height: 32px;
-                font-family: 'Open Sans'
+                font-family: 'Open Sans';
+                span {
+                    font-weight: bold;
+                }
+            }
+            span {
+                font-style: italic;
+            }
+            &__focus {
+                display: flex;
+                align-items: baseline;
+                h3 {
+                    padding-right: 0.3rem;
+                    font-size: 18px;
+                }
+                a {
+                    display: flex;
+                    transition: all .3s ease-in-out ;
+                    text-decoration: none;
+                    font-family: 'Open Sans';
+                    color: $accent;
+                    img {
+                        width: 15%;
+                        margin: 0;
+                    }
+                    h4 {
+                        padding-right: 0.3rem;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        color: #3d7e9a;
+                    }
+                }
+                span {
+                    padding-right: 0.3rem;
+
+                }
             }
         }
     }

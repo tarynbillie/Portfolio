@@ -34,6 +34,9 @@ export default class Farmr extends Component {
                     </Link>
                     <div className='rectangle' />
                     <div className='nav'>
+                    <Link to={'/home'} className='link'>
+                        <h3>Home</h3>
+                    </Link>
                         <h3 onClick={() => { this.scroll(this.aboutRef) }}>About</h3>
                         <h3 onClick={() => { this.scroll(this.challengeRef) }}>Challenges</h3>
                         <h3 onClick={() => { this.scroll(this.codeRef) }}>Code</h3>
@@ -54,10 +57,10 @@ export default class Farmr extends Component {
                         </p>
                         <p>
                             Communication and invoicing takes time out of your day
-                            for both the farmer and chef. Farmr makes "farm to table" more achievable.
-                            Upon log-in, the user will be able to see what produce the farmer is going
-                            to harvest for the upcoming week. The user is able to pick and choose which
-                            specific produce they would like to order from the farmer. Once the user has
+                            for both the farmer and chef. Farmr makes "farm to table" more achievable. I created
+                            this application to save time for both parties.
+                            Upon log-in, the user is able to pick and choose which
+                            specific produce they would like to order from the farmer and gets stored in the database. Once the user has
                             chosen their final pickings for the upcoming week, a notification email asking
                             ther user to log in.
                         </p>

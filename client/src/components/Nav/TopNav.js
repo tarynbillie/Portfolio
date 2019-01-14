@@ -14,8 +14,17 @@ export default class TopNav extends Component {
         ref.current.scrollIntoView({ behavior: 'smooth' })
     }
 
+    componentDidMount() {
+        if (window.location.href.includes('about')) {
+            this.setState({
+                isAbout: true,
+            })
+        }
+    }
+
     state = {
         isOpen: false,
+        isAbout: false,
     }
 
     showModal = () => {
@@ -34,18 +43,20 @@ export default class TopNav extends Component {
         return (
             <div>
                 <div className='header'>
-                    <Link to={'/home'} className='link'>
-                        <div className='logo'>
-                            <h1>Taryn Li</h1>
+                    {!this.state.isAbout &&
+                        <div>
+                            <Link to={'/home'} className='link'>
+                                <div className='logo'>
+                                    <h1>Taryn Li</h1>
+                                </div>
+                            </Link>
+                            <div className='rectangle' />
                         </div>
-                    </Link>
-                    <div className='rectangle' />
-                    <div className='nav'>
-                    <Link to={'/home'} className='link'>
-                        <h3>Home</h3>
-                    </Link>
+                    }
+                    
+                    <div className={`nav ${this.state.isAbout && 'isAbout'}`}>
                         <Link to={'/about'} className='link'>
-                            <h3>About Me</h3>
+                            <h3>About</h3>
                         </Link>
                         <Link to={'/projects'} className='link'>
                             <h3>Projects</h3>
