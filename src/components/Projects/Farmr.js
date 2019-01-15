@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from "react-scroll";
 import upArrow from '../../assets/round-expand_less.svg';
+import farmr from '../../assets/Farmr-macbook.png';
+import code from '../../assets/Bitmap.png';
 import './farmr.scss';
 import Footer from '../Footer/Footer';
 
@@ -47,7 +49,7 @@ export default class Farmr extends Component {
                     <div className='title'>
                         <h1>Farmr</h1>
                         <h2>BrainStation final project - 2018</h2>
-                        <img src='./assets/Farmr-macbook.png' />
+                        <img src={farmr} />
                     </div>
                     <section ref={this.aboutRef}>
                         <h1>About the project</h1>
@@ -84,7 +86,7 @@ export default class Farmr extends Component {
                             NPM install
                         </p>
                     </section>
-                    <img src='./assets/Bitmap.png' alt='code' />
+                    <img src={code} alt='code' />
                     <section ref={this.conclusionRef}>
                         <h1>Project Conclusion</h1>
                         <p>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import portrait from '../../assets/portrait.jpg';
 import react from '../../assets/react.svg';
 import html5 from '../../assets/html5-badge.svg';
 import css3 from '../../assets/css3.svg';
@@ -25,7 +26,7 @@ export default class About extends Component {
             <div className='home'>
                 <div className='about' ref={this.aboutRef}>
                     <div className='info'>
-                        <img className='portrait' src='./assets/DSC_2366-2.jpg' alt='Taryn Li' />
+                        <img className='portrait' src={portrait} alt='Taryn Li' />
                         <div className='text'>
                             <h1>About</h1>
                             <p>Hi! I'm a recent graduate of BrainStation's web development program, located in Toronto, ON.

@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import github from '../../assets/github-home.svg';
+import linkedin from '../../assets/LinkedIn.svg';
+import TopNav from '../Nav/TopNav';
 import '../Home/home.scss';
 import '../Nav/nav.scss';
-import TopNav from '../Nav/TopNav';
 
 
 export default class LandingPage extends Component {
@@ -22,10 +24,10 @@ export default class LandingPage extends Component {
                         </Link>
                         <div className='social-media'>
                             <a href='https://github.com/tarynbillie'>
-                                <img src='./assets/GitHub.svg' alt='LinkedIn' />
+                                <img src={linkedin} alt='LinkedIn' />
                             </a>
                             <a href='https://www.linkedin.com/in/taryn-li/'>
-                                <img src='./assets/LinkedIn.svg' alt='Github' />
+                                <img src={github} alt='Github' />
                             </a>
                         </div>
                     </div>

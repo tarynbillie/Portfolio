@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import github from '../../assets/github-home.svg';
+import linkedin from '../../assets/LinkedIn.svg';
 import './footer.scss';
 
 export default class Footer extends Component {
@@ -11,10 +13,10 @@ export default class Footer extends Component {
                     <h2>519 212 2052</h2>
                     <div className='icons'>
                         <a href='https://github.com/tarynbillie'>
-                            <img src='./assets/GitHub.svg' alt='LinkedIn' />
+                            <img src={linkedin} alt='LinkedIn' />
                         </a>
                         <a href='https://www.linkedin.com/in/taryn-li/'>
-                            <img src='./assets/LinkedIn.svg' alt='Github' />
+                            <img src={github} alt='Github' />
                         </a>
                     </div>
                 </div>
