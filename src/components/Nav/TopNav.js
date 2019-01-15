@@ -60,7 +60,7 @@ export default class TopNav extends Component {
                             <h3>Home</h3>
                         </Link>
                         <Link to={'/about'} className='link'>
-                            <h3>About</h3>
+                            <h3>About me</h3>
                         </Link>
                         <Link to={'/projects'} className='link'>
                             <h3>Projects</h3>

@@ -49,7 +49,7 @@ export default class ContactModal extends Component {
                 <div className='modal-layer' onClick={this.props.handleClose} style={modalLayer}></div>
                 <div className="form-container" style={formModal}>
                 <div className='form-container__close'>
-                    <img src={closebtn} onClick={this.props.handleClose} />
+                    <img src={closebtn} alt='close' onClick={this.props.handleClose} />
                 </div>
                     <h1>Leave a message</h1>
                     <form onSubmit={this.formSubmit} >

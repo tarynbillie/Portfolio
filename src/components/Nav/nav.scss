@@ -25,7 +25,8 @@ $burnt: #121212;
     align-items: center;
     justify-content: flex-end;
     position: fixed;
-    background-color: rgba(255,255,255,0.8);
+    background-color: $rare;
+    // background-color: rgba(255,255,255,0.8);
     width: 100%;
     height: 5rem;
     .link {

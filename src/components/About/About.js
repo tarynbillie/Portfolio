@@ -28,7 +28,7 @@ export default class About extends Component {
                     <div className='info'>
                         <img className='portrait' src={portrait} alt='Taryn Li' />
                         <div className='text'>
-                            <h1>About</h1>
+                            <h1>About me</h1>
                             <p>Hi! I'm a recent graduate of BrainStation's web development program, located in Toronto, ON.
                             My experience at BrainStation allowed me to grasp new concepts quickly, and effectively adapt to full stack development.
                             Graduating with a 90% average I’m well positioned to contribute robust, clean, maintainable code and become an asset to any team.
@@ -42,11 +42,11 @@ export default class About extends Component {
                             </div>
                             <div className='text__skill'>
                                 <div className='column'>
-                                    <img src={html5} className='html'/>
+                                    <img src={html5} alt='html5 logo' className='html'/>
                                     <h5>HTML5</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={react}/>
+                                    <img src={react} alt='react logo'/>
                                     <h5>JSX</h5>
                                 </div>
                             </div>
@@ -55,11 +55,11 @@ export default class About extends Component {
                             </div>
                             <div className='text__skill'>
                                 <div className='column'>
-                                    <img src={css3}/>
+                                    <img src={css3} alt='css3 logo'/>
                                     <h5>CSS3</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={sass} className='badge--large'/>
+                                    <img src={sass} alt='sass logo' className='badge--large'/>
                                     <h5>SASS</h5>
                                 </div>
                             </div>
@@ -68,23 +68,23 @@ export default class About extends Component {
                             </div>
                             <div className='text__skill'>
                                 <div className='column'>
-                                    <img src={react}/>
+                                    <img src={react} alt='react lgoo'/>
                                     <h5>React</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={javascript} className='badge--large'/>
+                                    <img src={javascript} alt='javascript logo' className='badge--large'/>
                                     <h5>JavaScript</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={node}/>
+                                    <img src={node} alt='node logo'/>
                                     <h5>Node</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={webpack} className='badge--xlarge'/>
+                                    <img src={webpack} alt='webpack logo' className='badge--xlarge'/>
                                     <h5>Webpack</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={npm} className='badge--large'/>
+                                    <img src={npm} alt='npm logo' className='badge--large'/>
                                     <h5>NPM</h5>
                                 </div>
                             </div>
@@ -93,11 +93,11 @@ export default class About extends Component {
                             </div>
                             <div className='text__skill'>
                                 <div className='column'>
-                                    <img src={mongo} className='badge--xlarge'/>
+                                    <img src={mongo} alt='mongodb logo' className='badge--xlarge'/>
                                     <h5>MongoDB</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={mysql} className='badge--xlarge'/>
+                                    <img src={mysql} alt='mysql logo' className='badge--xlarge'/>
                                     <h5>MySql</h5>
                                 </div>
                             </div>
@@ -106,23 +106,23 @@ export default class About extends Component {
                             </div>
                             <div className='text__skill'>
                                 <div className='column'>
-                                    <img src={github} className='badge--large'/>
+                                    <img src={github} alt='github logo' className='badge--large'/>
                                     <h5>Github</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={vscode} className='badge--medium'/>
+                                    <img src={vscode} alt='vscode logo' className='badge--medium'/>
                                     <h5>Visual Studio Code</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={heroku} className='badge--large'/>
+                                    <img src={heroku} alt='heroku logo' className='badge--large'/>
                                     <h5>Heroku</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={git}/>
+                                    <img src={git} alt='git logo'/>
                                     <h5>Git</h5>
                                 </div>
                                 <div className='column'>
-                                    <img src={postman} className='badge--medium'/>
+                                    <img src={postman} alt='postman logo' className='badge--medium'/>
                                     <h5>Postman</h5>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@ export default class About extends Component {
                                 </a>
                                 <span>//</span>
                                 <a href='https://github.com/styled-components/styled-components'>
-                                    <h4>Styled-components 💅</h4>
+                                    <h4>Styled-components <span role="img" aria-label="nail polish">💅</span></h4>
                                 </a>
                                 <span>//</span>
                                 <a href='https://www.w3.org/WAI/fundamentals/accessibility-intro/'>

@@ -12,7 +12,7 @@ export default class Farmr extends Component {
 
     constructor() {
         super()
-        this.aboutRef = React.createRef();
+        this.missionRef = React.createRef();
         this.challengeRef = React.createRef();
         this.codeRef = React.createRef();
         this.conclusionRef = React.createRef();
@@ -39,7 +39,7 @@ export default class Farmr extends Component {
                     <Link to={'/home'} className='link'>
                         <h3>Home</h3>
                     </Link>
-                        <h3 onClick={() => { this.scroll(this.aboutRef) }}>About</h3>
+                        <h3 onClick={() => { this.scroll(this.missionRef) }}>Mission</h3>
                         <h3 onClick={() => { this.scroll(this.challengeRef) }}>Challenges</h3>
                         <h3 onClick={() => { this.scroll(this.codeRef) }}>Code</h3>
                         <h3 onClick={() => { this.scroll(this.conclusionRef) }}>Conclusion</h3>
@@ -51,16 +51,20 @@ export default class Farmr extends Component {
                         <h2>BrainStation final project - 2018</h2>
                         <img src={farmr} alt='farmr screenshot'/>
                     </div>
-                    <section ref={this.aboutRef}>
-                        <h1>About the project</h1>
+                    <section ref={this.missionRef}>
+                        <h1>Mission</h1>
                         <p>
                             Directly connecting you to your farm supplier. Making "farm to table"
                             more achievable and less time consuming!
                         </p>
                         <p>
                             Communication and invoicing takes time out of your day
-                            for both the farmer and chef. Farmr makes "farm to table" more achievable. I created
-                            this application to save time for both parties.
+                            for both the farmer and chef. Farmr makes "farm to table" more achievable. My insportaion for creating Farmr
+                            was to make my sister and her husband (who are organic farmers) day-to-day lives easier. My initial idea was to
+                            create an application that would shave off some time in their busy schedules. I soon realized that this application
+                            would save time for more than just a farmer, but also a chef that's looking to give their guests a more unique experience at their resturant.
+                        </p>
+                        <p>
                             Upon log-in, the user is able to pick and choose which
                             specific produce they would like to order from the farmer and gets stored in the database. Once the user has
                             chosen their final pickings for the upcoming week, a notification email asking
@@ -76,6 +80,18 @@ export default class Farmr extends Component {
                             I had also created "stretch features" that I would implement <i>only</i> after completing the core ones.
                             By doing this I was able to time managment more effectivly.
                         </p>
+                        <p>
+                            Keeping on track was quite difficult. I took many different routes than I originally didn't set out to. 
+                            Using Firebase Authentication (Googles BaaS) seemed appealing at first, but a stubborn little bird on my shoulder
+                            was chirpping at me to do it all myself. So that's what I did..."Register" and "Login" authentication and authorization took
+                            at least 3 days to accompish, pushing back some features that I wanted to finish. This just meant I had to kick into high gear
+                            and complete everything before the due date - which I did of course.
+                        </p>
+                        <p>
+                            Finally, thinking about all the logistics Farmr's core concept, and if it would even make sense to use!
+                            I'm no business woman by all means, so coming up with a great idea was also a challenge in itself. As a developer, trying to develope,
+                            design, analyze, 
+                        </p>
                     </section>
                     <section ref={this.codeRef}>
                         <h1>Code</h1>
@@ -83,14 +99,16 @@ export default class Farmr extends Component {
                             MERN Stack - MongoDb, Express, React, Node.
                         </p>
                         <p>
-                            NPM install
+                            NPM packages used - JWT, bcrypt, cors, sendgrid/mail, mongoose
                         </p>
                     </section>
                     <img src={code} alt='code screenshot' />
                     <section ref={this.conclusionRef}>
                         <h1>Project Conclusion</h1>
                         <p>
-                            In conclusion, this project was very fun and rewarding.
+                            In conclusion, creating Farmr was very fun and rewarding. I will be continuously updating this project as there
+                            are a lot of features that still need to be implemented - as well as some bug fixes.
+                            The live version is still to be determind.
                         </p>
                     </section>
                     <button onClick={this.scrollToTop}>

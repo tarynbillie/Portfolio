@@ -16,10 +16,10 @@ $burnt: #121212;
         .portrait {
             // object-position: 50 100%;
             position: fixed;
-            // top: 5rem;
+            margin-left: 5rem;
             object-fit: cover;
             height: 100vh;
-            width: 40%;
+            width: 35%;
             z-index: 0;
             clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
             
