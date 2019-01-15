@@ -1,19 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "c1f37ed01d52fcc808fcd597894ea7bc",
-    "url": "/Portfolio/static/media/mongodb.c1f37ed0.svg"
+    "revision": "eb6a11c5d54470b5273b9b3aa7715f33",
+    "url": "/Portfolio/static/media/nodejs-1.eb6a11c5.svg"
   },
   {
-    "revision": "ff9c139fa890bc64906c",
-    "url": "/Portfolio/static/css/main.0fd71ee7.chunk.css"
+    "revision": "6ee32e6b8c7a93ccc372",
+    "url": "/Portfolio/static/css/main.4b7a3cc0.chunk.css"
   },
   {
-    "revision": "5ac181f78aa8de5a11cd",
-    "url": "/Portfolio/static/js/1.5ac181f7.chunk.js"
+    "revision": "53b1a4fe00eda2c04475",
+    "url": "/Portfolio/static/js/1.53b1a4fe.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
     "url": "/Portfolio/static/js/runtime~main.3b961160.js"
+  },
+  {
+    "revision": "0941e99f5f3c43e8428f34889a4fb574",
+    "url": "/Portfolio/static/media/github-home.0941e99f.svg"
+  },
+  {
+    "revision": "34efd2c7a4dd98b48f660f1087dc3ac7",
+    "url": "/Portfolio/static/media/LinkedIn.34efd2c7.svg"
   },
   {
     "revision": "acf31a88d889e0cf4f2cae0bd23da0d1",
@@ -28,6 +36,18 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/round-expand_less.b83606e5.svg"
   },
   {
+    "revision": "b02ad935fa12597e45ac8d732a1489df",
+    "url": "/Portfolio/static/media/Farmr-macbook.b02ad935.png"
+  },
+  {
+    "revision": "a1a782283c915e267fe9fa54259120ea",
+    "url": "/Portfolio/static/media/Bitmap.a1a78228.png"
+  },
+  {
+    "revision": "f7adc932e081d5cc971ccad5dafbfd20",
+    "url": "/Portfolio/static/media/portrait.f7adc932.jpg"
+  },
+  {
     "revision": "a5b80bec5e2b7709e3869a37cc362de1",
     "url": "/Portfolio/static/media/html5-badge.a5b80bec.svg"
   },
@@ -40,8 +60,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/javascript-1.d29d3bf0.svg"
   },
   {
-    "revision": "eb6a11c5d54470b5273b9b3aa7715f33",
-    "url": "/Portfolio/static/media/nodejs-1.eb6a11c5.svg"
+    "revision": "6ee32e6b8c7a93ccc372",
+    "url": "/Portfolio/static/js/main.6ee32e6b.chunk.js"
   },
   {
     "revision": "a10f2fbf46dcb79508f4a0482406b755",
@@ -52,8 +72,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/webpack-icon.04bd4881.svg"
   },
   {
-    "revision": "ff9c139fa890bc64906c",
-    "url": "/Portfolio/static/js/main.ff9c139f.chunk.js"
+    "revision": "c1f37ed01d52fcc808fcd597894ea7bc",
+    "url": "/Portfolio/static/media/mongodb.c1f37ed0.svg"
   },
   {
     "revision": "4761aa256448ef98d0b97a0b939d7508",
@@ -100,7 +120,7 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/OpenSans-Regular.d7d5d458.ttf"
   },
   {
-    "revision": "b984bd3faec5baf6c11c0762891e605f",
+    "revision": "12e107b6de1c06037626478697a591d5",
     "url": "/Portfolio/index.html"
   }
 ];
