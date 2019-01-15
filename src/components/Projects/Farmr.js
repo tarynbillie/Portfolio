@@ -49,7 +49,7 @@ export default class Farmr extends Component {
                     <div className='title'>
                         <h1>Farmr</h1>
                         <h2>BrainStation final project - 2018</h2>
-                        <img src={farmr} />
+                        <img src={farmr} alt='farmr screenshot'/>
                     </div>
                     <section ref={this.aboutRef}>
                         <h1>About the project</h1>
@@ -86,7 +86,7 @@ export default class Farmr extends Component {
                             NPM install
                         </p>
                     </section>
-                    <img src={code} alt='code' />
+                    <img src={code} alt='code screenshot' />
                     <section ref={this.conclusionRef}>
                         <h1>Project Conclusion</h1>
                         <p>
@@ -94,7 +94,7 @@ export default class Farmr extends Component {
                         </p>
                     </section>
                     <button onClick={this.scrollToTop}>
-                        <img className='' src={upArrow} />
+                        <img src={upArrow} alt='arrow'/>
                     </button>
                 </div>
                 <Footer />
