@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tarynbillie.github.io/Portfolio",
+  "homepage": "https://tarynbillie.github.io/Portfolio",
   "dependencies": {
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
