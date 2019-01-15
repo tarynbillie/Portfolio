@@ -22,20 +22,20 @@ export default class Footer extends Component {
                 </div>
                 <div className='footer__right'>
                     <h1>Leave a message</h1>
-                    <form>
+                    <form method="POST" action="https://formspree.io/tarynbillie@gmail.com" >
                         <label>
                             Name
-                        <input type='text' />
+                        <input type='text' name='name' />
                         </label>
                         <label>
                             Email
-                        <input type='email' />
+                        <input type='email' name='email' />
                         </label>
                         <label>
                             Message
-                        <textarea type='text' />
+                        <textarea type='message' name='message' />
                         </label>
-                        <button>Send</button>
+                        <button type='submit'>Send</button>
                     </form>
                 </div>
             </div>

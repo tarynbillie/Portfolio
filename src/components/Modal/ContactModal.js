@@ -52,21 +52,21 @@ export default class ContactModal extends Component {
                     <img src={closebtn} alt='close' onClick={this.props.handleClose} />
                 </div>
                     <h1>Leave a message</h1>
-                    <form onSubmit={this.formSubmit} >
+                    <form method="POST" action="https://formspree.io/tarynbillie@gmail.com" >
                         <label>
                             Name
-                            <input type='text' />
+                            <input type='text' name='name'/>
                         </label>
                         <label>
                             Email address
-                            <input type='email' name='email' onChange={this.handleChange} />
+                            <input type='email' name='email'/>
                         </label>
                         <label>
                             Message
-                            <textarea type='text' />
+                            <textarea type='message' name='message' />
                         </label>
                         <div className='btn'>
-                            <button type='submit' onClick={this.contact}>Submit</button>
+                            <button type='submit' onClick={this.props.handleClose}>Submit</button>
                         </div>
                     </form>
                 </div>
