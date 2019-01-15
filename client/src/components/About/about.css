@@ -11,6 +11,7 @@
 }
 
 .about .info .portrait {
+  position: fixed;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100vh;
@@ -29,7 +30,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: justify;
-  width: 60%;
+  margin-left: 37rem;
+  color: #121212;
+  width: 50%;
   padding: 6rem 5rem;
 }
 
@@ -40,17 +43,89 @@
 }
 
 .about .info .text p {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 30px;
   font-family: 'Open Sans';
-}
-
-.about .info .text p span {
-  font-weight: bold;
 }
 
 .about .info .text span {
   font-style: italic;
+  padding-bottom: 2rem;
+}
+
+.about .info .text__header {
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+
+.about .info .text__header h3 {
+  margin-top: 0;
+}
+
+.about .info .text__header h4 {
+  margin-top: 0.8rem;
+  padding-bottom: 1rem;
+  border-bottom: thin solid #D3D3D3;
+}
+
+.about .info .text__skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about .info .text__skill .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .info .text__skill .column h5 {
+  padding-left: 1rem;
+}
+
+.about .info .text__skill .column .html {
+  margin-left: 0.5rem;
+}
+
+.about .info .text__skill .badge--xsmall {
+  width: 10%;
+}
+
+.about .info .text__skill .badge--small {
+  width: 30%;
+}
+
+.about .info .text__skill .badge--medium {
+  width: 50%;
+}
+
+.about .info .text__skill .badge--large {
+  width: 70%;
+}
+
+.about .info .text__skill .badge--xlarge {
+  width: 90%;
+}
+
+.about .info .text__skill h5 {
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 0;
+  padding-right: 1rem;
 }
 
 .about .info .text__focus {
@@ -60,11 +135,12 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-top: 3rem;
 }
 
 .about .info .text__focus h3 {
   padding-right: 0.3rem;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about .info .text__focus a {
@@ -76,11 +152,6 @@
   text-decoration: none;
   font-family: 'Open Sans';
   color: #C24B0C;
-}
-
-.about .info .text__focus a img {
-  width: 15%;
-  margin: 0;
 }
 
 .about .info .text__focus a h4 {

@@ -39,20 +39,6 @@ export default class ContactModal extends Component {
             errorMsg: '',
         })
     }
-    // contact = () => {
-    //     const body = {
-    //         email: this.state.email,
-    //         password: this.state.password
-    //       };
-
-    //       const init = {
-    //         method: "POST",
-    //         body: JSON.stringify(body),
-    //         headers: {
-    //           'content-type': 'application/json'
-    //         }
-    //       };
-    // }
 
 
     render() {

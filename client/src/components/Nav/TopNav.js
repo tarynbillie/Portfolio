@@ -18,6 +18,7 @@ export default class TopNav extends Component {
         if (window.location.href.includes('about')) {
             this.setState({
                 isAbout: true,
+
             })
         }
     }
@@ -25,6 +26,7 @@ export default class TopNav extends Component {
     state = {
         isOpen: false,
         isAbout: false,
+        isHome: false
     }
 
     showModal = () => {
@@ -53,8 +55,10 @@ export default class TopNav extends Component {
                             <div className='rectangle' />
                         </div>
                     }
-                    
                     <div className={`nav ${this.state.isAbout && 'isAbout'}`}>
+                        <Link to={'/home'} className='link'>
+                            <h3>Home</h3>
+                        </Link>
                         <Link to={'/about'} className='link'>
                             <h3>About</h3>
                         </Link>
@@ -63,7 +67,6 @@ export default class TopNav extends Component {
                         </Link>
                         <button className='contact' onClick={this.showModal}>Get in touch</button>
                         <ContactModal handleClose={this.closeModal} Open={this.state.isOpen} />
-
                     </div>
                 </div>
             </div>

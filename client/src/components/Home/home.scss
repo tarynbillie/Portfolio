@@ -76,6 +76,16 @@ $burnt: #121212;
                 opacity: 1;
                 right: 0;
             }
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+                width: 5%;
+                margin-top: 1rem;
+            }
+            img svg:hover {
+                fill: $primary;
+
+            }
         }
     }
 }

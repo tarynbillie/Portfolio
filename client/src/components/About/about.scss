@@ -15,6 +15,7 @@ $burnt: #121212;
         display: flex;
         .portrait {
             // object-position: 50 100%;
+            position: fixed;
             object-fit: cover;
             height: 100vh;
             width: 40%;
@@ -26,7 +27,9 @@ $burnt: #121212;
             display: flex;
             flex-direction: column;
             text-align: justify;
-            width: 60%;
+            margin-left: 37rem;
+            color: $burnt;
+            width: 50%;
             padding: 6rem 5rem;
             h1 {
                 font-family: 'Georgia';
@@ -34,22 +37,70 @@ $burnt: #121212;
                 font-weight: normal;
             }
             p {
-                font-size: 20px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 30px;
                 font-family: 'Open Sans';
-                span {
-                    font-weight: bold;
-                }
             }
             span {
                 font-style: italic;
+                padding-bottom: 2rem;
+            }
+            &__header {
+                font-family: 'Open Sans';
+                font-size: 18px;
+                h3 {
+                    margin-top: 0;
+                }
+                h4 {
+                    margin-top: 0.8rem;
+                    padding-bottom: 1rem;
+                    border-bottom: thin solid $mediumRare;
+                }
+            }
+            &__skill {
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-start;
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h5 {
+                        padding-left: 1rem;
+                    }
+                    .html {
+                        margin-left: 0.5rem;
+                    }
+                }
+                .badge--xsmall {
+                    width: 10%;
+                }
+                .badge--small {
+                    width: 30%;
+                }
+                .badge--medium {
+                    width: 50%
+                }
+                .badge--large {
+                    width: 70%
+                }
+                .badge--xlarge {
+                    width: 90%;
+                }
+                h5 {
+                    font-weight: normal;
+                    font-size: 14px;
+                    margin-top: 0;
+                    padding-right: 1rem;
+                }
             }
             &__focus {
                 display: flex;
                 align-items: baseline;
+                margin-top: 3rem;
                 h3 {
                     padding-right: 0.3rem;
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 a {
                     display: flex;
@@ -57,10 +108,6 @@ $burnt: #121212;
                     text-decoration: none;
                     font-family: 'Open Sans';
                     color: $accent;
-                    img {
-                        width: 15%;
-                        margin: 0;
-                    }
                     h4 {
                         padding-right: 0.3rem;
                         font-weight: normal;

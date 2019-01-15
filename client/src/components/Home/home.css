@@ -76,4 +76,19 @@
   opacity: 1;
   right: 0;
 }
+
+.home .hero .blurb .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5%;
+  margin-top: 1rem;
+}
+
+.home .hero .blurb img svg:hover {
+  fill: #CDDCE0;
+}
 /*# sourceMappingURL=home.css.map */

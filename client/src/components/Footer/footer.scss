@@ -25,7 +25,8 @@ $burnt: #121212;
 
 .footer {
     display: flex;
-    margin: 7rem 5rem;
+    height: 80vh;
+    margin: 10rem 5rem 0 5rem;
     color: $burnt;
     &__left {
         display: flex;
