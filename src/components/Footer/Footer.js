@@ -12,10 +12,10 @@ export default class Footer extends Component {
                     <h2>tarynbillie@gmail.com</h2>
                     <h2>519 212 2052</h2>
                     <div className='icons'>
-                        <a href='https://github.com/tarynbillie'>
+                        <a href='https://github.com/tarynbillie' target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt='LinkedIn' />
                         </a>
-                        <a href='https://www.linkedin.com/in/taryn-li/'>
+                        <a href='https://www.linkedin.com/in/taryn-li/' target="_blank" rel="noopener noreferrer">
                             <img src={github} alt='Github' />
                         </a>
                     </div>

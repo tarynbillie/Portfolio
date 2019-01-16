@@ -23,10 +23,10 @@ export default class LandingPage extends Component {
                             </button>
                         </Link>
                         <div className='social-media'>
-                            <a href='https://github.com/tarynbillie'>
+                            <a href='https://github.com/tarynbillie' target="_blank" rel="noopener noreferrer">
                                 <img src={github} alt='Github' />
                             </a>
-                            <a href='https://www.linkedin.com/in/taryn-li/'>
+                            <a href='https://www.linkedin.com/in/taryn-li/' target="_blank" rel="noopener noreferrer">
                                 <img src={linkedin} alt='LinkedIn' />
                             </a>
                         </div>

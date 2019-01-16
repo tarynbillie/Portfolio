@@ -128,19 +128,19 @@ export default class About extends Component {
                             </div>
                             <div className='text__focus'>
                                 <h3>Current focus:</h3>
-                                <a href='https://reactjs.org/'>
+                                <a href='https://reactjs.org/' target="_blank" rel="noopener noreferrer">
                                     <h4>React</h4>
                                 </a>
                                 <span>//</span>
-                                <a href='https://redux.js.org/basics/usage-with-react'>
+                                <a href='https://redux.js.org/basics/usage-with-react' target="_blank" rel="noopener noreferrer">
                                     <h4>Redux</h4>
                                 </a>
                                 <span>//</span>
-                                <a href='https://github.com/styled-components/styled-components'>
+                                <a href='https://github.com/styled-components/styled-components' target="_blank" rel="noopener noreferrer">
                                     <h4>Styled-components <span role="img" aria-label="nail polish">💅</span></h4>
                                 </a>
                                 <span>//</span>
-                                <a href='https://www.w3.org/WAI/fundamentals/accessibility-intro/'>
+                                <a href='https://www.w3.org/WAI/fundamentals/accessibility-intro/' target="_blank" rel="noopener noreferrer">
                                     <h4>Accessibility</h4>
                                 </a>
                             </div>
