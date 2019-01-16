@@ -94,9 +94,24 @@
   background-color: #CDDCE0;
 }
 
-@media only screen and (max-width: 425px) {
-  .nav {
+@media screen and (max-width: 425px) and (min-width: 0px) {
+  .header .logo, .header .rectangle {
+    display: none;
+  }
+  .header .nav {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .header .nav {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 768px) {
+  .header .nav {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=nav.css.map */

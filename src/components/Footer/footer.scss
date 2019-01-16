@@ -7,6 +7,10 @@ $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
 
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
 @mixin btn {
     background-color: $rare;
     border: 1.5px solid $primary;
@@ -26,8 +30,8 @@ $burnt: #121212;
 .footer {
     display: flex;
     height: 80vh;
-    margin: 10rem 5rem 0 5rem;
     color: $burnt;
+    margin-left: 3rem;
     &__left {
         display: flex;
         flex-direction: column;
@@ -99,4 +103,24 @@ $burnt: #121212;
             }
         }
     }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 2.5rem 3rem;
+        &__left {
+            width: 100%;
+            margin-bottom: 4rem;
+            .icons {
+                width: 35%;
+            }
+        }
+        &__right {
+            width: 90%;
+        }
+    }
+
 }

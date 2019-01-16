@@ -49,37 +49,41 @@
 .project .farmr .title h1 {
   margin-bottom: 1rem;
   font-family: Georgia;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 68px;
   text-align: center;
   font-weight: normal;
   margin-top: 10rem;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .project .farmr .title h2 {
   margin: 0;
   font-family: 'Open Sans';
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 1.25rem;
+  line-height: 1.68rem;
   text-align: center;
   font-weight: normal;
 }
 
 .project .farmr .title img {
-  margin: 2rem 17.6rem;
-  height: 30rem;
-  width: 55rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 1rem;
+  width: 65%;
 }
 
 .project .farmr section {
-  margin: 2rem 23.3rem;
+  position: relative;
+  width: 50%;
 }
 
 .project .farmr section h1 {
   margin-bottom: 1rem;
   font-family: Georgia;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 68px;
   text-align: center;
   font-weight: normal;
@@ -87,15 +91,18 @@
 
 .project .farmr section p {
   font-family: 'Open Sans';
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 32px;
   color: #121212;
   text-align: justify;
 }
 
 .project .farmr img {
-  height: 29rem;
-  width: 50rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 55%;
 }
 
 .project .farmr button {
@@ -104,15 +111,15 @@
   border-radius: 2px;
   height: 2.5rem;
   width: 2.5rem;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   outline: none;
-  top: 40rem;
-  right: 3rem;
+  top: 90%;
+  right: 3%;
 }
 
 .project .farmr button img {
@@ -123,5 +130,23 @@
 
 .project .farmr button:hover {
   background-color: #CDDCE0;
+}
+
+@media only screen and (max-width: 425px) {
+  .project .header .nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .project .header .nav {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .project .farmr section {
+    width: 75%;
+  }
 }
 /*# sourceMappingURL=farmr.css.map */

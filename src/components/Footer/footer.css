@@ -3,8 +3,8 @@
   display: -ms-flexbox;
   display: flex;
   height: 80vh;
-  margin: 10rem 5rem 0 5rem;
   color: #121212;
+  margin-left: 3rem;
 }
 
 .footer__left {
@@ -124,5 +124,29 @@
 
 .footer__right form button:hover {
   background-color: #CDDCE0;
+}
+
+@media only screen and (max-width: 425px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    margin: 2.5rem 3rem;
+  }
+  .footer__left {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .footer__left .icons {
+    width: 35%;
+  }
+  .footer__right {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

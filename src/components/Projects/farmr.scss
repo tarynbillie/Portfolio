@@ -7,10 +7,14 @@ $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
 
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
 @mixin header {
     margin-bottom: 1rem;
     font-family: Georgia;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 68px;
     text-align: center;
     font-weight: normal;
@@ -18,7 +22,7 @@ $burnt: #121212;
 
 @mixin text {
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 32px;
     color: $burnt;
     text-align: justify;
@@ -30,8 +34,15 @@ $burnt: #121212;
     border-radius: 2px;
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
+}
+
+@mixin image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
 }
 
 @keyframes fadein {
@@ -53,24 +64,25 @@ $burnt: #121212;
             h1 {
                 @include header();
                 margin-top: 10rem;
-                font-size: 60px;
+                font-size: 3.75rem;
             }
             h2 {
                 margin: 0;
                 font-family: 'Open Sans';
-                font-size: 20px;
-                line-height: 27px;
+                font-size: 1.25rem;
+                line-height: 1.68rem;
                 text-align: center;
                 font-weight: normal;
             }
             img {
-                margin: 2rem 17.6rem;
-                height: 30rem;
-                width: 55rem;
+                @include image();
+                margin-top: 1rem;
+                width: 65%;
             }
         }
         section {
-            margin: 2rem 23.3rem;
+            position: relative;
+            width: 50%;
             h1 {
                 @include header();
             }
@@ -79,16 +91,16 @@ $burnt: #121212;
             }
         }
         img {
-            height: 29rem;
-            width: 50rem;
+            @include image();
+            width: 55%;
         }
         button {
             @include btn();
             display: flex;
             position: fixed;
             outline: none;
-            top: 40rem;
-            right: 3rem;
+            top: 90%;
+            right: 3%;
             img {
                 text-align: center;
                 height: 2rem;
@@ -96,6 +108,36 @@ $burnt: #121212;
             }
             &:hover {
                 background-color: $primary;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .project {
+        .header {
+            .nav{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone){
+    .project {
+        .header {
+            .nav{
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-laptop) {
+    .project {
+        .farmr {
+            section {
+                width: 75%;
             }
         }
     }

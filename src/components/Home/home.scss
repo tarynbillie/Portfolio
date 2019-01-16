@@ -7,6 +7,12 @@ $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
 
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-monitor: 1440px;
+
+
 @mixin btn {
     background-color: $rare;
     border: 1.5px solid $primary;
@@ -29,17 +35,19 @@ $burnt: #121212;
         .blurb {
             display: flex;
             flex-direction: column;
-            padding-top: 15rem;
-            margin: 1.5rem 5rem 0 5rem;
-            h2 {
+            position: relative;
+            width: 51%;
+            top: 30%;
+            margin-left: 5rem;
+            h1 {
                 font-family: 'Georgia';
-                font-size: 60px;
+                font-size: 3.8rem;
                 font-weight: normal;
                 margin-bottom: 0.5rem;
             }
-            h3 {
+            h2 {
                 font-family: 'Open Sans';
-                font-size: 20px;
+                font-size: 1.25rem;
                 font-weight: normal;
                 margin: 0 0 2rem 0;
             }
@@ -49,7 +57,7 @@ $burnt: #121212;
                 background-color: $rare;
                 border: thin solid $burnt;
                 border-radius: 3px;
-                font-size: 16px;
+                font-size: 1rem;
                 appearance: none;
                 outline: none;
                 cursor: pointer;
@@ -80,7 +88,7 @@ $burnt: #121212;
             .social-media {
                 display: flex;
                 justify-content: space-between;
-                width: 6%;
+                width: 11%;
                 margin-top: 1rem;
             }
             img svg:hover {
@@ -90,3 +98,63 @@ $burnt: #121212;
         }
     }
 }
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .home {
+        .hero {
+            .blurb {
+                margin-left: 2rem;
+                width: 85%;
+                top: 10%;
+                h1 {
+                    font-size: 2.8rem;
+                }
+                h2 {
+                    font-size: 1.3rem;
+                }
+                .social-media {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+    .home {
+        .hero {
+            .blurb {
+                top: 25%;
+                .social-media {
+                    width: 35%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-laptop) and (min-width: $breakpoint-monitor) {
+    .home {
+        .hero {
+            .blurb {
+                top: 30%;
+                .social-media {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: $breakpoint-monitor) {
+//     .home {
+//         .hero {
+//             .blurb {
+//                 top: 30%;
+//                 .social-media {
+//                     width: 20%;
+//                 }
+//             }
+//         }
+//     }
+// }

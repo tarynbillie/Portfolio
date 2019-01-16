@@ -134,14 +134,35 @@ $breakpoint-laptop: 1024px;
 }
 
 @media only screen and (max-width: $breakpoint-phone) {
-    .info {
-        display: flex;
-        flex-direction: column;
-        .portrait {
-            position: absolute;
+    .about {
+        .info {
+            display: flex;
+            flex-direction: column;
+            .portrait {
+                position: absolute;
+            }
+            .text {
+                position: relative;
+            }
         }
-        .text {
-            position: relative;
+    }   
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+    .about {
+        .info {
+            display: flex;
+            flex-direction: column;
+            .portrait {
+                height: 70%;
+                width: 80%;
+                position: relative;
+            }
+            .text {
+                width: 80%;
+                left: 10%;
+                position: relative;
+            }
         }
-    }
+    }  
 }

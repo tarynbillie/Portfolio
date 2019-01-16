@@ -15,8 +15,8 @@ export default class LandingPage extends Component {
                 <section className='hero'>
                     <TopNav />
                     <div className='blurb'>
-                        <h2>Hello, my name is Taryn Li</h2>
-                        <h3>I am a Jr. Full Stack Developer from Toronto, Ontario.</h3>
+                        <h1>Hello, my name is Taryn Li</h1>
+                        <h2>I am a Jr. Full Stack Developer from Toronto, Ontario.</h2>
                         <Link to={'/projects'}>
                             <button className='project'>
                                 <span>Checkout my recent work</span>
@@ -31,8 +31,6 @@ export default class LandingPage extends Component {
                             </a>
                         </div>
                     </div>
-                
-            
                 </section>
             </div>
         )

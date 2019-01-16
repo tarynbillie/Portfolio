@@ -19,20 +19,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 15rem;
-  margin: 1.5rem 5rem 0 5rem;
+  position: relative;
+  width: 51%;
+  top: 30%;
+  margin-left: 5rem;
 }
 
-.home .hero .blurb h2 {
+.home .hero .blurb h1 {
   font-family: 'Georgia';
-  font-size: 60px;
+  font-size: 3.8rem;
   font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
-.home .hero .blurb h3 {
+.home .hero .blurb h2 {
   font-family: 'Open Sans';
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   margin: 0 0 2rem 0;
 }
@@ -43,7 +45,7 @@
   background-color: #FFF;
   border: thin solid #121212;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -85,11 +87,46 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 6%;
+  width: 11%;
   margin-top: 1rem;
 }
 
 .home .hero .blurb img svg:hover {
   fill: #CDDCE0;
+}
+
+@media only screen and (max-width: 425px) {
+  .home .hero .blurb {
+    margin-left: 2rem;
+    width: 85%;
+    top: 10%;
+  }
+  .home .hero .blurb h1 {
+    font-size: 2.8rem;
+  }
+  .home .hero .blurb h2 {
+    font-size: 1.3rem;
+  }
+  .home .hero .blurb .social-media {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home .hero .blurb {
+    top: 25%;
+  }
+  .home .hero .blurb .social-media {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1440px) {
+  .home .hero .blurb {
+    top: 30%;
+  }
+  .home .hero .blurb .social-media {
+    width: 20%;
+  }
 }
 /*# sourceMappingURL=home.css.map */
