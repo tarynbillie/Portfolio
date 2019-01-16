@@ -7,6 +7,9 @@ $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
 
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+
 @mixin contactBtn {
     background-color: $rare;
     border: 1.5px solid $primary;
@@ -87,4 +90,11 @@ $burnt: #121212;
             }
         }
     }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .nav {
+        width: 100%;
+    }
+
 }

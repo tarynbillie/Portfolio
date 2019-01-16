@@ -12,14 +12,15 @@
 
 .about .info .portrait {
   position: fixed;
-  margin-left: 5rem;
+  top: 0;
+  left: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100vh;
-  width: 35%;
+  width: 40%;
   z-index: 0;
-  -webkit-clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
-          clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
+  -webkit-clip-path: polygon(0 0, 0 180%, 140% 0);
+  clip-path: polygon(0 0, 0 180%, 140% 0);
 }
 
 .about .info .text {
@@ -31,10 +32,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: justify;
-  margin-left: 37rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  right: 5%;
   color: #121212;
-  width: 50%;
-  padding: 6rem 5rem;
 }
 
 .about .info .text h1 {
@@ -167,5 +169,23 @@
 
 .about .info .text__focus span {
   padding-right: 0.3rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info .portrait {
+    position: absolute;
+  }
+  .info .text {
+    position: relative;
+  }
 }
 /*# sourceMappingURL=about.css.map */

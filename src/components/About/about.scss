@@ -7,6 +7,11 @@ $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
 
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+
 .about {
     height: 100vh;
     margin: 0;
@@ -14,24 +19,25 @@ $burnt: #121212;
     .info {
         display: flex;
         .portrait {
-            // object-position: 50 100%;
             position: fixed;
-            margin-left: 5rem;
+            top: 0;
+            left: 5rem;
             object-fit: cover;
             height: 100vh;
-            width: 35%;
+            width: 40%;
             z-index: 0;
-            clip-path: polygon(0 0, 0 800px, 1500px 0, 0 0);
-            
+            -webkit-clip-path: polygon(0 0, 0 180%, 140% 0);
+            clip-path: polygon(0 0, 0 180%, 140% 0);            
         }
         .text {
             display: flex;
             flex-direction: column;
             text-align: justify;
-            margin-left: 37rem;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            right: 5%;
             color: $burnt;
-            width: 50%;
-            padding: 6rem 5rem;
             h1 {
                 font-family: 'Georgia';
                 font-size: 40px;
@@ -123,6 +129,19 @@ $burnt: #121212;
 
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        .portrait {
+            position: absolute;
+        }
+        .text {
+            position: relative;
         }
     }
 }

@@ -93,4 +93,10 @@
 .header .nav .contact:hover {
   background-color: #CDDCE0;
 }
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=nav.css.map */
