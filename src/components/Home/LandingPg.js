@@ -13,7 +13,6 @@ export default class LandingPage extends Component {
         return (
             <div className='home'>
                 <section className='hero'>
-                    <TopNav />
                     <div className='blurb'>
                         <h1>Hello, my name is Taryn Li</h1>
                         <h2>I am a Jr. Full Stack Developer from Toronto, Ontario.</h2>
@@ -32,6 +31,7 @@ export default class LandingPage extends Component {
                         </div>
                     </div>
                 </section>
+                <TopNav />
             </div>
         )
     }

@@ -55,7 +55,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1.5rem;
-  width: 40%;
+  width: 45%;
 }
 
 .header .nav h3 {
@@ -94,7 +94,7 @@
   background-color: #CDDCE0;
 }
 
-@media screen and (max-width: 425px) and (min-width: 0px) {
+@media screen and (max-width: 425px) {
   .header .logo, .header .rectangle {
     display: none;
   }
@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 768px) and (min-width: 425px) {
   .header .nav {
-    width: 40%;
+    width: 60%;
   }
 }
 

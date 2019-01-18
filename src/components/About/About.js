@@ -32,7 +32,7 @@ export default class About extends Component {
                             <p>Hi! I'm a recent graduate of BrainStation's web development program, located in Toronto, ON.
                             My experience at BrainStation allowed me to grasp new concepts quickly, and effectively adapt to full stack development.
                             Graduating with a 90% average I’m well positioned to contribute robust, clean, maintainable code and become an asset to any team.
-                            Known as a self-starter with a take-charge attitude; highly motivated to work in a fast paced,
+                            Known as a self-starter with a take-charge attitude; highly motivated to work in a fast-paced,
                             innovative environment. A creative, resourceful developer with good interpersonal and organizational skills.
                             </p>
                             <span> Women in Development Scholarship Recipient (2018)</span>

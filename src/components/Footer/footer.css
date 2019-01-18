@@ -2,9 +2,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  height: 70vh;
   color: #121212;
-  margin-left: 3rem;
+  margin: 10rem 3rem 0 5rem;
 }
 
 .footer__left {
@@ -58,7 +58,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  width: 65%;
 }
 
 .footer__right h1 {

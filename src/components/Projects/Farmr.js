@@ -16,6 +16,8 @@ export default class Farmr extends Component {
         this.challengeRef = React.createRef();
         this.codeRef = React.createRef();
         this.conclusionRef = React.createRef();
+        this.contactRef = React.createRef();
+
     }
     scroll(ref) {
         ref.current.scrollIntoView({ behavior: 'smooth' })
@@ -43,6 +45,7 @@ export default class Farmr extends Component {
                         <h3 onClick={() => { this.scroll(this.challengeRef) }}>Challenges</h3>
                         <h3 onClick={() => { this.scroll(this.codeRef) }}>Code</h3>
                         <h3 onClick={() => { this.scroll(this.conclusionRef) }}>Conclusion</h3>
+                        <h3 onClick={() => { this.scroll(this.contactRef) }}>Contact me</h3>
                     </div>
                 </div>
                 <div className='farmr'>
@@ -59,16 +62,16 @@ export default class Farmr extends Component {
                         </p>
                         <p>
                             Communication and invoicing takes time out of your day
-                            for both the farmer and chef. Farmr makes "farm to table" more achievable. My insportaion for creating Farmr
+                            for both the farmer and chef. Farmr makes "farm to table" more achievable. My inspiration for creating Farmr
                             was to make my sister and her husband (who are organic farmers) day-to-day lives easier. My initial idea was to
                             create an application that would shave off some time in their busy schedules. I soon realized that this application
-                            would save time for more than just a farmer, but also a chef that's looking to give their guests a more unique experience at their resturant.
+                            would save time for more than just a farmer, but also a chef that's looking to give their guests a more unique experience at their restaurant.
                         </p>
                         <p>
                             Upon log-in, the user is able to pick and choose which
-                            specific produce they would like to order from the farmer and gets stored in the database. Once the user has
+                            specific products they would like to order from the farmer and gets stored in the database. Once the user has
                             chosen their final pickings for the upcoming week, a notification email asking
-                            ther user to log in.
+                            the user to log in.
                         </p>
                     </section>
                     <section ref={this.challengeRef}>
@@ -76,21 +79,22 @@ export default class Farmr extends Component {
                         <p>
                             While attending school I was given 1 1/2 weeks to work on this final project.
                             That was my first challenge. As stated in my project proposal, I set off to make a list
-                            of "core features". Features that I though I would be able to create within the given timeframe.
+                            of "core features". Features that I thought I would be able to create within the given timeframe.
                             I had also created "stretch features" that I would implement <i>only</i> after completing the core ones.
-                            By doing this I was able to time managment more effectivly.
+                            By doing this I was able to time management more effectively.
                         </p>
                         <p>
                             Keeping on track was quite difficult. I took many different routes than I originally didn't set out to. 
-                            Using Firebase Authentication (Googles BaaS) seemed appealing at first, but a stubborn little bird on my shoulder
-                            was chirpping at me to do it all myself. So that's what I did..."Register" and "Login" authentication and authorization took
-                            at least 3 days to accompish, pushing back some features that I wanted to finish. This just meant I had to kick into high gear
-                            and complete everything before the due date - which I did of course.
+                            Using Firebase Authentication (Googles BaaS) seemed appealing at first, but a stubborn little bird on 
+                            my shoulder was chirping at me to do it all myself. So that's what I did..."Register" and "Login" authentication 
+                            and authorization took at least 3 days to accomplish, pushing back some features that I wanted to finish. This just meant 
+                            I had to kick into high gear and complete everything before the due date - which I did of course.
                         </p>
                         <p>
                             Finally, thinking about all the logistics Farmr's core concept, and if it would even make sense to use!
-                            I'm no business woman by all means, so coming up with a great idea was also a challenge in itself. As a developer, trying to develope,
-                            design, analyze, 
+                            I'm no businesswoman by all means, so coming up with a great idea was also a challenge in itself. As junior developer, it
+                            was challenging for me to see the big picture from the start, and not until I was at least half-way through, I knew which direction
+                            I wanted to take this project.
                         </p>
                     </section>
                     <section ref={this.codeRef}>
@@ -107,15 +111,18 @@ export default class Farmr extends Component {
                         <h1>Project Conclusion</h1>
                         <p>
                             In conclusion, creating Farmr was very fun and rewarding. I will be continuously updating this project as there
-                            are a lot of features that still need to be implemented - as well as some bug fixes.
-                            The live version is still to be determind.
+                            are a lot of features that still need to be implemented - as well as some bug fixes. I plan on slowly integrating 
+                            Redux as well as Styled-components for easier state management, predictability, and consistency.
+                            The live version is still to be determined.
                         </p>
                     </section>
                     <button onClick={this.scrollToTop}>
                         <img src={upArrow} alt='arrow'/>
                     </button>
                 </div>
+                <div ref={this.contactRef}>
                 <Footer />
+                </div>
             </div>
         )
     }

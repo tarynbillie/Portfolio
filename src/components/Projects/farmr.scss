@@ -56,6 +56,7 @@ $breakpoint-laptop: 1024px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: auto;
         .title {
             display: flex;
             flex-direction: column;
@@ -81,7 +82,6 @@ $breakpoint-laptop: 1024px;
             }
         }
         section {
-            position: relative;
             width: 50%;
             h1 {
                 @include header();

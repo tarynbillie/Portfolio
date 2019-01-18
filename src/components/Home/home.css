@@ -21,8 +21,9 @@
           flex-direction: column;
   position: relative;
   width: 51%;
-  top: 30%;
+  top: 35%;
   margin-left: 5rem;
+  z-index: 0;
 }
 
 .home .hero .blurb h1 {
