@@ -1,3 +1,48 @@
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
 .home .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,14 +71,19 @@
   z-index: 0;
 }
 
-.home .hero .blurb h1 {
+.home .hero .blurb .transition {
+  -webkit-animation: 1.3s ease-out 0s 1 slideInFromTop;
+          animation: 1.3s ease-out 0s 1 slideInFromTop;
+}
+
+.home .hero .blurb .transition h1 {
   font-family: 'Georgia';
   font-size: 3.8rem;
   font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
-.home .hero .blurb h2 {
+.home .hero .blurb .transition h2 {
   font-family: 'Open Sans';
   font-size: 1.25rem;
   font-weight: normal;

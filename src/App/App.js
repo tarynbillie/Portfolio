@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import './App.css';
-import Home from './Home/LandingPg.js';
-import Farmr from './Projects/Farmr.js';
-import About from './About/About.js';
+import './App.scss';
+import Home from '../components/Home/LandingPg.js';
+import Farmr from '../components/Projects/Farmr/Farmr.js';
+import About from '../components/About/About.js';
+import Projects from '../components/Projects/Projects';
 
 
 class App extends Component {
@@ -14,7 +15,8 @@ class App extends Component {
           <Switch>
             <Route path='/home' exact component={Home} />
             <Route path='/about' exact component={About} />
-            <Route path='/projects' exact component={Farmr} />
+            <Route path='/projects' exact component={Projects} />
+            <Route path='/farmr' exact component={Farmr} />
             <Route path={'/'} render={() => <Redirect to='/home' />} />
           </Switch>
         </div>

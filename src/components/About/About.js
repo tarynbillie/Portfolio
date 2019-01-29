@@ -21,11 +21,23 @@ import './about.scss';
 
 
 export default class About extends Component {
+
+
     render() {
+
+        // const spinner = document.querySelector('.js-loading-spinner');
+        // const copy = spinner.querySelector('.js-loading-spinner-copy');
+        // if(el.spinner.classList.contains("-loaded")) {
+        //     copy.innerHTML = "Content has loaded.";
+        // }
+
         return (
             <div className='home'>
                 <div className='about' ref={this.aboutRef}>
                     <div className='info'>
+                        <div class="loading-spinner js-loading-spinner" role="alert" aria-live="assertive">
+                            <p class="vh js-loading-spinner-copy">Content is loading...</p>
+                        </div>
                         <img className='portrait' src={portrait} alt='Taryn Li' />
                         <div className='text'>
                             <h1>About me</h1>

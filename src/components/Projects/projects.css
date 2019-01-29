@@ -1,0 +1,31 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projects {
+  position: absolute;
+  margin: 15rem 8rem;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+.projects h1 {
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  font-weight: normal;
+}
+/*# sourceMappingURL=projects.css.map */

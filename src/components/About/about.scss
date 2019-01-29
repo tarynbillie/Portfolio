@@ -11,6 +11,37 @@ $breakpoint-phone: 425px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 
+@mixin loading-spinner($selector: "&::before", $time: 1.5s) {
+    @keyframes spinner {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+    }
+    position: relative;
+    &.-loaded { 
+        opacity: 0;
+        transition: opacity linear 0.1s;
+    }
+    #{$selector} {
+        animation: $time linear infinite spinner;
+        border: solid 3px #eee;
+        border-bottom-color: $accent;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        left: 50%;
+        opacity: inherit;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        transform-origin: center;
+        width: 40px;
+        will-change: transform;
+    }
+}
 
 .about {
     height: 100vh;

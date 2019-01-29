@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from "react-scroll";
-import upArrow from '../../assets/round-expand_less.svg';
-import farmr from '../../assets/Farmr-macbook.png';
-import code from '../../assets/Bitmap.png';
+import upArrow from '../../../assets/round-expand_less.svg';
+import farmr from '../../../assets/Farmr-macbook.png';
+import code from '../../../assets/Bitmap.png';
 import './farmr.scss';
-import Footer from '../Footer/Footer';
+import Footer from '../../Footer/Footer';
 
 
 export default class Farmr extends Component {
@@ -85,8 +85,8 @@ export default class Farmr extends Component {
                         </p>
                         <p>
                             Keeping on track was quite difficult. I took many different routes than I originally didn't set out to. 
-                            Using Firebase Authentication (Googles BaaS) seemed appealing at first, but a stubborn little bird on 
-                            my shoulder was chirping at me to do it all myself. So that's what I did..."Register" and "Login" authentication 
+                            Using Firebase Authentication (Googles BaaS) seemed appealing at first, but my love for a challenge made me want to do it all myself - so that's what I did. 
+                            "Register" and "Login" authentication 
                             and authorization took at least 3 days to accomplish, pushing back some features that I wanted to finish. This just meant 
                             I had to kick into high gear and complete everything before the due date - which I did of course.
                         </p>

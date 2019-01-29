@@ -14,8 +14,10 @@ export default class LandingPage extends Component {
             <div className='home'>
                 <section className='hero'>
                     <div className='blurb'>
-                        <h1>Hello, my name is Taryn Li</h1>
-                        <h2>I am a Jr. Full Stack Developer from Toronto, Ontario.</h2>
+                        <div className='transition'>
+                            <h1>Hello, my name is Taryn Li</h1>
+                            <h2>I am a Jr. Full Stack Developer from Toronto, Ontario.</h2>
+                        </div>
                         <Link to={'/projects'}>
                             <button className='project'>
                                 <span>Checkout my recent work</span>

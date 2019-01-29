@@ -23,14 +23,28 @@ $breakpoint-monitor: 1440px;
     cursor: pointer;
 }
 
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .home {
+    animation: fadein 3s;
     .hero {
         display: flex;
         flex-direction: column;
         color: $burnt;
         width: 100%;
         height: 100vh;
-      
         .blurb {
             display: flex;
             flex-direction: column;
@@ -39,17 +53,21 @@ $breakpoint-monitor: 1440px;
             top: 35%;
             margin-left: 5rem;
             z-index: 0;
-            h1 {
-                font-family: 'Georgia';
-                font-size: 3.8rem;
-                font-weight: normal;
-                margin-bottom: 0.5rem;
-            }
-            h2 {
-                font-family: 'Open Sans';
-                font-size: 1.25rem;
-                font-weight: normal;
-                margin: 0 0 2rem 0;
+            .transition {
+                animation: 1.3s ease-out 0s 1 slideInFromTop;
+                h1 {
+                    font-family: 'Georgia';
+                    font-size: 3.8rem;
+                    font-weight: normal;
+                    margin-bottom: 0.5rem;
+    
+                }
+                h2 {
+                    font-family: 'Open Sans';
+                    font-size: 1.25rem;
+                    font-weight: normal;
+                    margin: 0 0 2rem 0;
+                }
             }
             button {
                 width: 15rem;

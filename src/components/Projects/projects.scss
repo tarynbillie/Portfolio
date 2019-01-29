@@ -1,0 +1,30 @@
+$primary: #CDDCE0;
+$accent: #C24B0C;
+
+$rare: #FFF;
+$mediumRare:#D3D3D3;
+$mediumWell: #808080;
+$well: #484848;
+$burnt: #121212;
+
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-monitor: 1440px;
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.projects {
+    position: absolute;
+    margin: 15rem 8rem;
+    animation: fadein 3s;
+    h1 {
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        font-weight: normal;
+    }
+}
