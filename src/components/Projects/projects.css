@@ -17,8 +17,8 @@
 }
 
 .projects {
-  position: absolute;
-  margin: 15rem 8rem;
+  margin-top: 12rem;
+  margin-left: 5rem;
   -webkit-animation: fadein 3s;
           animation: fadein 3s;
 }
@@ -27,5 +27,48 @@
   font-family: 'Open Sans';
   font-size: 2rem;
   font-weight: normal;
+}
+
+.projects .table {
+  display: table;
+}
+
+.projects .table ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-left: 0;
+}
+
+.projects .table ul li {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  list-style-type: none;
+  width: 40%;
+}
+
+.projects .table ul li img {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.projects .table ul li img:hover {
+  cursor: pointer;
+}
+
+.projects .table ul li p {
+  text-align: center;
+}
+
+.projects ul:hover li {
+  opacity: 0.5;
+}
+
+.projects ul li:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=projects.css.map */
