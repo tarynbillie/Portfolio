@@ -1,0 +1,139 @@
+$primary: #CDDCE0;
+$accent: #C24B0C;
+
+$rare: #FFF;
+$mediumRare:#D3D3D3;
+$mediumWell: #808080;
+$well: #484848;
+$burnt: #121212;
+
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-monitor: 1440px;
+
+
+@mixin contactBtn {
+    background-color: $rare;
+    border: 1.5px solid $primary;
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 9rem;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: $rare;
+    width: 100%;
+    height: 5rem;
+    .link {
+        color: $burnt;
+        text-decoration: none;
+        .logo {
+            h1 {
+                position: absolute;
+                top: 0.1rem;
+                left: 0;
+                font-family: 'Georgia';
+                font-weight: normal;
+                font-size: 40px;
+                z-index: 1;
+                margin: 1.5rem 0 0 5rem;
+
+            }
+        }
+    }
+    .rectangle {
+        position: absolute;
+        top: 2.7rem;
+        left: 7.8rem;
+        width: 134px;
+        height: 64px;
+        background-color: $primary;
+        z-index: 0;
+    }
+}
+
+.side-nav {
+    animation: 1.3s ease-out 0s 1 slideInFromLeft;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .link {
+        color: $burnt;
+        text-decoration: none;
+    }
+    h3 {
+        font-family: 'Open Sans';
+        font-weight: normal;
+        font-size: 1.2rem;
+        margin-top: 0;
+        cursor: pointer;
+    }
+    h3::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $primary;
+        transition: width .5s;
+    }
+    h3:hover::after {
+        width: 100%;
+    }
+    .contact {
+        @include contactBtn();
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-phone) {
+    .header {
+        .logo, .rectangle {
+            display: none;
+        }
+        .nav{
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .header {
+        .nav{
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-laptop) and (max-width: $breakpoint-tablet) {
+    .header {
+        .nav{
+            width: 60%;
+        }
+    }
+}
