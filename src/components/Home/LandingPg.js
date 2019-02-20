@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import linkedin from '../../assets/LinkedIn.svg';
 import TopNav from '../Nav/TopNav';
 import '../Home/home.scss';
 import '../Nav/topNav.scss';
