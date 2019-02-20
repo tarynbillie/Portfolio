@@ -4,8 +4,8 @@ import { animateScroll as scroll } from "react-scroll";
 import upArrow from '../../../assets/round-expand_less.svg';
 import farmr from '../../../assets/Farmr-macbook.png';
 import code from '../../../assets/Bitmap.png';
-import './farmr.scss';
 import Footer from '../../Footer/Footer';
+import '../projects.scss'
 
 
 export default class Farmr extends Component {
@@ -121,7 +121,7 @@ export default class Farmr extends Component {
                     </button>
                 </div>
                 <div ref={this.contactRef}>
-                <Footer />
+                    <Footer />
                 </div>
             </div>
         )

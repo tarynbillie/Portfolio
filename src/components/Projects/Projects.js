@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import farmr from '../../assets/Farmr-macbook.png';
 import TopNav from '../Nav/TopNav';
-import './projects.scss'
+import './projectsLanding.scss'
 
 
 export default class Projects extends Component {
@@ -20,7 +20,9 @@ export default class Projects extends Component {
                             </Link>
                         </li>
                         <li>
-                            <p>Coming soon</p>
+                            <Link to={'/activityfindr'}>
+                                <p>Coming soon</p>
+                            </Link>
                         </li>
                         <li>
                             <p>Coming soon</p>
