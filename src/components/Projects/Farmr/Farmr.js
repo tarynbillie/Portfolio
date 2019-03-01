@@ -38,6 +38,9 @@ export default class Farmr extends Component {
                         </div>
                     </Link>
                     <div className='rectangle' />
+                    <Link to={'/projects'} className='link'>
+                        <h2>Back</h2>
+                    </Link>
                     <div className='side-nav'>
                     <Link to={'/home'} className='link'>
                         <h3>Home</h3>

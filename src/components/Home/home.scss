@@ -1,5 +1,7 @@
 $primary: #CDDCE0;
 $accent: #C24B0C;
+$secondAccent: #F1C40F;
+
 
 $rare: #FFF;
 $mediumRare:#D3D3D3;
@@ -113,7 +115,7 @@ $breakpoint-monitor: 1440px;
                 margin-top: 1rem;
 
                 a svg:hover {
-                    fill: $accent;
+                    fill: $secondAccent;
                     transform: scale(1.1);
                     transition: transform 0.5s ease-in-out, fill 0.5s;
                 }

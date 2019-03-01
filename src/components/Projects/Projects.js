@@ -21,7 +21,7 @@ export default class Projects extends Component {
                         </li>
                         <li>
                             <Link to={'/activityfindr'}>
-                                <p>Coming soon</p>
+                                <p>Activity Findr</p>
                             </Link>
                         </li>
                         <li>

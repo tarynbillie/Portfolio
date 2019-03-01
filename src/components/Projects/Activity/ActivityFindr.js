@@ -43,16 +43,16 @@ export default class ActivityFindr extends Component {
                         <h2>Back</h2>
                     </Link>
                 </div>
-                    <div className='side-nav'>
-                        <Link to={'/home'} className='link'>
-                            <h3>Home</h3>
-                        </Link>
-                        <h3 onClick={() => { this.scroll(this.missionRef) }}>Mission</h3>
-                        <h3 onClick={() => { this.scroll(this.challengeRef) }}>Challenges</h3>
-                        <h3 onClick={() => { this.scroll(this.codeRef) }}>Code</h3>
-                        <h3 onClick={() => { this.scroll(this.conclusionRef) }}>Conclusion</h3>
-                        <h3 onClick={() => { this.scroll(this.contactRef) }}>Contact me</h3>
-                    </div>
+                <div className='side-nav'>
+                    <Link to={'/home'} className='link'>
+                        <h3>Home</h3>
+                    </Link>
+                    <h3 onClick={() => { this.scroll(this.missionRef) }}>Mission</h3>
+                    <h3 onClick={() => { this.scroll(this.challengeRef) }}>Challenges</h3>
+                    <h3 onClick={() => { this.scroll(this.codeRef) }}>Code</h3>
+                    <h3 onClick={() => { this.scroll(this.conclusionRef) }}>Conclusion</h3>
+                    <h3 onClick={() => { this.scroll(this.contactRef) }}>Contact me</h3>
+                </div>
                 <div className='farmr'>
                     <div className='title'>
                         <h1>Activity Findr</h1>

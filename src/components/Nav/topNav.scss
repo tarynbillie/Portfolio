@@ -1,5 +1,7 @@
 $primary: #CDDCE0;
 $accent: #C24B0C;
+$secondAccent: #F1C40F;
+
 
 $rare: #FFF;
 $mediumRare:#D3D3D3;
@@ -78,7 +80,7 @@ $breakpoint-monitor: 1440px;
             display: block;
             width: 0;
             height: 2px;
-            background: $primary;
+            background: $secondAccent;
             transition: width .5s;
         }
         h3:hover::after {
