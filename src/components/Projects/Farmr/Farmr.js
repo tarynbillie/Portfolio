@@ -101,10 +101,10 @@ export default class Farmr extends Component {
                     <section ref={this.codeRef}>
                         <h1>Code</h1>
                         <p>
-                            MERN Stack - MongoDb, Express, React, Node.
+                            <b>MERN Stack</b> - MongoDb, Express, React, Node.
                         </p>
                         <p>
-                            NPM packages used - JWT, bcrypt, cors, sendgrid/mail, mongoose
+                            <b>NPM packages</b> - JWT, bcrypt, cors, sendgrid/mail, mongoose
                         </p>
                     </section>
                     <img src={code} alt='code screenshot' />

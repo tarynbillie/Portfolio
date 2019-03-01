@@ -88,17 +88,17 @@ export default class ActivityFindr extends Component {
                     <section ref={this.codeRef}>
                         <h1>Code</h1>
                         <p>
-                            MERN Stack - MongoDb, Express, React, Node.
+                            <b>Stack</b> - React, Express, Node.
                         </p>
                         <p>
-                            NPM packages used - JWT, bcrypt, cors, sendgrid/mail, mongoose
+                            <b>NPM packages</b> - cors, rapidapi-connect, apollo-boost, graphql, google-maps-react, react-star-rating-component, react-router-dom.
                         </p>
                     </section>
                     <section ref={this.conclusionRef}>
                         <h1>Project Conclusion</h1>
                         <p>
                             In conclusion, I found paird programming to be very helpful. Not only do you catch silly errors, like missing a semicolon, or misspelling a variable, but it was super fun! I love collaborating
-                            on ideas and designs. 
+                            on ideas and designs. Any app that makes users lives easier, or more fun, is always a great motivation for me to create.
                         </p>
                     </section>
                     <button onClick={this.scrollToTop}>

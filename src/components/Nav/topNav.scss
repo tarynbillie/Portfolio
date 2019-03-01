@@ -86,7 +86,7 @@ $breakpoint-monitor: 1440px;
         }
         .contact {
             @include contactBtn();
-
+            transition: all 0.3s ease-in-out;
             &:hover {
                 background-color: $primary;
             }
