@@ -59,7 +59,7 @@ $breakpoint-monitor: 1440px;
                 animation: 1.8s ease-out 0s 1 slideInFromTop;
                 h1 {
                     font-family: 'Georgia';
-                    font-size: 4rem;
+                    font-size: 3rem;
                     font-weight: normal;
                     margin-bottom: 0.5rem;
     
@@ -69,18 +69,18 @@ $breakpoint-monitor: 1440px;
                 animation: 1.2s ease-out 0s 1 slideInFromTop;
                 h2 {
                     font-family: 'Open Sans';
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                     font-weight: normal;
                     margin: 0 0 2rem 0;
                 }
             }
             button {
-                width: 17rem;
-                height: 2.5rem;
+                width: 16rem;
+                height: 2rem;
                 background-color: $rare;
                 border: thin solid $burnt;
                 border-radius: 3px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 appearance: none;
                 outline: none;
                 cursor: pointer;
@@ -111,7 +111,7 @@ $breakpoint-monitor: 1440px;
             .social-media {
                 display: flex;
                 justify-content: space-between;
-                width: 12%;
+                width: 14%;
                 margin-top: 1rem;
 
                 a svg:hover {

@@ -14,7 +14,7 @@ $breakpoint-laptop: 1024px;
 @mixin header {
     margin-bottom: 1rem;
     font-family: Georgia;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 68px;
     text-align: center;
     font-weight: normal;
@@ -22,7 +22,7 @@ $breakpoint-laptop: 1024px;
 
 @mixin text {
     font-family: 'Open Sans';
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 32px;
     color: $burnt;
     text-align: justify;

@@ -20,8 +20,8 @@ $breakpoint-monitor: 1440px;
     border: 1.5px solid $primary;
     border-radius: 3px;
     height: 2.5rem;
-    width: 9rem;
-    font-size: 1.2rem;
+    width: 8rem;
+    font-size: 1rem;
     outline: none;
     cursor: pointer;
 }
@@ -46,7 +46,7 @@ $breakpoint-monitor: 1440px;
                 left: 0;
                 font-family: 'Georgia';
                 font-weight: normal;
-                font-size: 40px;
+                font-size: 38px;
                 z-index: 1;
                 margin: 1.5rem 0 0 5rem;
 
@@ -71,7 +71,7 @@ $breakpoint-monitor: 1440px;
         h3 {
             font-weight: normal;
             font-family: 'Open Sans';
-            font-size: 1.2rem;
+            font-size: 1rem;
             cursor: pointer;
             margin: 5px 0;
             padding: 10px;
@@ -116,9 +116,6 @@ $breakpoint-monitor: 1440px;
             &:hover:after{
                 width: 100%;
             }
-        }
-        .selected h3 {
-            
         }
         .contact {
             @include contactBtn();
