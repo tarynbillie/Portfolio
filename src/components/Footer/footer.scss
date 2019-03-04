@@ -1,5 +1,7 @@
 $primary: #CDDCE0;
 $accent: #C24B0C;
+$secondAccent: #F1C40F;
+
 
 $rare: #FFF;
 $mediumRare:#D3D3D3;
@@ -29,9 +31,9 @@ $breakpoint-laptop: 1024px;
 
 .footer {
     display: flex;
-    height: 80vh;
+    height: 70vh;
     color: $burnt;
-    margin: 20rem 3rem 0 20rem;
+    margin: 10.5rem 3rem 0 20rem;
     &__left {
         display: flex;
         flex-direction: column;
@@ -56,8 +58,10 @@ $breakpoint-laptop: 1024px;
             width: 20%;
             justify-content: space-between;
             cursor: pointer;
-            &:hover {
-                color: $primary;
+            a svg:hover {
+                fill: $secondAccent;
+                transform: scale(1.1);
+                transition: transform 0.5s ease-in-out, fill 0.5s;
             }
         }
     }

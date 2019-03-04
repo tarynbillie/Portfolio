@@ -32,8 +32,13 @@ $breakpoint-monitor: 1440px;
         font-family: 'Open Sans';
         font-size: 2rem;
         font-weight: normal;
+        margin-bottom: 0;
     }
-
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5rem;
+        font-weight: normal;
+    }
     ul {
         display: flex;
         width: 100%;
@@ -51,16 +56,15 @@ $breakpoint-monitor: 1440px;
                 }
             }
             p {
+                text-decoration: none;
                 text-align: center;
             }
         }
     }
-    
     ul:hover li {
        opacity: 0.5;
     }
-      
-      ul li:hover {
+    ul li:hover {
         opacity: 1;
     }
 }

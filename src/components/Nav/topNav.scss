@@ -68,23 +68,57 @@ $breakpoint-monitor: 1440px;
         align-items: center;
         margin-top: 1.5rem;
         width: 45%;
-
         h3 {
-            font-family: 'Open Sans';
             font-weight: normal;
+            font-family: 'Open Sans';
             font-size: 1.2rem;
             cursor: pointer;
-        }
-        h3::after {
-            content: '';
+            margin: 5px 0;
+            padding: 10px;
             display: block;
-            width: 0;
-            height: 2px;
-            background: $secondAccent;
-            transition: width .5s;
+            position: relative;
+            z-index: 1;
+            transition: all .5s;
+            // &:hover {
+            //     color: #91640F;
+            // }
+            // &:after {
+            //     display: block;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     bottom: 0;
+            //     right: 0;
+            //     margin: auto;
+            //     width: 100%;
+            //     height: 1px;
+            //     content: '.';
+            //     color: transparent;
+            //     background: $secondAccent;
+            //     visibility: none;
+            //     opacity: 0;
+            //     z-index: -1;
+            //     transition: all .6s;
+            // }
+            // &:hover:after{
+            //     opacity: 1;
+            //     visibility: visible;
+            //     height: 100%;
+            // }
+            &:after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $secondAccent;
+                transition: width .5s;
+            }
+            &:hover:after{
+                width: 100%;
+            }
         }
-        h3:hover::after {
-            width: 100%;
+        .selected h3 {
+            
         }
         .contact {
             @include contactBtn();
