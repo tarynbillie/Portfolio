@@ -96,12 +96,12 @@ self.__precacheManifest = [
     "url": "/static/media/georgia regular font.f4b306ee.ttf"
   },
   {
-    "revision": "3e1af3ef546b9e6ecef9f3ba197bf7d2",
-    "url": "/static/media/Roboto-Regular.3e1af3ef.ttf"
-  },
-  {
     "revision": "ec4c9962ba54eb91787aa93d361c10a8",
     "url": "/static/media/Roboto-Black.ec4c9962.ttf"
+  },
+  {
+    "revision": "3e1af3ef546b9e6ecef9f3ba197bf7d2",
+    "url": "/static/media/Roboto-Regular.3e1af3ef.ttf"
   },
   {
     "revision": "d08840599e05db7345652d3d417574a9",
