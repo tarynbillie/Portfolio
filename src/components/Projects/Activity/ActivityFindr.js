@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { animateScroll as scroll } from "react-scroll"
 import upArrow from '../../../assets/round-expand_less.svg'
+import activityfindr from '../../../assets/iMac.png'
 import Footer from '../../Footer/Footer'
 import '../../Nav/sideNav.scss'
 import '../projects.scss'
@@ -54,6 +55,7 @@ export default class ActivityFindr extends Component {
                     <div className='title'>
                         <h1>Activity Findr</h1>
                         <h2>Paired Programming Project - 2018</h2>
+                        <img className='imac' src={activityfindr} alt='activityfindr screenshot'/>
                     </div>
                     <section ref={this.missionRef}>
                         <h1>Mission</h1>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import farmr from '../../assets/Farmr-macbook.png';
+import activityfindr from '../../assets/iMac.png';
 import TopNav from '../Nav/TopNav';
 import './projectsLanding.scss'
 
@@ -12,17 +13,19 @@ export default class Projects extends Component {
                 <TopNav />
                 <div className='projects'>
                     <h1>Below are some projects I've worked on</h1>
-                    <h4>This page is still under construction 🚧</h4>
+                    {/* <h4>This page is still under construction 🚧</h4> */}
                     <div className='table'>
                     <ul>
                         <li>
-                            <Link to={'/farmr'}>
-                                <img src={farmr} alt='farmr screenshot' />
+                            <Link to={'/farmr'} className='link'>
+                                <img src={farmr} alt='farmr screenshot' className='macbook'/>
+                                <h2>Farmr - Capstone</h2>
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/activityfindr'}>
-                                <p>Activity Findr</p>
+                            <Link to={'/activityfindr'} className='link'>
+                                <img src={activityfindr} alt='activityfindr screenshot' className='imac'/>
+                                <h2>Activity Findr - Paired Programming</h2>
                             </Link>
                         </li>
                         <li>

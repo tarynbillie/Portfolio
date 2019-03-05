@@ -29,33 +29,48 @@ $breakpoint-monitor: 1440px;
     margin-left: 5rem;
     animation: fadein 3s;
     h1 {
+        color: $burnt;
         font-family: 'Open Sans';
-        font-size: 2rem;
-        font-weight: normal;
-        margin-bottom: 0;
-    }
-    h4 {
-        margin-top: 0;
-        margin-bottom: 5rem;
+        font-size: 1.5rem;
         font-weight: normal;
     }
     ul {
         display: flex;
+        justify-content: space-between;
+        align-items: baseline;
         width: 100%;
+        margin-top: 6rem;
         padding-left: 0;
         li {
             transition: opacity 0.5s ease-in-out;
             list-style-type: none;
-            width: 40%;
-            img {
-                @include image();
-                margin-top: 1rem;
-                width: 100%;
-                &:hover {
-                    cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            width: 35%;
+            .link {
+                text-decoration: none;
+                color: $well;
+                img {
+                    @include image();
+                    margin-top: 1rem;
+                    width: 100%;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                .macbook {
+                    width: 65%;
+                }
+                .imac {
+                    width: 55%;
+                }
+                h2 {
+                    font-weight: normal;
+                    font-size: 1rem;
                 }
             }
             p {
+                color: $well;
                 text-decoration: none;
                 text-align: center;
             }

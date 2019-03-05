@@ -68,7 +68,7 @@ $breakpoint-laptop: 1024px;
                 font-size: 3.75rem;
             }
             h2 {
-                margin: 0;
+                margin-top: 0;
                 font-family: 'Open Sans';
                 font-size: 1.25rem;
                 line-height: 1.68rem;
@@ -79,6 +79,9 @@ $breakpoint-laptop: 1024px;
                 @include image();
                 margin-top: 1rem;
                 width: 65%;
+            }
+            .imac {
+                width: 50%;
             }
         }
         section {
