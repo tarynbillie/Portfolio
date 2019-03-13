@@ -7,7 +7,6 @@ export default class TopNav extends Component {
 	constructor (props) {
 		super(props);
 		this.contactRef = React.createRef();
-		// this.handleClick = this.handleClick.bind(this);
 
 		this.state = {
 			isOpen: false,
@@ -16,13 +15,6 @@ export default class TopNav extends Component {
 			animate: false
 		};
 	}
-
-	// handleClick(e) {
-	//     // modify the state, this will automatically recall render() below.
-	//     this.setState((prevState) => {
-	//       return { animate: !prevState.animate }
-	//     });
-	// }
 
 	componentDidMount () {
 		if (window.location.href.includes('about')) {
