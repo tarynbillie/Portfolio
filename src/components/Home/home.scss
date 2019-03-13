@@ -1,10 +1,9 @@
-$primary: #CDDCE0;
-$accent: #C24B0C;
-$secondAccent: #F1C40F;
+$primary: #cddce0;
+$accent: #c24b0c;
+$secondAccent: #f1c40f;
 
-
-$rare: #FFF;
-$mediumRare:#D3D3D3;
+$rare: #fff;
+$mediumRare: #d3d3d3;
 $mediumWell: #808080;
 $well: #484848;
 $burnt: #121212;
@@ -14,161 +13,166 @@ $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
 $breakpoint-monitor: 1440px;
 
-
 @mixin btn {
-    background-color: $rare;
-    border: 1.5px solid $primary;
-    border-radius: 3px;
-    height: 2.5rem;
-    width: 9rem;
-    font-size: 16px;
-    cursor: pointer;
+	background-color: $rare;
+	border: 1.5px solid $primary;
+	border-radius: 3px;
+	height: 2.5rem;
+	width: 9rem;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 @keyframes slideInFromTop {
-    0% {
-      transform: translateY(-200%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+	0% {
+		transform: translateY(-200%);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .home {
-    animation: fadein 1.5s;
-    .hero {
-        display: flex;
-        flex-direction: column;
-        color: $burnt;
-        width: 100%;
-        height: 100vh;
-        .blurb {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            width: 51%;
-            top: 35%;
-            margin-left: 5rem;
-            z-index: 0;
-            &__transition-one {
-                animation: 1.8s ease-out 0s 1 slideInFromTop;
-                h1 {
-                    font-family: 'Georgia';
-                    font-size: 3rem;
-                    font-weight: normal;
-                    margin-bottom: 0.5rem;
-    
-                }
-            }
-            &__transition-two {
-                animation: 1.2s ease-out 0s 1 slideInFromTop;
-                h2 {
-                    font-family: 'Open Sans';
-                    font-size: 1rem;
-                    font-weight: normal;
-                    margin: 0 0 2rem 0;
-                }
-            }
-            button {
-                width: 16rem;
-                height: 2rem;
-                background-color: $rare;
-                border: thin solid $burnt;
-                border-radius: 3px;
-                font-size: 1rem;
-                appearance: none;
-                outline: none;
-                cursor: pointer;
+	animation: fadein 1.5s;
+	.hero {
+		display: flex;
+		flex-direction: column;
+		color: $burnt;
+		width: 100%;
+		height: 100vh;
+		.blurb {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			width: 51%;
+			top: 35%;
+			margin-left: 5rem;
+			z-index: 0;
+			&__transition-one {
+				animation: 1.8s ease-out 0s 1 slideInFromTop;
+				h1 {
+					font-family: 'Georgia';
+					font-size: 3rem;
+					font-weight: normal;
+					margin-bottom: 0.5rem;
+				}
+			}
+			&__transition-two {
+				animation: 1.2s ease-out 0s 1 slideInFromTop;
+				h2 {
+					font-family: 'Open Sans';
+					font-size: 1rem;
+					font-weight: normal;
+					margin: 0 0 2rem 0;
+				}
+			}
+			button {
+				width: 16rem;
+				height: 2rem;
+				background-color: $rare;
+				border: thin solid $burnt;
+				border-radius: 3px;
+				font-size: 1rem;
+				appearance: none;
+				outline: none;
+				cursor: pointer;
+			}
+			button span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+			button span:after {
+				content: '\2192';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
 
-            }
-            button span {
-                cursor: pointer;
-                display: inline-block;
-                position: relative;
-                transition: 0.5s;
-            }
-            button span:after {
-                content: '\2192';
-                position: absolute;
-                opacity: 0;
-                top: 0;
-                right: -20px;
-                transition: 0.5s;
-            }
-              
-            button:hover span {
-                padding-right: 25px;
-            }
-            button:hover span:after {
-                opacity: 1;
-                right: 0;
-            }
-            .social-media {
-                display: flex;
-                justify-content: space-between;
-                width: 14%;
-                margin-top: 1rem;
+			button:hover span {
+				padding-right: 25px;
+			}
+			button:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
+			.social-media {
+				display: flex;
+				justify-content: space-between;
+				width: 14%;
+				margin-top: 1rem;
 
-                a svg:hover {
-                    fill: $secondAccent;
-                    transform: scale(1.1);
-                    transition: transform 0.5s ease-in-out, fill 0.5s;
-                }
-            }
-        }
-    }
+				a svg:hover {
+					fill: $secondAccent;
+					transform: scale(1.1);
+					transition: transform 0.5s ease-in-out, fill 0.5s;
+				}
+			}
+		}
+		.girl {
+			margin: 5rem 0 0 42rem;
+			width: 65%;
+		}
+	}
 }
 
 @media only screen and (max-width: $breakpoint-phone) {
-    .home {
-        .hero {
-            .blurb {
-                margin-left: 2rem;
-                width: 85%;
-                top: 10%;
-                h1 {
-                    font-size: 2.8rem;
-                }
-                h2 {
-                    font-size: 1.3rem;
-                }
-                .social-media {
-                    width: 40%;
-                }
-            }
-        }
-    }
+	.home {
+		.hero {
+			.blurb {
+				margin-left: 2rem;
+				width: 85%;
+				top: 10%;
+				h1 {
+					font-size: 2.8rem;
+				}
+				h2 {
+					font-size: 1.3rem;
+				}
+				.social-media {
+					width: 40%;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $breakpoint-tablet) {
-    .home {
-        .hero {
-            .blurb {
-                top: 25%;
-                .social-media {
-                    width: 35%;
-                }
-            }
-        }
-    }
+	.home {
+		.hero {
+			.blurb {
+				top: 25%;
+				.social-media {
+					width: 35%;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $breakpoint-laptop) and (min-width: $breakpoint-monitor) {
-    .home {
-        .hero {
-            .blurb {
-                top: 30%;
-                .social-media {
-                    width: 20%;
-                }
-            }
-        }
-    }
+	.home {
+		.hero {
+			.blurb {
+				top: 30%;
+				.social-media {
+					width: 20%;
+				}
+			}
+		}
+	}
 }
 
 // @media only screen and (max-width: $breakpoint-monitor) {
