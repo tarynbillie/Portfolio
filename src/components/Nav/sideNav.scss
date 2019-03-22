@@ -154,7 +154,7 @@
 	}
 }
 
-@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-phablet) {
+@media screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-phablet) {
 	.side-nav {
 		display: none;
 	}

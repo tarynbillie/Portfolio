@@ -96,7 +96,7 @@
 	}
 }
 
-@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+@media only screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-tablet) {
 	.footer {
 		display: flex;
 		flex-direction: column;

@@ -171,7 +171,7 @@
   padding-right: 0.3rem;
 }
 
-@media screen and (min-width: 400px) and (max-width: 750px) {
+@media screen and (min-width: 320px) and (max-width: 750px) {
   .about .info {
     display: -webkit-box;
     display: -ms-flexbox;

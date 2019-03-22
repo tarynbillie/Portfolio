@@ -75,9 +75,9 @@
 	}
 }
 
-@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-phablet) {
+@media only screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-phablet) {
 	.projects {
-		margin-left: 1.5rem;
+		margin: 8rem 0 0 1.5rem;
 		ul {
 			display: flex;
 			flex-direction: column;

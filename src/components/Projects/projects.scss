@@ -110,11 +110,14 @@
 	}
 }
 
-@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+@media only screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-tablet) {
 	.project {
 		.farmr {
 			section {
-				width: 70%;
+				width: 80%;
+				p {
+					line-height: normal;
+				}
 			}
 		}
 	}

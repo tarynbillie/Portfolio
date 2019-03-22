@@ -138,9 +138,12 @@
   background-color: #cddce0;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 750px) {
+@media only screen and (min-width: 320px) and (max-width: 750px) {
   .project .farmr section {
-    width: 70%;
+    width: 80%;
+  }
+  .project .farmr section p {
+    line-height: normal;
   }
 }
 /*# sourceMappingURL=projects.css.map */

@@ -152,7 +152,7 @@
 	}
 }
 
-@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-tablet) {
 	.about {
 		.info {
 			display: flex;
