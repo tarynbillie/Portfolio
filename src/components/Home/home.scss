@@ -113,7 +113,25 @@
 			width: 55%;
 			position: relative;
 			top: 3%;
-			left: 35%;
+			left: 50%;
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-mobile) {
+	.home {
+		.hero {
+			.blurb {
+				width: 80%;
+				top: 20%;
+				margin-left: 2rem;
+				.social-media {
+					width: 40%;
+				}
+			}
+			.girl {
+				display: none;
+			}
 		}
 	}
 }
