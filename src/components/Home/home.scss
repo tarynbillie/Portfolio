@@ -1,17 +1,4 @@
-$primary: #cddce0;
-$accent: #c24b0c;
-$secondAccent: #f1c40f;
-
-$rare: #fff;
-$mediumRare: #d3d3d3;
-$mediumWell: #808080;
-$well: #484848;
-$burnt: #121212;
-
-$breakpoint-phone: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-laptop: 1024px;
-$breakpoint-monitor: 1440px;
+@import '../../util/variables.scss';
 
 @mixin btn {
 	background-color: $rare;
@@ -122,68 +109,46 @@ $breakpoint-monitor: 1440px;
 			}
 		}
 		.girl {
-			margin: 9rem 0 0 42rem;
+			// margin: 9rem 0 0 42rem;
 			width: 55%;
+			position: relative;
+			top: 3%;
+			left: 35%;
 		}
 	}
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
 	.home {
 		.hero {
 			.blurb {
-				margin-left: 2rem;
-				width: 85%;
-				top: 10%;
-				h1 {
-					font-size: 2.8rem;
-				}
-				h2 {
-					font-size: 1.3rem;
-				}
+				top: 20%;
+				margin-left: 3rem;
 				.social-media {
-					width: 40%;
+					width: 50%;
 				}
+			}
+			.girl {
+				display: none;
 			}
 		}
 	}
 }
 
-@media only screen and (max-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
 	.home {
 		.hero {
 			.blurb {
-				top: 25%;
+				margin-left: 3rem;
 				.social-media {
-					width: 35%;
+					width: 30%;
 				}
+			}
+			.girl {
+				position: relative;
+				top: 0;
+				left: 40%;
 			}
 		}
 	}
 }
-
-@media only screen and (max-width: $breakpoint-laptop) and (min-width: $breakpoint-monitor) {
-	.home {
-		.hero {
-			.blurb {
-				top: 30%;
-				.social-media {
-					width: 20%;
-				}
-			}
-		}
-	}
-}
-
-// @media only screen and (max-width: $breakpoint-monitor) {
-//     .home {
-//         .hero {
-//             .blurb {
-//                 top: 30%;
-//                 .social-media {
-//                     width: 20%;
-//                 }
-//             }
-//         }
-//     }
-// }

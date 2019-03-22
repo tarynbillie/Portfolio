@@ -1,156 +1,142 @@
-$primary: #CDDCE0;
-$accent: #C24B0C;
-$secondAccent: #F1C40F;
-
-
-$rare: #FFF;
-$mediumRare:#D3D3D3;
-$mediumWell: #808080;
-$well: #484848;
-$burnt: #121212;
-
-$breakpoint-phone: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-laptop: 1024px;
-$breakpoint-monitor: 1440px;
-
+@import '../../util/variables.scss';
 
 @mixin contactBtn {
-    background-color: $rare;
-    border: 1.5px solid $primary;
-    border-radius: 3px;
-    height: 2.5rem;
-    width: 8rem;
-    font-size: 1rem;
-    outline: none;
-    cursor: pointer;
+	background-color: $rare;
+	border: 1.5px solid $primary;
+	border-radius: 3px;
+	height: 2.5rem;
+	width: 8rem;
+	font-size: 1rem;
+	outline: none;
+	cursor: pointer;
 }
 
 .header {
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: flex-end;
-    position: fixed;
-    background-color: $rare;
-    width: 100%;
-    height: 5rem;
-    .link {
-        color: $burnt;
-        text-decoration: none;
-        .logo {
-            h1 {
-                position: absolute;
-                top: 0.1rem;
-                left: 0;
-                font-family: 'Georgia';
-                font-weight: normal;
-                font-size: 38px;
-                z-index: 1;
-                margin: 1.5rem 0 0 5rem;
-
-            }
-        }
-    }
-    .rectangle {
-        position: absolute;
-        top: 1.2rem;
-        left: 7.8rem;
-        width: 134px;
-        height: 64px;
-        background-color: $primary;
-        z-index: 0;
-    }
-    .nav {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 1.5rem;
-        width: 45%;
-        h3 {
-            font-weight: normal;
-            font-family: 'Open Sans';
-            font-size: 1rem;
-            cursor: pointer;
-            margin: 5px 0;
-            padding: 10px;
-            display: block;
-            position: relative;
-            z-index: 1;
-            transition: all .5s;
-            // &:hover {
-            //     color: #91640F;
-            // }
-            // &:after {
-            //     display: block;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     bottom: 0;
-            //     right: 0;
-            //     margin: auto;
-            //     width: 100%;
-            //     height: 1px;
-            //     content: '.';
-            //     color: transparent;
-            //     background: $secondAccent;
-            //     visibility: none;
-            //     opacity: 0;
-            //     z-index: -1;
-            //     transition: all .6s;
-            // }
-            // &:hover:after{
-            //     opacity: 1;
-            //     visibility: visible;
-            //     height: 100%;
-            // }
-            &:after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 2px;
-                background: $secondAccent;
-                transition: width .5s;
-            }
-            &:hover:after{
-                width: 100%;
-            }
-        }
-        .contact {
-            @include contactBtn();
-            transition: all 0.3s ease-in-out;
-            &:hover {
-                background-color: $primary;
-            }
-        }
-    }
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: flex-end;
+	position: fixed;
+	background-color: $rare;
+	width: 100%;
+	height: 5rem;
+	.link {
+		color: $burnt;
+		text-decoration: none;
+		.logo {
+			h1 {
+				position: absolute;
+				top: 0.1rem;
+				left: 0;
+				font-family: 'Georgia';
+				font-weight: normal;
+				font-size: 38px;
+				z-index: 1;
+				margin: 1.5rem 0 0 5rem;
+			}
+		}
+	}
+	.rectangle {
+		position: absolute;
+		top: 1.2rem;
+		left: 7.8rem;
+		width: 134px;
+		height: 64px;
+		background-color: $primary;
+		z-index: 0;
+	}
+	.nav {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 1.5rem;
+		width: 45%;
+		h3 {
+			font-weight: normal;
+			font-family: 'Open Sans';
+			font-size: 1rem;
+			cursor: pointer;
+			margin: 5px 0;
+			padding: 10px;
+			display: block;
+			position: relative;
+			z-index: 1;
+			transition: all .5s;
+			// &:hover {
+			//     color: #91640F;
+			// }
+			// &:after {
+			//     display: block;
+			//     position: absolute;
+			//     top: 0;
+			//     left: 0;
+			//     bottom: 0;
+			//     right: 0;
+			//     margin: auto;
+			//     width: 100%;
+			//     height: 1px;
+			//     content: '.';
+			//     color: transparent;
+			//     background: $secondAccent;
+			//     visibility: none;
+			//     opacity: 0;
+			//     z-index: -1;
+			//     transition: all .6s;
+			// }
+			// &:hover:after{
+			//     opacity: 1;
+			//     visibility: visible;
+			//     height: 100%;
+			// }
+			&:after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 2px;
+				background: $secondAccent;
+				transition: width .5s;
+			}
+			&:hover:after {
+				width: 100%;
+			}
+		}
+		.contact {
+			@include contactBtn();
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
 }
 
-@media screen and (max-width: $breakpoint-phone) {
-    .header {
-        .logo, .rectangle {
-            display: none;
-        }
-        .nav{
-            width: 100%;
-        }
-    }
-
+@media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+	.header {
+		.link {
+			.logo {
+				display: none;
+			}
+		}
+		.rectangle {
+			display: none;
+		}
+		.nav {
+			width: 100%;
+		}
+	}
 }
 
-@media screen and (max-width: $breakpoint-tablet) {
-    .header {
-        .nav{
-            width: 60%;
-        }
-    }
-}
-
-@media screen and (min-width: $breakpoint-laptop) and (max-width: $breakpoint-tablet) {
-    .header {
-        .nav{
-            width: 60%;
-        }
-    }
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+	.header {
+		.link {
+			.logo {
+			}
+		}
+		.rectangle {
+		}
+		.nav {
+			width: 70%;
+		}
+	}
 }

@@ -1,130 +1,154 @@
-$primary: #CDDCE0;
-$accent: #C24B0C;
-$secondAccent: #F1C40F;
-
-
-$rare: #FFF;
-$mediumRare:#D3D3D3;
-$mediumWell: #808080;
-$well: #484848;
-$burnt: #121212;
-
-$breakpoint-phone: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-laptop: 1024px;
+@import '../../util/variables.scss';
 
 @mixin btn {
-    background-color: $rare;
-    border: 1.5px solid $primary;
-    border-radius: 3px;
-    height: 2.5rem;
-    width: 9rem;
-    font-size: 14px;
-    cursor: pointer;
+	background-color: $rare;
+	border: 1.5px solid $primary;
+	border-radius: 3px;
+	height: 2.5rem;
+	width: 9rem;
+	font-size: 14px;
+	cursor: pointer;
 }
 
 @mixin input {
-    font-size: 14px;
-    padding-left: 0.5rem;
-    outline: none;
+	font-size: 14px;
+	padding-left: 0.5rem;
+	outline: none;
 }
 
 .footer {
-    display: flex;
-    height: 70vh;
-    color: $burnt;
-    margin: 10.5rem 3rem 0 20rem;
-    &__left {
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-        h1 {
-            margin-top: 0;
-            font-family: 'Georgia';
-            font-weight: normal;
-            font-size: 34px;
-            line-height: 46px;
-        }
-        h2 {
-            margin: 0.5rem 0;
-            font-family: 'Open Sans';
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 27px;
-        }
-        .icons {
-            margin-top: 0.5rem;
-            display: flex;
-            width: 20%;
-            justify-content: space-between;
-            cursor: pointer;
-            a svg:hover {
-                fill: $secondAccent;
-                transform: scale(1.1);
-                transition: transform 0.5s ease-in-out, fill 0.5s;
-            }
-        }
-    }
-    &__right {
-        display: flex;
-        flex-direction: column;
-        width: 65%;
-        h1 {
-            margin-top: 0.5rem;
-            font-family: 'Georgia';
-            font-size: 30px;
-            font-weight: normal;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            label {
-                display: flex;
-                flex-direction: column;
-                font-size: 14px;
-                input {
-                    @include input();
-                    width: 50%;
-                    height: 2rem;
-                    margin-bottom: 2rem;                   
-                }
-                textarea {
-                    @include input();
-                    border-color: $mediumRare;
-                    height: 8rem;
-                    resize: none;
-                }
-            }
-            button {
-                margin-top: 2rem;
-                width: 20%;
-                height: 2.5rem;
-                @include btn();
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    background-color: $primary;
-                }
-            }
-        }
-    }
+	display: flex;
+	height: 70vh;
+	color: $burnt;
+	margin: 10.5rem 3rem 0 20rem;
+	&__left {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		h1 {
+			margin-top: 0;
+			font-family: 'Georgia';
+			font-weight: normal;
+			font-size: 34px;
+			line-height: 46px;
+		}
+		h2 {
+			margin: 0.5rem 0;
+			font-family: 'Open Sans';
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 27px;
+		}
+		.icons {
+			margin-top: 0.5rem;
+			display: flex;
+			width: 20%;
+			justify-content: space-between;
+			cursor: pointer;
+			a svg:hover {
+				fill: $secondAccent;
+				transform: scale(1.1);
+				transition: transform 0.5s ease-in-out, fill 0.5s;
+			}
+		}
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		width: 65%;
+		h1 {
+			margin-top: 0.5rem;
+			font-family: 'Georgia';
+			font-size: 30px;
+			font-weight: normal;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			label {
+				display: flex;
+				flex-direction: column;
+				font-size: 14px;
+				input {
+					@include input();
+					width: 50%;
+					height: 2rem;
+					margin-bottom: 2rem;
+				}
+				textarea {
+					@include input();
+					border-color: $mediumRare;
+					height: 8rem;
+					resize: none;
+				}
+			}
+			button {
+				margin-top: 2rem;
+				width: 20%;
+				height: 2.5rem;
+				@include btn();
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					background-color: $primary;
+				}
+			}
+		}
+	}
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        margin: 2.5rem 3rem;
-        &__left {
-            width: 100%;
-            margin-bottom: 4rem;
-            .icons {
-                width: 35%;
-            }
-        }
-        &__right {
-            width: 90%;
-        }
-    }
+@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		margin: 2rem 3.5rem;
+		&__left {
+			width: 100%;
+			margin-bottom: 4rem;
+			.icons {
+				width: 25%;
+			}
+		}
+		&__right {
+			width: 90%;
+		}
+	}
+}
 
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		margin: 2rem 6rem 2rem 12rem;
+		&__left {
+			width: 100%;
+			margin-bottom: 4rem;
+			.icons {
+				width: 15%;
+			}
+		}
+		&__right {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopHD) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		margin: 4rem 6rem 2rem 12rem;
+		&__left {
+			width: 100%;
+			margin-bottom: 4rem;
+			.icons {
+				width: 10%;
+			}
+		}
+		&__right {
+			width: 100%;
+		}
+	}
 }

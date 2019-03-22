@@ -4,7 +4,7 @@
   display: flex;
   height: 70vh;
   color: #121212;
-  margin: 10rem 3rem 0 5rem;
+  margin: 10.5rem 3rem 0 20rem;
 }
 
 .footer__left {
@@ -15,14 +15,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 25%;
 }
 
 .footer__left h1 {
   margin-top: 0;
   font-family: 'Georgia';
   font-weight: normal;
-  font-size: 40px;
+  font-size: 34px;
   line-height: 46px;
 }
 
@@ -30,7 +30,7 @@
   margin: 0.5rem 0;
   font-family: 'Open Sans';
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 27px;
 }
 
@@ -39,15 +39,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 15%;
+  width: 20%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
 }
 
-.footer__left .icons:hover {
-  color: #CDDCE0;
+.footer__left .icons a svg:hover {
+  fill: #f1c40f;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: fill 0.5s, -webkit-transform 0.5s ease-in-out;
+  transition: fill 0.5s, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, fill 0.5s;
+  transition: transform 0.5s ease-in-out, fill 0.5s, -webkit-transform 0.5s ease-in-out;
 }
 
 .footer__right {
@@ -102,7 +108,7 @@
   font-size: 14px;
   padding-left: 0.5rem;
   outline: none;
-  border-color: #D3D3D3;
+  border-color: #d3d3d3;
   height: 8rem;
   resize: none;
 }
@@ -111,22 +117,22 @@
   margin-top: 2rem;
   width: 20%;
   height: 2.5rem;
-  background-color: #FFF;
-  border: 1.5px solid #CDDCE0;
+  background-color: #fff;
+  border: 1.5px solid #cddce0;
   border-radius: 3px;
   height: 2.5rem;
   width: 9rem;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .footer__right form button:hover {
-  background-color: #CDDCE0;
+  background-color: #cddce0;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 400px) and (max-width: 750px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,17 +142,65 @@
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100vh;
-    margin: 2.5rem 3rem;
+    margin: 2rem 3.5rem;
   }
   .footer__left {
     width: 100%;
     margin-bottom: 4rem;
   }
   .footer__left .icons {
-    width: 35%;
+    width: 25%;
   }
   .footer__right {
     width: 90%;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    margin: 2rem 6rem 2rem 12rem;
+  }
+  .footer__left {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .footer__left .icons {
+    width: 15%;
+  }
+  .footer__right {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    margin: 4rem 6rem 2rem 12rem;
+  }
+  .footer__left {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .footer__left .icons {
+    width: 10%;
+  }
+  .footer__right {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=footer.css.map */

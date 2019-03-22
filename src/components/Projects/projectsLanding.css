@@ -1,0 +1,147 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projects {
+  margin-top: 12rem;
+  margin-left: 5rem;
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+.projects h1 {
+  color: #121212;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+  margin-top: 6rem;
+  padding-left: 0;
+}
+
+.projects ul li {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  width: 35%;
+}
+
+.projects ul li .link {
+  text-decoration: none;
+  color: #484848;
+}
+
+.projects ul li .link img {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.projects ul li .link img:hover {
+  cursor: pointer;
+}
+
+.projects ul li .link .macbook {
+  width: 65%;
+}
+
+.projects ul li .link .imac {
+  width: 55%;
+}
+
+.projects ul li .link h2 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.projects ul li p {
+  color: #484848;
+  text-decoration: none;
+  text-align: center;
+}
+
+.projects ul:hover li {
+  opacity: 0.5;
+}
+
+.projects ul li:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 550px) {
+  .projects {
+    margin-left: 1.5rem;
+  }
+  .projects ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects ul li {
+    width: 95%;
+  }
+  .projects ul li .link .macbook {
+    width: 80%;
+  }
+  .projects ul li .link .imac {
+    width: 75%;
+  }
+  .projects ul li .link h2 {
+    font-weight: normal;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1000px) {
+  .projects {
+    margin-left: 1.5rem;
+  }
+  .projects ul li {
+    width: 55%;
+  }
+  .projects ul li .link .macbook {
+    width: 80%;
+  }
+  .projects ul li .link .imac {
+    width: 75%;
+  }
+  .projects ul li .link h2 {
+    font-weight: normal;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=projectsLanding.css.map */

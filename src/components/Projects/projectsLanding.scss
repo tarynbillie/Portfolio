@@ -1,92 +1,124 @@
-$primary: #CDDCE0;
-$accent: #C24B0C;
-
-$rare: #FFF;
-$mediumRare:#D3D3D3;
-$mediumWell: #808080;
-$well: #484848;
-$burnt: #121212;
-
-$breakpoint-phone: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-laptop: 1024px;
-$breakpoint-monitor: 1440px;
-
+@import '../../util/variables.scss';
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @mixin image {
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
 }
 
 .projects {
-    margin-top: 12rem;
-    margin-left: 5rem;
-    animation: fadein 3s;
-    h1 {
-        color: $burnt;
-        font-family: 'Open Sans';
-        font-size: 1.5rem;
-        font-weight: normal;
-    }
-    ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        width: 100%;
-        margin-top: 6rem;
-        padding-left: 0;
-        li {
-            transition: opacity 0.5s ease-in-out;
-            list-style-type: none;
-            text-decoration: none;
-            text-align: center;
-            width: 35%;
-            .link {
-                text-decoration: none;
-                color: $well;
-                img {
-                    @include image();
-                    margin-top: 1rem;
-                    width: 100%;
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-                .macbook {
-                    width: 65%;
-                }
-                .imac {
-                    width: 55%;
-                }
-                h2 {
-                    font-weight: normal;
-                    font-size: 1rem;
-                }
-            }
-            p {
-                color: $well;
-                text-decoration: none;
-                text-align: center;
-            }
-        }
-    }
-    ul:hover li {
-       opacity: 0.5;
-    }
-    ul li:hover {
-        opacity: 1;
-    }
+	margin-top: 12rem;
+	margin-left: 5rem;
+	animation: fadein 3s;
+	h1 {
+		color: $burnt;
+		font-family: 'Open Sans';
+		font-size: 1.5rem;
+		font-weight: normal;
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 100%;
+		margin-top: 6rem;
+		padding-left: 0;
+		li {
+			transition: opacity 0.5s ease-in-out;
+			list-style-type: none;
+			text-decoration: none;
+			text-align: center;
+			width: 35%;
+			.link {
+				text-decoration: none;
+				color: $well;
+				img {
+					@include image();
+					margin-top: 1rem;
+					width: 100%;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				.macbook {
+					width: 65%;
+				}
+				.imac {
+					width: 55%;
+				}
+				h2 {
+					font-weight: normal;
+					font-size: 1rem;
+				}
+			}
+			p {
+				color: $well;
+				text-decoration: none;
+				text-align: center;
+			}
+		}
+	}
+	ul:hover li {
+		opacity: 0.5;
+	}
+	ul li:hover {
+		opacity: 1;
+	}
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
-    ul {
-        display: flex;
-        flex-direction: column;
-    }
+@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-phablet) {
+	.projects {
+		margin-left: 1.5rem;
+		ul {
+			display: flex;
+			flex-direction: column;
+			li {
+				width: 95%;
+				.link {
+					.macbook {
+						width: 80%;
+					}
+					.imac {
+						width: 75%;
+					}
+					h2 {
+						font-weight: normal;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $breakpoint-phablet) and (max-width: $breakpoint-desktop) {
+	.projects {
+		margin-left: 1.5rem;
+		ul {
+			li {
+				width: 55%;
+				.link {
+					.macbook {
+						width: 80%;
+					}
+					.imac {
+						width: 75%;
+					}
+					h2 {
+						font-weight: normal;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
 }

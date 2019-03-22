@@ -1,148 +1,121 @@
-$primary: #CDDCE0;
-$accent: #C24B0C;
-
-$rare: #FFF;
-$mediumRare:#D3D3D3;
-$mediumWell: #808080;
-$well: #484848;
-$burnt: #121212;
-
-$breakpoint-phone: 425px;
-$breakpoint-tablet: 768px;
-$breakpoint-laptop: 1024px;
+@import '../../util/variables.scss';
 
 @mixin header {
-    margin-bottom: 1rem;
-    font-family: Georgia;
-    font-size: 2rem;
-    line-height: 68px;
-    text-align: center;
-    font-weight: normal;
+	margin-bottom: 1rem;
+	font-family: Georgia;
+	font-size: 2rem;
+	line-height: 68px;
+	text-align: center;
+	font-weight: normal;
 }
 
 @mixin text {
-    font-family: 'Open Sans';
-    font-size: 1rem;
-    line-height: 32px;
-    color: $burnt;
-    text-align: justify;
+	font-family: 'Open Sans';
+	font-size: 1rem;
+	line-height: 32px;
+	color: $burnt;
+	text-align: justify;
 }
 
 @mixin btn {
-    background-color: $rare;
-    border: 1.5px solid $primary;
-    border-radius: 2px;
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 1rem;
-    cursor: pointer;
+	background-color: $rare;
+	border: 1.5px solid $primary;
+	border-radius: 2px;
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: 1rem;
+	cursor: pointer;
 }
 
 @mixin image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
 }
 
 @keyframes fadein {
-    from { opacity: 0.5; }
-    to   { opacity: 1; }
+	from {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .project {
-    animation: fadein 1.5s;
-    .farmr {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        .title {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            color: $burnt;
-            h1 {
-                @include header();
-                margin-top: 10rem;
-                font-size: 3.75rem;
-            }
-            h2 {
-                margin-top: 0;
-                font-family: 'Open Sans';
-                font-size: 1.25rem;
-                line-height: 1.68rem;
-                text-align: center;
-                font-weight: normal;
-            }
-            img {
-                @include image();
-                margin-top: 1rem;
-                width: 65%;
-            }
-            .imac {
-                width: 50%;
-            }
-        }
-        section {
-            width: 50%;
-            h1 {
-                @include header();
-            }
-            p {
-                @include text();
-            }
-        }
-        img {
-            @include image();
-            width: 55%;
-        }
-        button {
-            @include btn();
-            display: flex;
-            position: fixed;
-            outline: none;
-            top: 90%;
-            right: 3%;
-            transition: all 0.3s ease-in-out;
-            img {
-                text-align: center;
-                height: 2rem;
-                width: 2rem;
-            }
-            &:hover {
-                background-color: $primary;
-            }
-        }
-    }
+	animation: fadein 1.5s;
+	.farmr {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+		.title {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			color: $burnt;
+			h1 {
+				@include header();
+				margin-top: 10rem;
+				font-size: 3.75rem;
+			}
+			h2 {
+				margin-top: 0;
+				font-family: 'Open Sans';
+				font-size: 1.25rem;
+				line-height: 1.68rem;
+				text-align: center;
+				font-weight: normal;
+			}
+			img {
+				@include image();
+				margin-top: 1rem;
+				width: 65%;
+			}
+			.imac {
+				width: 50%;
+			}
+		}
+		section {
+			width: 50%;
+			h1 {
+				@include header();
+			}
+			p {
+				@include text();
+			}
+		}
+		img {
+			@include image();
+			width: 55%;
+		}
+		button {
+			@include btn();
+			display: flex;
+			position: fixed;
+			outline: none;
+			top: 90%;
+			right: 3%;
+			transition: all 0.3s ease-in-out;
+			img {
+				text-align: center;
+				height: 2rem;
+				width: 2rem;
+			}
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
 }
 
-@media only screen and (max-width: $breakpoint-phone) {
-    .project {
-        .header {
-            .nav{
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone){
-    .project {
-        .header {
-            .nav{
-                width: 65%;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: $breakpoint-laptop) {
-    .project {
-        .farmr {
-            section {
-                width: 75%;
-            }
-        }
-    }
+@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+	.project {
+		.farmr {
+			section {
+				width: 70%;
+			}
+		}
+	}
 }

@@ -68,7 +68,7 @@
 .about .info .text__header h4 {
   margin-top: 0.8rem;
   padding-bottom: 1rem;
-  border-bottom: thin solid #D3D3D3;
+  border-bottom: thin solid #d3d3d3;
 }
 
 .about .info .text__skill {
@@ -154,7 +154,7 @@
   transition: all .3s ease-in-out;
   text-decoration: none;
   font-family: 'Open Sans';
-  color: #C24B0C;
+  color: #c24b0c;
 }
 
 .about .info .text__focus a h4 {
@@ -171,7 +171,7 @@
   padding-right: 0.3rem;
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (min-width: 400px) and (max-width: 750px) {
   .about .info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,14 +182,47 @@
             flex-direction: column;
   }
   .about .info .portrait {
-    position: absolute;
+    position: relative;
+    top: 3rem;
+    left: 2rem;
+    width: 85%;
+    height: 50%;
   }
   .about .info .text {
     position: relative;
+    top: 5rem;
+    left: 2rem;
+    width: 85%;
+    height: auto;
+    text-align: left;
+  }
+  .about .info .text__skill .column {
+    width: 20%;
+  }
+  .about .info .text__focus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .info .text__focus h3 {
+    margin: 0 0 1rem 0;
+  }
+  .about .info .text__focus a h4 {
+    margin-top: 0.1rem;
+  }
+  .about .info .text__focus span {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .about {
+    margin: 0 2rem 1rem 2rem;
+  }
   .about .info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -200,14 +233,39 @@
             flex-direction: column;
   }
   .about .info .portrait {
-    height: 70%;
-    width: 80%;
     position: relative;
+    top: 3rem;
+    left: 2rem;
+    width: 90%;
+    height: 50%;
   }
   .about .info .text {
-    width: 80%;
-    left: 10%;
     position: relative;
+    top: 5rem;
+    left: 2rem;
+    width: 90%;
+    height: auto;
+  }
+  .about .info .text__skill .column {
+    width: 20%;
+  }
+  .about .info .text__focus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .info .text__focus h3 {
+    margin: 0 0 1rem 0;
+  }
+  .about .info .text__focus a h4 {
+    margin-top: 0.1rem;
+  }
+  .about .info .text__focus span {
+    display: none;
   }
 }
 /*# sourceMappingURL=about.css.map */

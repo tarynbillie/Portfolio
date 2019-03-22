@@ -1,6 +1,6 @@
 @-webkit-keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
@@ -9,74 +9,138 @@
 
 @keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 0.5;
   }
   to {
     opacity: 1;
   }
 }
 
-.projects {
-  margin-top: 12rem;
-  margin-left: 5rem;
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+.project {
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
 }
 
-.projects h1 {
-  font-family: 'Open Sans';
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-.projects ul {
+.project .farmr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.project .farmr .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  padding-left: 0;
+  color: #121212;
 }
 
-.projects ul li {
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  list-style-type: none;
-  width: 40%;
+.project .farmr .title h1 {
+  margin-bottom: 1rem;
+  font-family: Georgia;
+  font-size: 2rem;
+  line-height: 68px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10rem;
+  font-size: 3.75rem;
 }
 
-.projects ul li img {
+.project .farmr .title h2 {
+  margin-top: 0;
+  font-family: 'Open Sans';
+  font-size: 1.25rem;
+  line-height: 1.68rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.project .farmr .title img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   margin-top: 1rem;
-  width: 100%;
+  width: 65%;
 }
 
-.projects ul li img:hover {
-  cursor: pointer;
+.project .farmr .title .imac {
+  width: 50%;
 }
 
-.projects ul li p {
+.project .farmr section {
+  width: 50%;
+}
+
+.project .farmr section h1 {
+  margin-bottom: 1rem;
+  font-family: Georgia;
+  font-size: 2rem;
+  line-height: 68px;
   text-align: center;
+  font-weight: normal;
 }
 
-.projects ul:hover li {
-  opacity: 0.5;
+.project .farmr section p {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  line-height: 32px;
+  color: #121212;
+  text-align: justify;
 }
 
-.projects ul li:hover {
-  opacity: 1;
+.project .farmr img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 55%;
 }
 
-@media only screen and (max-width: 425px) {
-  ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+.project .farmr button {
+  background-color: #fff;
+  border: 1.5px solid #cddce0;
+  border-radius: 2px;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  outline: none;
+  top: 90%;
+  right: 3%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project .farmr button img {
+  text-align: center;
+  height: 2rem;
+  width: 2rem;
+}
+
+.project .farmr button:hover {
+  background-color: #cddce0;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 750px) {
+  .project .farmr section {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=projects.css.map */

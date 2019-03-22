@@ -1,103 +1,99 @@
-$primary: #CDDCE0;
-$accent: #C24B0C;
-
-$rare: #FFF;
-$mediumRare:#D3D3D3;
-$mediumWell: #808080;
-$well: #484848;
-$burnt: #121212;
+@import '../../util/variables.scss';
 
 @mixin inputs {
-    width: 91%;
-    fill: $accent;
-    border-radius: 3px;
-    border: 1px solid $mediumRare;
-    outline: none;
-    font-size: 16px;
-    margin-top: 0.3rem;
-    padding-left: 0.8rem;
+	width: 91%;
+	fill: $accent;
+	border-radius: 3px;
+	border: 1px solid $mediumRare;
+	outline: none;
+	font-size: 16px;
+	margin-top: 0.3rem;
+	padding-left: 0.8rem;
 }
 
 @mixin btn {
-    margin-top: 1.5rem;
-    background-color: $primary;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: normal;
-    outline: none;
-    cursor: pointer;
+	margin-top: 1.5rem;
+	background-color: $primary;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: normal;
+	outline: none;
+	cursor: pointer;
 }
 
 @keyframes fadein {
-    from { opacity: 0.5; }
-    to   { opacity: 1; }
+	from {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .form-container {
-    display: flex;
-    animation: fadein 0.5s;
-    h1 {
-        text-align: center;
-        font-weight: normal;
-        font-family: 'Georgia';
-        font-size: 34px;
-    }
-    &__close {
-        display: flex;
-        justify-content: flex-end;
-        overflow: hidden;
-        img {
-            padding: 0.5rem 0.8rem;
-            width: 4%;
-            cursor: pointer;
-            transition: transform 1s;
-            &:hover {
-                transform: rotate(90deg);
-            }
-        }
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        label {
-            display: flex;
-            flex-direction: column;
-            font-family: 'Open Sans';
-            margin-left: 2rem;
-            color: $burnt;
-            font-size: 18px;
-            padding-top: 1rem;
-            input {
-                @include inputs();
-                height: 2.5rem;
-
-            }
-            textarea {
-                @include inputs();
-                height: 5rem;
-                resize: none;
-                overflow-y: scroll;
-            }
-        }
-        .btn {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 2rem;
-            button {
-                @include btn();
-                height: 38px;
-                width: 85%;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-        }
-        .error {
-            text-align: right;
-            font-size: 14px;
-            color: $accent;
-        }
-    }
+	display: flex;
+	animation: fadein 0.5s;
+	h1 {
+		text-align: center;
+		font-weight: normal;
+		font-family: 'Georgia';
+		font-size: 34px;
+	}
+	&__close {
+		display: flex;
+		justify-content: flex-end;
+		overflow: hidden;
+		img {
+			padding: 0.5rem 0.8rem;
+			width: 4%;
+			cursor: pointer;
+			transition: transform 1s;
+			&:hover {
+				transform: rotate(90deg);
+			}
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		label {
+			display: flex;
+			flex-direction: column;
+			font-family: 'Open Sans';
+			margin-left: 2rem;
+			color: $burnt;
+			font-size: 18px;
+			padding-top: 1rem;
+			input {
+				@include inputs();
+				height: 2.5rem;
+			}
+			textarea {
+				@include inputs();
+				height: 5rem;
+				resize: none;
+				overflow-y: scroll;
+			}
+		}
+		.btn {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 2rem;
+			button {
+				@include btn();
+				height: 38px;
+				width: 85%;
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
+		.error {
+			text-align: right;
+			font-size: 14px;
+			color: $accent;
+		}
+	}
 }

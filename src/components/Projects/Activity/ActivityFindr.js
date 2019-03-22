@@ -126,7 +126,7 @@ export default class ActivityFindr extends Component {
 					<section ref={this.conclusionRef}>
 						<h1>Project Conclusion</h1>
 						<p>
-							In conclusion, I found paird programming to be very helpful. Not only do you catch silly
+							In conclusion, I found paired programming to be very helpful. Not only do you catch silly
 							errors, like missing a semicolon, or misspelling a variable, but it was super fun! I love
 							collaborating on ideas and designs. Any app that makes users lives easier, or more fun, is
 							always a great motivation for me to create.

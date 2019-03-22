@@ -39,8 +39,8 @@
 }
 
 .home {
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
 }
 
 .home .hero {
@@ -71,29 +71,34 @@
   z-index: 0;
 }
 
-.home .hero .blurb .transition {
-  -webkit-animation: 1.3s ease-out 0s 1 slideInFromTop;
-          animation: 1.3s ease-out 0s 1 slideInFromTop;
+.home .hero .blurb__transition-one {
+  -webkit-animation: 1.8s ease-out 0s 1 slideInFromTop;
+          animation: 1.8s ease-out 0s 1 slideInFromTop;
 }
 
-.home .hero .blurb .transition h1 {
+.home .hero .blurb__transition-one h1 {
   font-family: 'Georgia';
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
-.home .hero .blurb .transition h2 {
+.home .hero .blurb__transition-two {
+  -webkit-animation: 1.2s ease-out 0s 1 slideInFromTop;
+          animation: 1.2s ease-out 0s 1 slideInFromTop;
+}
+
+.home .hero .blurb__transition-two h2 {
   font-family: 'Open Sans';
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: normal;
   margin: 0 0 2rem 0;
 }
 
 .home .hero .blurb button {
-  width: 15rem;
+  width: 16rem;
   height: 2rem;
-  background-color: #FFF;
+  background-color: #fff;
   border: thin solid #121212;
   border-radius: 3px;
   font-size: 1rem;
@@ -138,46 +143,51 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 11%;
+  width: 14%;
   margin-top: 1rem;
 }
 
-.home .hero .blurb img svg:hover {
-  fill: #CDDCE0;
+.home .hero .blurb .social-media a svg:hover {
+  fill: #f1c40f;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: fill 0.5s, -webkit-transform 0.5s ease-in-out;
+  transition: fill 0.5s, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, fill 0.5s;
+  transition: transform 0.5s ease-in-out, fill 0.5s, -webkit-transform 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 425px) {
+.home .hero .girl {
+  width: 55%;
+  position: relative;
+  top: 3%;
+  left: 35%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 750px) {
   .home .hero .blurb {
-    margin-left: 2rem;
-    width: 85%;
-    top: 10%;
-  }
-  .home .hero .blurb h1 {
-    font-size: 2.8rem;
-  }
-  .home .hero .blurb h2 {
-    font-size: 1.3rem;
+    top: 20%;
+    margin-left: 3rem;
   }
   .home .hero .blurb .social-media {
-    width: 40%;
+    width: 50%;
+  }
+  .home .hero .girl {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .home .hero .blurb {
-    top: 25%;
+    margin-left: 3rem;
   }
   .home .hero .blurb .social-media {
-    width: 35%;
+    width: 30%;
   }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 1440px) {
-  .home .hero .blurb {
-    top: 30%;
-  }
-  .home .hero .blurb .social-media {
-    width: 20%;
+  .home .hero .girl {
+    position: relative;
+    top: 0;
+    left: 40%;
   }
 }
 /*# sourceMappingURL=home.css.map */
