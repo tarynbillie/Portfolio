@@ -95,8 +95,6 @@
 				height: 2px;
 				background: $secondAccent;
 				transition: width .5s;
-				// this takes away safari's double click
-				content: "(pseudo block!)";
 			}
 			&:hover:after {
 				width: 100%;

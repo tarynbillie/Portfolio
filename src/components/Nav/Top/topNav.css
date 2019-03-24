@@ -79,7 +79,6 @@
   background: #f1c40f;
   -webkit-transition: width .5s;
   transition: width .5s;
-  content: "(pseudo block!)";
 }
 
 .header .nav h3:hover:after {
