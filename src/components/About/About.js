@@ -15,7 +15,7 @@ import github from '../../assets/github-icon.svg';
 import heroku from '../../assets/heroku.svg';
 import git from '../../assets/git.svg';
 import postman from '../../assets/postman.svg';
-import TopNav from '../Nav/TopNav.js';
+import TopNav from '../Nav/Top/TopNav.js';
 import './about.scss';
 
 export default class About extends Component {

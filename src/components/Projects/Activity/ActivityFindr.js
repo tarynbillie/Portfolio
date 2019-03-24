@@ -4,7 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import upArrow from '../../../assets/round-expand_less.svg';
 import activityfindr from '../../../assets/iMac.png';
 import Footer from '../../Footer/Footer';
-import '../../Nav/sideNav.scss';
+import '../../Nav/Side/sideNav.scss';
 import '../projects.scss';
 
 export default class ActivityFindr extends Component {

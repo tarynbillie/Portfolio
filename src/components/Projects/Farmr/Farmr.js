@@ -5,7 +5,7 @@ import upArrow from '../../../assets/round-expand_less.svg';
 import farmr from '../../../assets/Farmr-macbook.png';
 import code from '../../../assets/Bitmap.png';
 import Footer from '../../Footer/Footer';
-import '../../Nav/sideNav.scss';
+import '../../Nav/Side/sideNav.scss';
 import '../projects.scss';
 
 export default class Farmr extends Component {

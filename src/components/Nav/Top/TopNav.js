@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import ContactModal from '../Modal/ContactModal.js';
-import './Hamburger/hamburger.scss';
+import ContactModal from '../../Modal/ContactModal.js';
+import '../Hamburger/hamburger.scss';
 import './topNav.scss';
 
 export default class TopNav extends Component {

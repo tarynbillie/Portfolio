@@ -23,17 +23,16 @@ a {
 	text-decoration: none;
 	color: #232323;
 	transition: color 0.3s ease;
-}
-
-a:hover {
-	color: tomato;
+	&:hover {
+		color: $accent;
+	}
 }
 
 #menuToggle {
 	display: block;
 	position: absolute;
-	top: 50px;
-	right: 50px;
+	top: 35px;
+	right: 35px;
 	z-index: 1;
 	-webkit-user-select: none;
 	user-select: none;
