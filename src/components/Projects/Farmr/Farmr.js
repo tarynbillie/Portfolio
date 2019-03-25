@@ -4,7 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import upArrow from '../../../assets/round-expand_less.svg';
 import farmr from '../../../assets/Taryn-Li-Farmr-Project.png';
 import code from '../../../assets/Bitmap.png';
-import Footer from '../../Footer/Footer';
+// import Footer from '../../Footer/Footer';
 import '../../Nav/Side/sideNav.scss';
 import '../projects.scss';
 
@@ -67,13 +67,13 @@ export default class Farmr extends Component {
 						>
 							Conclusion
 						</h3>
-						<h3
+						{/* <h3
 							onClick={() => {
 								this.scroll(this.contactRef);
 							}}
 						>
 							Contact me
-						</h3>
+						</h3> */}
 					</div>
 				</div>
 				<div className='farmr'>
@@ -153,12 +153,15 @@ export default class Farmr extends Component {
 						</p>
 					</section>
 					<button onClick={this.scrollToTop}>
-						<img src={upArrow} alt='arrow' />
+						<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
+							<path fill='none' d='M0 0h24v24H0V0z' />
+							<path d='M11.29 8.71L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71c-.38-.39-1.02-.39-1.41 0z' />
+						</svg>
 					</button>
 				</div>
-				<div ref={this.contactRef}>
-					<Footer />
-				</div>
+				{/* <div ref={this.contactRef}> */}
+				{/* <Footer /> */}
+				{/* </div> */}
 			</div>
 		);
 	}

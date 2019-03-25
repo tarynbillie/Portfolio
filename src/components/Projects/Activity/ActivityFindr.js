@@ -67,13 +67,13 @@ export default class ActivityFindr extends Component {
 					>
 						Conclusion
 					</h3>
-					<h3
+					{/* <h3
 						onClick={() => {
 							this.scroll(this.contactRef);
 						}}
 					>
 						Contact me
-					</h3>
+					</h3> */}
 				</div>
 				<div className='farmr'>
 					<div className='title'>
@@ -136,9 +136,9 @@ export default class ActivityFindr extends Component {
 						<img src={upArrow} alt='arrow' />
 					</button>
 				</div>
-				<div ref={this.contactRef}>
+				{/* <div ref={this.contactRef}>
 					<Footer />
-				</div>
+				</div> */}
 			</div>
 		);
 	}
