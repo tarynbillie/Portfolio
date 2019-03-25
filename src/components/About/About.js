@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import portrait from '../../assets/portrait.jpg';
+import portrait from '../../assets/Taryn-Li-Web-Developer-Toronto.png';
 import react from '../../assets/react.svg';
 import html5 from '../../assets/html5-badge.svg';
 import css3 from '../../assets/css3.svg';

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import upArrow from '../../../assets/round-expand_less.svg';
-import farmr from '../../../assets/Farmr-macbook.png';
+import farmr from '../../../assets/Taryn-Li-Farmr-Project.png';
 import code from '../../../assets/Bitmap.png';
 import Footer from '../../Footer/Footer';
 import '../../Nav/Side/sideNav.scss';
@@ -80,7 +80,7 @@ export default class Farmr extends Component {
 					<div className='title'>
 						<h1>Farmr</h1>
 						<h2>BrainStation final project - 2018</h2>
-						<img src={farmr} alt='farmr screenshot' />
+						<img src={farmr} alt='Taryn Li - Farmr' />
 					</div>
 					<section ref={this.missionRef}>
 						<h1>Mission</h1>
