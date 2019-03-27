@@ -16,6 +16,7 @@ import heroku from '../../assets/heroku.svg';
 import git from '../../assets/git.svg';
 import postman from '../../assets/postman.svg';
 import TopNav from '../Nav/Top/TopNav.js';
+import Footer from '../Footer/Footer.js';
 import './about.scss';
 
 export default class About extends Component {
@@ -27,7 +28,7 @@ export default class About extends Component {
 		// }
 
 		return (
-			<div className='home'>
+			<section>
 				<div className='about' ref={this.aboutRef}>
 					<div className='info'>
 						<div className='loading-spinner js-loading-spinner' role='alert' aria-live='assertive'>
@@ -183,7 +184,8 @@ export default class About extends Component {
 					</div>
 				</div>
 				<TopNav />
-			</div>
+				<Footer />
+			</section>
 		);
 	}
 }

@@ -22,6 +22,7 @@
 }
 
 .project .farmr {
+  margin-bottom: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,6 +127,7 @@
   outline: none;
   top: 90%;
   left: 4.3%;
+  z-index: 2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }

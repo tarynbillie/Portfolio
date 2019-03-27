@@ -97,7 +97,7 @@
 
 .home .hero .blurb button {
   width: 16rem;
-  height: 2rem;
+  height: 2.5rem;
   background-color: #fff;
   border: thin solid #121212;
   border-radius: 3px;
@@ -158,9 +158,9 @@
 }
 
 .home .hero .girl {
-  width: 55%;
+  width: 53%;
   position: relative;
-  top: 3%;
+  top: 0;
   left: 46%;
 }
 

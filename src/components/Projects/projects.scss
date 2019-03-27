@@ -47,6 +47,7 @@
 .project {
 	animation: fadein 1.5s;
 	.farmr {
+		margin-bottom: 6rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -98,6 +99,7 @@
 			outline: none;
 			top: 90%;
 			left: 4.3%;
+			z-index: 2;
 			transition: all 0.3s ease-in-out;
 			svg {
 				fill: $rare;

@@ -1,154 +1,55 @@
 @import '../../util/variables.scss';
 
-@mixin btn {
-	background-color: $rare;
-	border: 1.5px solid $primary;
-	border-radius: 3px;
-	height: 2.5rem;
-	width: 9rem;
-	font-size: 14px;
-	cursor: pointer;
-}
-
-@mixin input {
-	font-size: 14px;
-	padding-left: 0.5rem;
-	outline: none;
-}
-
 .footer {
 	display: flex;
-	height: 70vh;
+	flex-direction: column;
+	position: relative;
+	background-color: #e3f6ed;
+	text-align: center;
+	height: 50vh;
 	color: $burnt;
-	margin: 10.5rem 3rem 0 20rem;
-	&__left {
-		display: flex;
-		flex-direction: column;
-		width: 25%;
-		h1 {
-			margin-top: 0;
-			font-family: 'Georgia';
-			font-weight: normal;
-			font-size: 34px;
-			line-height: 46px;
-		}
-		h2 {
-			margin: 0.5rem 0;
-			font-family: 'Open Sans';
-			font-weight: normal;
-			font-size: 18px;
-			line-height: 27px;
-		}
-		.icons {
-			margin-top: 0.5rem;
-			display: flex;
-			width: 20%;
-			justify-content: space-between;
-			cursor: pointer;
-			a svg:hover {
-				fill: $secondAccent;
-				transform: scale(1.1);
-				transition: transform 0.5s ease-in-out, fill 0.5s;
-			}
-		}
+	svg {
+		position: absolute;
+		top: -18%;
 	}
-	&__right {
+	h1 {
+		font-weight: normal;
+		margin-top: 5rem;
+		font-size: 2rem;
+	}
+	h2 {
+		margin: 0;
+		font-weight: normal;
+		font-size: 18px;
+	}
+	&__links {
 		display: flex;
-		flex-direction: column;
-		width: 65%;
-		h1 {
-			margin-top: 0.5rem;
-			font-family: 'Georgia';
-			font-size: 30px;
-			font-weight: normal;
-		}
-		form {
-			display: flex;
-			flex-direction: column;
-			label {
-				display: flex;
-				flex-direction: column;
-				font-size: 14px;
-				input {
-					@include input();
-					width: 50%;
-					height: 2rem;
-					margin-bottom: 2rem;
+		justify-content: space-evenly;
+		a {
+			margin-top: 4rem;
+			h3 {
+				font-size: 20px;
+				cursor: pointer;
+				display: block;
+				position: relative;
+				transition: all .5s;
+				&:after {
+					content: '';
+					display: block;
+					width: 0;
+					height: 2px;
+					background: $secondAccent;
+					color: $burnt !important;
+					transition: width .5s;
 				}
-				textarea {
-					@include input();
-					border-color: $mediumRare;
-					height: 8rem;
-					resize: none;
-				}
-			}
-			button {
-				margin-top: 2rem;
-				width: 20%;
-				height: 2.5rem;
-				@include btn();
-				transition: all 0.3s ease-in-out;
-				&:hover {
-					background-color: $primary;
+				&:hover:after {
+					width: 100%;
+					color: $burnt !important;
 				}
 			}
 		}
 	}
-}
-
-@media only screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-tablet) {
-	.footer {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-		margin: 2rem 3.5rem;
-		&__left {
-			width: 100%;
-			margin-bottom: 4rem;
-			.icons {
-				width: 25%;
-			}
-		}
-		&__right {
-			width: 90%;
-		}
-	}
-}
-
-@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-	.footer {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-		margin: 2rem 6rem 2rem 12rem;
-		&__left {
-			width: 100%;
-			margin-bottom: 4rem;
-			.icons {
-				width: 15%;
-			}
-		}
-		&__right {
-			width: 100%;
-		}
-	}
-}
-
-@media only screen and (min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopHD) {
-	.footer {
-		display: flex;
-		flex-direction: column;
-		height: 100vh;
-		margin: 4rem 6rem 2rem 12rem;
-		&__left {
-			width: 100%;
-			margin-bottom: 4rem;
-			.icons {
-				width: 10%;
-			}
-		}
-		&__right {
-			width: 100%;
-		}
+	small {
+		margin-top: 4.3rem;
 	}
 }

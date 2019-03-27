@@ -136,9 +136,9 @@ export default class ActivityFindr extends Component {
 						<img src={upArrow} alt='arrow' />
 					</button>
 				</div>
-				{/* <div ref={this.contactRef}>
+				<div ref={this.contactRef}>
 					<Footer />
-				</div> */}
+				</div>
 			</div>
 		);
 	}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import farmr from '../../assets/Taryn-Li-Farmr-Project.png';
 import activityfindr from '../../assets/Taryn-Li-ActivityFindr-Project.png';
 import TopNav from '../Nav/Top/TopNav';
+import Footer from '../Footer/Footer.js';
 import './projectsLanding.scss';
 
 export default class Projects extends Component {
@@ -32,6 +33,7 @@ export default class Projects extends Component {
 						</ul>
 					</div>
 				</div>
+				<Footer />
 			</section>
 		);
 	}

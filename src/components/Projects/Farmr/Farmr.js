@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
-import upArrow from '../../../assets/round-expand_less.svg';
 import farmr from '../../../assets/Taryn-Li-Farmr-Project.png';
 import code from '../../../assets/Bitmap.png';
-// import Footer from '../../Footer/Footer';
+import Footer from '../../Footer/Footer';
 import '../../Nav/Side/sideNav.scss';
 import '../projects.scss';
 
@@ -159,9 +158,9 @@ export default class Farmr extends Component {
 						</svg>
 					</button>
 				</div>
-				{/* <div ref={this.contactRef}> */}
-				{/* <Footer /> */}
-				{/* </div> */}
+				<div ref={this.contactRef}>
+					<Footer />
+				</div>
 			</div>
 		);
 	}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import illustration from '../../assets/girl.svg';
 import TopNav from '../Nav/Top/TopNav';
+import Footer from '../Footer/Footer.js';
 import '../Home/home.scss';
 import '../Nav/Top/topNav.scss';
 
@@ -64,6 +65,7 @@ export default class LandingPage extends Component {
 					</div>
 				</section>
 				<TopNav />
+				<Footer />
 			</div>
 		);
 	}
