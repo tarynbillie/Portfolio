@@ -9,13 +9,13 @@
   position: relative;
   background-color: #e3f6ed;
   text-align: center;
-  height: 50vh;
+  height: 44vh;
   color: #121212;
 }
 
 .footer svg {
   position: absolute;
-  top: -23%;
+  top: -27%;
 }
 
 .footer h1 {
@@ -37,6 +37,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-top: 1.5rem;
 }
 
 .footer__links a h3 {
@@ -50,6 +51,12 @@
 }
 
 .footer small {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

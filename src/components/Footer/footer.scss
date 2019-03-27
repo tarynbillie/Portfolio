@@ -6,11 +6,11 @@
 	position: relative;
 	background-color: #e3f6ed;
 	text-align: center;
-	height: 50vh;
+	height: 44vh;
 	color: $burnt;
 	svg {
 		position: absolute;
-		top: -23%;
+		top: -27%;
 	}
 	h1 {
 		font-weight: normal;
@@ -25,6 +25,7 @@
 	&__links {
 		display: flex;
 		justify-content: space-evenly;
+		margin-top: 1.5rem;
 		a {
 			h3 {
 				font-size: 20px;
@@ -51,6 +52,12 @@
 		}
 	}
 	small {
-		margin-top: 3rem;
+		margin-top: 1.5rem;
+	}
+}
+
+@media screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-tablet) {
+	.footer {
+		display: none;
 	}
 }
