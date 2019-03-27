@@ -15,12 +15,12 @@
 
 .footer svg {
   position: absolute;
-  top: -18%;
+  top: -23%;
 }
 
 .footer h1 {
   font-weight: normal;
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-size: 2rem;
 }
 
@@ -39,12 +39,9 @@
           justify-content: space-evenly;
 }
 
-.footer__links a {
-  margin-top: 4rem;
-}
-
 .footer__links a h3 {
   font-size: 20px;
+  margin-top: 1rem;
   cursor: pointer;
   display: block;
   position: relative;
@@ -52,23 +49,7 @@
   transition: all .5s;
 }
 
-.footer__links a h3:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #f1c40f;
-  color: #121212 !important;
-  -webkit-transition: width .5s;
-  transition: width .5s;
-}
-
-.footer__links a h3:hover:after {
-  width: 100%;
-  color: #121212 !important;
-}
-
 .footer small {
-  margin-top: 4.3rem;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=footer.css.map */

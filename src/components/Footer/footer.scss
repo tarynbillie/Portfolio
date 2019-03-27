@@ -10,11 +10,11 @@
 	color: $burnt;
 	svg {
 		position: absolute;
-		top: -18%;
+		top: -23%;
 	}
 	h1 {
 		font-weight: normal;
-		margin-top: 5rem;
+		margin-top: 3rem;
 		font-size: 2rem;
 	}
 	h2 {
@@ -26,30 +26,31 @@
 		display: flex;
 		justify-content: space-evenly;
 		a {
-			margin-top: 4rem;
 			h3 {
 				font-size: 20px;
+				margin-top: 1rem;
 				cursor: pointer;
 				display: block;
 				position: relative;
 				transition: all .5s;
-				&:after {
-					content: '';
-					display: block;
-					width: 0;
-					height: 2px;
-					background: $secondAccent;
-					color: $burnt !important;
-					transition: width .5s;
-				}
-				&:hover:after {
-					width: 100%;
-					color: $burnt !important;
-				}
+				// Until I find the inherit color transition bug
+				// &:after {
+				// 	content: '';
+				// 	display: block;
+				// 	width: 0;
+				// 	height: 2px;
+				// 	background: $secondAccent;
+				// 	color: $burnt !important;
+				// 	transition: width .5s;
+				// }
+				// &:hover:after {
+				// 	width: 100%;
+				// 	color: $burnt !important;
+				// }
 			}
 		}
 	}
 	small {
-		margin-top: 4.3rem;
+		margin-top: 3rem;
 	}
 }

@@ -22,7 +22,7 @@ export default class Footer extends Component {
 				</svg>
 				<h1>Get in Touch</h1>
 				<h2>tarynbillie@gmail.com</h2>
-				<h2>519 212 2052</h2>
+				<h2>+1 519 212 2052</h2>
 				<div className='footer__links'>
 					<a href='https://github.com/tarynbillie' target='_blank' rel='noopener noreferrer'>
 						<h3>GitHub</h3>
