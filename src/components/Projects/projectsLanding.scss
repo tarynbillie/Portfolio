@@ -19,10 +19,13 @@
 	margin: 10rem 0 9.5rem 5rem;
 	animation: fadein 3s;
 	h1 {
+		padding-bottom: 0.5rem;
+		width: 5%;
 		color: $burnt;
 		font-family: 'Open Sans';
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: normal;
+		border-bottom: 3px solid $secondAccent;
 	}
 	ul {
 		display: flex;

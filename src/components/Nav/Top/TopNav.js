@@ -55,7 +55,7 @@ export default class TopNav extends Component {
 						<h3>Home</h3>
 					</NavLink>
 					<NavLink to={'/about'} className='link' activeClassName='selected'>
-						<h3>About me</h3>
+						<h3>About</h3>
 					</NavLink>
 					<NavLink to={'/projects'} className='link' activeClassName='selected'>
 						<h3>Projects</h3>

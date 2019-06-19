@@ -12,7 +12,7 @@ export default class Projects extends Component {
 			<section>
 				<TopNav />
 				<div className='projects'>
-					<h1>Below are some projects I've worked on</h1>
+					<h1>Projects</h1>
 					<div className='table'>
 						<ul>
 							<li>

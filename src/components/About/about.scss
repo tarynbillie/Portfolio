@@ -1,4 +1,5 @@
 @import '../../util/variables.scss';
+@import '../../util/mixin.scss';
 
 @mixin loading-spinner($selector: "&::before", $time: 1.5s) {
 	@keyframes spinner {
@@ -62,15 +63,43 @@
 				font-family: 'Georgia';
 				font-size: 40px;
 				font-weight: normal;
+				&:after {
+					content: '';
+					display: block;
+					width: 12%;
+					padding-top: 0.5rem;
+					border-bottom: 3px solid $secondAccent;
+				}
 			}
 			p {
+				margin-bottom: 0;
 				font-size: 18px;
 				line-height: 30px;
 				font-family: 'Open Sans';
 			}
-			span {
-				font-style: italic;
-				padding-bottom: 2rem;
+			.about-cta {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 2rem;
+				span {
+					font-style: italic;
+				}
+				a {
+					margin: 1rem 0;
+					width: 12rem;
+					#resume {
+						@include contactBtn();
+						background-color: $primary;
+						height: 2.5rem;
+						width: 100%;
+						border: none;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							background-color: $secondPrimary;
+						}
+					}
+				}
 			}
 			&__header {
 				font-family: 'Open Sans';

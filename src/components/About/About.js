@@ -38,15 +38,25 @@ export default class About extends Component {
 						<div className='text'>
 							<h1>About me</h1>
 							<p>
-								Hi! I'm a recent graduate of BrainStation's web development program, located in Toronto,
-								ON. My experience at BrainStation allowed me to grasp new concepts quickly, and
-								effectively adapt to full stack development. Graduating with a 90% average I’m well
-								positioned to contribute robust, clean, maintainable code and become an asset to any
-								team. Known as a self-starter with a take-charge attitude; highly motivated to work in a
-								fast-paced, innovative environment. A creative, resourceful developer with good
-								interpersonal and organizational skills.
+								Hi! I'm a graduate of BrainStation's Full stack Web Development and User Interface
+								Design programs. Located in the heart of downtown Toronto. My experience at BrainStation
+								allowed me to grasp new concepts quickly, and effectively adapt to full stack
+								development and design. Graduating with a 90% average I’m well positioned to contribute
+								robust, clean, maintainable code and become an asset to any team. Known as a
+								self-starter with a take-charge attitude; highly motivated to work in a fast-paced,
+								innovative environment. A creative, resourceful developer with good interpersonal and
+								organizational skills.
 							</p>
-							<span> Women in Development Scholarship Recipient (2018)</span>
+							<p>
+								When I'm not coding or designing, you can find me hiking the Bruce Trail, sailing on
+								Humber bay, or at the gym!
+							</p>
+							<div className='about-cta'>
+								<span> Women in Development Scholarship Recipient (2018)</span>
+								<a href='/assets/Taryn Li Resume.pdf' download>
+									<button id='resume'>Download my resume</button>
+								</a>
+							</div>
 							<div className='text__header'>
 								<h3>Languages and frameworks</h3>
 								<h4>HTML</h4>

@@ -1,15 +1,5 @@
 @import '../../../util/variables.scss';
-
-@mixin contactBtn {
-	background-color: $rare;
-	border: 1.5px solid $primary;
-	border-radius: 3px;
-	height: 2.5rem;
-	width: 8rem;
-	font-size: 1rem;
-	outline: none;
-	cursor: pointer;
-}
+@import '../../../util/mixin.scss';
 
 .header {
 	top: 0;
@@ -76,6 +66,10 @@
 		}
 		.contact {
 			@include contactBtn();
+			background-color: $rare;
+			border: 1.5px solid $primary;
+			height: 2.5rem;
+			width: 8rem;
 			transition: all 0.3s ease-in-out;
 			&:hover {
 				background-color: $primary;
