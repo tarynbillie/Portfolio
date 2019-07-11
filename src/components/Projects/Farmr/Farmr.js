@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
-import farmr from '../../../assets/Taryn-Li-Farmr-Project.png';
-import code from '../../../assets/Bitmap.png';
+import PropTypes from 'prop-types';
+import closebtn from '../../assets/close.svg';
 import Footer from '../../Footer/Footer';
 import '../../Nav/Side/sideNav.scss';
 import '../projects.scss';
@@ -26,142 +25,81 @@ export default class Farmr extends Component {
 
 	render () {
 		return (
-			<div className='project'>
-				<div className='header'>
-					<Link to={'/home'} className='link'>
-						<div className='logo'>
-							<h1>Taryn Li</h1>
+			<div
+				style={{
+					...flex,
+					display:
+						this.props.Open ? 'flex' :
+						'none'
+				}}>
+				<div className='modal-layer' onClick={this.props.handleClose} style={modalLayer} />
+				<div className='form-container' style={formModal}>
+					<div className='form-container__close'>
+						<img src={closebtn} alt='close' onClick={this.props.handleClose} />
+					</div>
+					<h1>Leave a message</h1>
+					<form method='POST' action='https://formspree.io/tarynbillie@gmail.com'>
+						<label>
+							Name
+							<input type='text' name='name' />
+						</label>
+						<label>
+							Email address
+							<input type='email' name='email' />
+						</label>
+						<label>
+							Message
+							<textarea type='message' name='message' />
+						</label>
+						<div className='btn'>
+							<button type='submit' onClick={this.props.handleClose}>
+								Submit
+							</button>
 						</div>
-					</Link>
-					<div className='rectangle' />
-					<Link to={'/projects'} className='link'>
-						<h2>Back</h2>
-					</Link>
-					<div className='side-nav'>
-						<h3
-							onClick={() => {
-								this.scroll(this.missionRef);
-							}}
-						>
-							Mission
-						</h3>
-						<h3
-							onClick={() => {
-								this.scroll(this.challengeRef);
-							}}
-						>
-							Challenges
-						</h3>
-						<h3
-							onClick={() => {
-								this.scroll(this.codeRef);
-							}}
-						>
-							Code
-						</h3>
-						<h3
-							onClick={() => {
-								this.scroll(this.conclusionRef);
-							}}
-						>
-							Conclusion
-						</h3>
-						{/* <h3
-							onClick={() => {
-								this.scroll(this.contactRef);
-							}}
-						>
-							Contact me
-						</h3> */}
-					</div>
-				</div>
-				<div className='farmr'>
-					<div className='title'>
-						<h1>Farmr</h1>
-						<h2>BrainStation final project - 2018</h2>
-						<img src={farmr} alt='Taryn Li - Farmr' />
-					</div>
-					<section ref={this.missionRef}>
-						<h1>Mission</h1>
-						<p>
-							Directly connecting you to your farm supplier. Making "farm to table" more achievable and
-							less time consuming!
-						</p>
-						<p>
-							Communication and invoicing takes time out of your day for both the farmer and chef. Farmr
-							makes "farm to table" more achievable. My inspiration for creating Farmr was to make my
-							sister and her husband (who are organic farmers) day-to-day lives easier. My initial idea
-							was to create an application that would shave off some time in their busy schedules
-							specifically for crop planning (they use excel). After conduction an user interview with the
-							organic farmers, it was then clear to me their biggest pain was communicating with all their
-							clients. I then realized that this application would save time for more than just a farmer,
-							but also a chef that's looking to give their guests a more unique experience at their
-							restaurant.
-						</p>
-						<p>
-							Upon log-in, the user is able to pick and choose which specific products they would like to
-							order from the farmer and gets stored in the database. The farmers have seperate profiles
-							where they're able to enter what they have to sell, which also get's stored in the database.
-							Once there is a match between the "wants" and "haves", a notification email is sent to the
-							chef asking the user to log in, where further communication can take place.
-						</p>
-					</section>
-					<section ref={this.challengeRef}>
-						<h1>Challenges</h1>
-						<p>
-							While attending school I was given 1 1/2 weeks to work on this final project. That was my
-							first challenge. As stated in my project proposal, I set off to make a list of "core
-							features". Features that I thought I would be able to create within the given timeframe. I
-							had also created "stretch features" that I would implement <i>only</i> after completing the
-							core ones. By doing this I was able to time management more effectively.
-						</p>
-						<p>
-							Keeping on track was quite difficult. I took many different routes than I originally didn't
-							set out to. Using Firebase Authentication (Googles BaaS) seemed appealing at first, but my
-							love for a challenge made me want to do it all myself - so that's what I did. "Register" and
-							"Login" authentication and authorization took at least 3 days to accomplish, pushing back
-							some features that I wanted to finish. This just meant I had to kick into high gear and
-							complete everything before the due date - which I did of course.
-						</p>
-						<p>
-							Finally, thinking about all the logistics Farmr's core concept, and if it would even make
-							sense to use! Since I am still a spring chicken in this industry, coming up with a great
-							idea was also a challenge in itself. As junior developer, it was challenging for me to see
-							the big picture from the start, and not until I was at least half-way through, I knew which
-							direction I wanted to take this project.
-						</p>
-					</section>
-					<section ref={this.codeRef}>
-						<h1>Code</h1>
-						<p>
-							<b>MERN Stack</b> - MongoDb, Express, React, Node.
-						</p>
-						<p>
-							<b>NPM packages</b> - JWT, bcrypt, cors, sendgrid/mail, mongoose.
-						</p>
-					</section>
-					<img src={code} alt='code screenshot' />
-					<section ref={this.conclusionRef}>
-						<h1>Project Conclusion</h1>
-						<p>
-							In conclusion, creating Farmr was very fun and rewarding. I will be continuously updating
-							this project as there are a lot of features that still need to be implemented - as well as
-							some bug fixes. I plan on slowly integrating Redux as well as Styled-components for easier
-							state management, predictability, and consistency. The live version is still to be
-							determined.
-						</p>
-					</section>
-					<button onClick={this.scrollToTop}>
-						<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
-							<path fill='none' d='M0 0h24v24H0V0z' />
-							<path d='M11.29 8.71L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71c-.38-.39-1.02-.39-1.41 0z' />
-						</svg>
-					</button>
-				</div>
-				<div ref={this.contactRef}>
-					<Footer />
+					</form>
 				</div>
 			</div>
 		);
 	}
 }
+
+Farmr.propTypes = {
+	handleClose: PropTypes.func.isRequired,
+	Open: PropTypes.bool.isRequired
+};
+
+const flex = {
+	position: 'fixed',
+	top: 0,
+	left: 0,
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+	width: '100vw',
+	height: '100vh',
+	zIndex: 20,
+	overflow: 'hidden',
+	backgroundColor: 'rgba(57,57,57,0.6)'
+};
+
+const modalLayer = {
+	position: 'fixed',
+	width: '100vw',
+	height: '100vh',
+	zIndex: 20,
+	backgroundColor: 'transparent'
+};
+
+const formModal = {
+	position: 'absolute',
+	color: 'rgb(57,57,57)',
+	backgroundColor: '#FFFFFF',
+	width: '550px',
+	maxWidth: '100%',
+	maxHeight: '100%',
+	zIndex: 20,
+	borderRadius: '8px',
+	overflow: 'auto',
+	display: 'flex',
+	flexDirection: 'column'
+};

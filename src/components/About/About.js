@@ -16,7 +16,7 @@ import heroku from '../../assets/heroku.svg';
 import git from '../../assets/git.svg';
 import postman from '../../assets/postman.svg';
 import TopNav from '../Nav/Top/TopNav.js';
-import Footer from '../Footer/Footer.js';
+// import Footer from '../Footer/Footer.js';
 import './about.scss';
 
 export default class About extends Component {
@@ -54,7 +54,7 @@ export default class About extends Component {
 							<div className='about-cta'>
 								<span> Women in Development Scholarship Recipient (2018)</span>
 								<a href='/assets/Taryn Li Resume.pdf' download>
-									<button id='resume'>Download my resume</button>
+									<button id='resume'>Download Resume</button>
 								</a>
 							</div>
 							<div className='text__header'>
@@ -156,24 +156,21 @@ export default class About extends Component {
 								<a
 									href='https://redux.js.org/basics/usage-with-react'
 									target='_blank'
-									rel='noopener noreferrer'
-								>
+									rel='noopener noreferrer'>
 									<h4>Redux</h4>
 								</a>
 								<span>//</span>
 								<a
 									href='https://reactjs.org/docs/hooks-intro.html'
 									target='_blank'
-									rel='noopener noreferrer'
-								>
+									rel='noopener noreferrer'>
 									<h4>Hooks</h4>
 								</a>
 								<span>//</span>
 								<a
 									href='https://github.com/styled-components/styled-components'
 									target='_blank'
-									rel='noopener noreferrer'
-								>
+									rel='noopener noreferrer'>
 									<h4>
 										Styled-components
 										<span role='img' aria-label='nail polish'>
@@ -185,8 +182,7 @@ export default class About extends Component {
 								<a
 									href='https://www.w3.org/WAI/fundamentals/accessibility-intro/'
 									target='_blank'
-									rel='noopener noreferrer'
-								>
+									rel='noopener noreferrer'>
 									<h4>Accessibility</h4>
 								</a>
 							</div>
@@ -194,7 +190,7 @@ export default class About extends Component {
 					</div>
 				</div>
 				<TopNav />
-				<Footer />
+				{/* <Footer /> */}
 			</section>
 		);
 	}

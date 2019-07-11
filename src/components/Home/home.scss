@@ -30,6 +30,10 @@
 
 .home {
 	animation: fadein 1.5s;
+	background-image: url('../../assets/Background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	.hero {
 		display: flex;
 		flex-direction: column;
@@ -40,8 +44,9 @@
 			display: flex;
 			flex-direction: column;
 			position: relative;
-			width: 51%;
+			width: 45%;
 			top: 35%;
+			background-color: $rare;
 			margin-left: 5rem;
 			z-index: 0;
 			&__transition-one {
@@ -98,12 +103,11 @@
 			.social-media {
 				display: flex;
 				justify-content: space-between;
-				width: 14%;
+				width: 25%;
 				margin-top: 1rem;
 
 				a svg:hover {
-					fill: $secondAccent;
-					transform: scale(1.1);
+					fill: $accent;
 					transition: transform 0.5s ease-in-out, fill 0.5s;
 				}
 			}
@@ -125,7 +129,7 @@
 				top: 20%;
 				margin-left: 2rem;
 				.social-media {
-					width: 40%;
+					width: 60%;
 				}
 			}
 			.girl {
@@ -142,7 +146,7 @@
 				top: 20%;
 				margin-left: 3rem;
 				.social-media {
-					width: 50%;
+					width: 75%;
 				}
 			}
 			.girl {
@@ -158,13 +162,13 @@
 			.blurb {
 				margin-left: 3rem;
 				.social-media {
-					width: 30%;
+					width: 40%;
 				}
 			}
 			.girl {
 				position: relative;
 				top: 0;
-				left: 40%;
+				left: 45%;
 			}
 		}
 	}

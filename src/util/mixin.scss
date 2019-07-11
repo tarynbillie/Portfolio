@@ -4,3 +4,60 @@
 	outline: none;
 	cursor: pointer;
 }
+
+@mixin inputs {
+	width: 91%;
+	fill: $accent;
+	border-radius: 3px;
+	border: 1px solid $mediumRare;
+	outline: none;
+	font-size: 16px;
+	margin-top: 0.3rem;
+	padding-left: 0.8rem;
+}
+
+@mixin ctaBtn {
+	margin-top: 1.5rem;
+	background-color: $primary;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: normal;
+	outline: none;
+	cursor: pointer;
+}
+
+@mixin header {
+	margin-bottom: 1rem;
+	font-family: Georgia;
+	font-size: 2rem;
+	line-height: 68px;
+	text-align: center;
+	font-weight: normal;
+}
+
+@mixin text {
+	font-family: 'Open Sans';
+	font-size: 1rem;
+	line-height: 32px;
+	color: $burnt;
+	text-align: justify;
+}
+
+@mixin btn {
+	background-color: $secondAccent;
+	opacity: 0.3;
+	border-radius: 50px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .4);
+	height: 3rem;
+	width: 3rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+@mixin image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}

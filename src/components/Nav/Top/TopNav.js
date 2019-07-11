@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import ContactModal from '../../Modal/ContactModal.js';
+import logo from '../../../assets/T-L.svg';
 import '../Hamburger/hamburger.scss';
 import './topNav.scss';
 
@@ -25,29 +25,14 @@ export default class TopNav extends Component {
 		}
 	}
 
-	showModal = () => {
-		this.setState({
-			isOpen: true
-		});
-	};
-
-	closeModal = () => {
-		this.setState({
-			isOpen: false
-		});
-	};
-
 	render () {
 		return (
 			<div className='header'>
 				{!this.state.isAbout && (
 					<div>
 						<NavLink to={'/home'} className='link'>
-							<div className='logo'>
-								<h1>Taryn Li</h1>
-							</div>
+							<img src={logo} className='logo' alt='Taryn Li Logo' />
 						</NavLink>
-						<div className='rectangle' />
 					</div>
 				)}
 				<div className={`nav ${this.state.isAbout && 'isAbout'}`}>
@@ -60,11 +45,11 @@ export default class TopNav extends Component {
 					<NavLink to={'/projects'} className='link' activeClassName='selected'>
 						<h3>Projects</h3>
 					</NavLink>
-					<button className='contact' onClick={this.showModal}>
-						Get in touch
-					</button>
-					<ContactModal handleClose={this.closeModal} Open={this.state.isOpen} />
+					<NavLink to={'contact'} className='link' activeClassName='selected'>
+						<button className='contact'>Get in touch</button>
+					</NavLink>
 				</div>
+				{/* Mobile menu STARTS */}
 				<nav role='navigation'>
 					<div id='menuToggle'>
 						<input type='checkbox' />
@@ -81,6 +66,9 @@ export default class TopNav extends Component {
 							</NavLink>
 							<NavLink to={'/projects'} className='link' activeClassName='selected'>
 								<li>Projects</li>
+							</NavLink>
+							<NavLink to={'/contact'} className='link' activeClassName='selected'>
+								<li>Contact</li>
 							</NavLink>
 						</ul>
 					</div>

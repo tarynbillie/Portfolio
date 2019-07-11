@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="2015px" viewBox="0 0 1440 2015" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Buttons</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="102" y="508" width="459" height="268" rx="10"></rect>
+        <filter x="-13.1%" y="-22.4%" width="126.1%" height="144.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.411764706   0 0 0 0 0.411764706   0 0 0 0 0.411764706  0 0 0 0.197443182 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="102" y="975" width="459" height="268" rx="10"></rect>
+        <filter x="-13.1%" y="-22.4%" width="126.1%" height="144.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.411764706   0 0 0 0 0.411764706   0 0 0 0 0.411764706  0 0 0 0.197443182 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="621" y="975" width="459" height="268" rx="10"></rect>
+        <filter x="-13.1%" y="-22.4%" width="126.1%" height="144.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.411764706   0 0 0 0 0.411764706   0 0 0 0 0.411764706  0 0 0 0.197443182 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="9 16.17 4.83 12 3.41 13.41 9 19 21 7 19.59 5.59"></polygon>
+        <rect id="path-9" x="0" y="0" width="50" height="50"></rect>
+    </defs>
+    <g id="Buttons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1440" height="2015"></rect>
+        <g id="Group-6" transform="translate(102.000000, 195.000000)">
+            <text id="Buttons" font-family="Helvetica" font-size="30" font-weight="normal" fill="#696969">
+                <tspan x="0" y="29">Buttons</tspan>
+            </text>
+            <path d="M0,82.5 L1231.5,82.5" id="Line" stroke="#CCCCCC" stroke-linecap="square"></path>
+        </g>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <g id="Group-5" transform="translate(242.000000, 530.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text id="*Disabled" font-size="13">
+                <tspan x="0" y="194">*Disabled</tspan>
+            </text>
+            <text id="Active" font-size="13">
+                <tspan x="0" y="134">Active</tspan>
+            </text>
+            <text id="Hover" font-size="13">
+                <tspan x="0" y="74">Hover</tspan>
+            </text>
+            <text id="Inactive" font-size="14">
+                <tspan x="0" y="14">Inactive</tspan>
+            </text>
+        </g>
+        <g id="Button-/-Primary-/-Small-/-01-Default" transform="translate(368.000000, 587.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D98824" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Primary-/-Small-/-01-Default" transform="translate(368.000000, 528.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#F29829" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Primary-/-Small-/-01-Default" transform="translate(368.000000, 647.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#C17920" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Primary-/-Small-/-01-Default" transform="translate(368.000000, 707.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#F29829" opacity="0.65" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group-4" transform="translate(475.000000, 532.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text id="Active" font-size="13">
+                <tspan x="0" y="132">Active</tspan>
+            </text>
+            <text id="*Disabled" font-size="13">
+                <tspan x="0" y="192">*Disabled</tspan>
+            </text>
+            <text id="Hover" font-size="13">
+                <tspan x="0" y="72">Hover</tspan>
+            </text>
+            <text id="Inactive" font-size="14">
+                <tspan x="0" y="14">Inactive</tspan>
+            </text>
+        </g>
+        <g id="Button-/-Primary-/-Large-/-01-Default" transform="translate(132.000000, 643.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#C17920" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="LARGE" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Primary-/-Large-/-01-Default" transform="translate(133.000000, 523.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#F29829" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="LARGE" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Primary-/-Large-/-01-Default" transform="translate(132.000000, 703.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#F29829" opacity="0.65" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="LARGE" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Primary-/-Large-/-01-Default" transform="translate(132.000000, 583.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D98824" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="LARGE" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Primary" transform="translate(102.000000, 405.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text font-size="18">
+                <tspan x="0" y="18">Primary</tspan>
+            </text>
+            <text id="Main-call-to-action." font-size="14">
+                <tspan x="0" y="48">Main call to action. There should be only one primary action on a page at a time. Light and dark </tspan>
+                <tspan x="0" y="65">backgrounds are permitted to use this button.</tspan>
+            </text>
+        </g>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+        </g>
+        <g id="Group-3" transform="translate(242.000000, 998.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text id="Inactive" font-size="14">
+                <tspan x="0" y="14">Inactive</tspan>
+            </text>
+            <text id="*Disabled" font-size="13">
+                <tspan x="0" y="193">*Disabled</tspan>
+            </text>
+            <text id="Hover" font-size="13">
+                <tspan x="0" y="73">Hover</tspan>
+            </text>
+            <text id="Active" font-size="13">
+                <tspan x="0" y="133">Active</tspan>
+            </text>
+        </g>
+        <g id="Button-/-01-Standard-/-Small-/-01-Default" transform="translate(368.000000, 995.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D9593D" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-01-Standard-/-Small-/-01-Default" transform="translate(368.000000, 1175.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D9593D" opacity="0.65" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-01-Standard-/-Small-/-01-Default" transform="translate(368.000000, 1115.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#AD4730" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-01-Standard-/-Small-/-01-Default" transform="translate(368.000000, 1055.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#C35036" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20.7995605" y="17">SMAL</tspan>
+                    <tspan x="34.8850098" y="33">L</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group-2" transform="translate(475.000000, 998.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text id="*Disabled" font-size="13">
+                <tspan x="0" y="193">*Disabled</tspan>
+            </text>
+            <text id="Inactive" font-size="14">
+                <tspan x="0" y="14">Inactive</tspan>
+            </text>
+            <text id="Hover" font-size="13">
+                <tspan x="0" y="73">Hover</tspan>
+            </text>
+            <text id="Active" font-size="13">
+                <tspan x="0" y="133">Active</tspan>
+            </text>
+        </g>
+        <g id="Button-/-01-Standard-/-Large-/-01-Default" transform="translate(132.000000, 990.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D9593D" x="0" y="0" width="80" height="38" rx="18"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="*65%-opacity" font-family="Helvetica" font-size="14" font-weight="normal" fill="#696969">
+            <tspan x="102" y="799">*65% opacity</tspan>
+        </text>
+        <text id="*65%-opacity" font-family="Helvetica" font-size="14" font-weight="normal" fill="#696969">
+            <tspan x="621" y="1266">*65% opacity</tspan>
+        </text>
+        <text id="*65%-opacity" font-family="Helvetica" font-size="14" font-weight="normal" fill="#696969">
+            <tspan x="102" y="1266">*65% opacity</tspan>
+        </text>
+        <g id="Button-/-01-Standard-/-Large-/-01-Default" transform="translate(132.000000, 1050.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#C35036" x="0" y="0" width="80" height="38" rx="18"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-01-Standard-/-Large-/-01-Default" transform="translate(132.000000, 1170.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D9593D" opacity="0.65" x="0" y="0" width="80" height="38" rx="18"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-01-Standard-/-Large-/-01-Default" transform="translate(132.000000, 1110.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#AD4730" x="0" y="0" width="80" height="38" rx="18"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+        </g>
+        <g id="Group" transform="translate(761.000000, 999.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text id="*Disabled" font-size="13">
+                <tspan x="0" y="192">*Disabled</tspan>
+            </text>
+            <text id="Inactive" font-size="14">
+                <tspan x="0" y="14">Inactive</tspan>
+            </text>
+            <text id="Hover" font-size="13">
+                <tspan x="0" y="72">Hover</tspan>
+            </text>
+            <text id="Active" font-size="13">
+                <tspan x="0" y="132">Active</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(994.000000, 999.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text id="*Disabled" font-size="13">
+                <tspan x="0" y="192">*Disabled</tspan>
+            </text>
+            <text id="Inactive" font-size="14">
+                <tspan x="0" y="14">Inactive</tspan>
+            </text>
+            <text id="Hover" font-size="13">
+                <tspan x="0" y="72">Hover</tspan>
+            </text>
+            <text id="Active" font-size="13">
+                <tspan x="0" y="132">Active</tspan>
+            </text>
+        </g>
+        <g id="Button-/-02-Standard-/-Large-/-01-Default" transform="translate(651.000000, 990.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#6AA68A" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-02-Standard-/-Large-/-01-Default" transform="translate(651.000000, 1170.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#6AA68A" opacity="0.65" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-02-Standard-/-Large-/-01-Default" transform="translate(651.000000, 1110.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#54846E" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-02-Standard-/-Large-/-01-Default" transform="translate(651.000000, 1050.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#5F957C" x="0" y="0" width="80" height="38" rx="19"></rect>
+                <text id="large" font-family="Helvetica" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="22.2995605" y="22">LARG</tspan>
+                    <tspan x="35.6645508" y="38">E</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Standard" transform="translate(102.000000, 871.000000)" fill="#696969" font-family="Helvetica" font-weight="normal">
+            <text font-size="18">
+                <tspan x="0" y="18">Standard</tspan>
+            </text>
+            <text id="Standard-buttons-are" font-size="14">
+                <tspan x="0" y="49">Standard buttons are utility actions, when you see multiple actions together, in forms and the </tspan>
+                <tspan x="0" y="66">primary action is displayed. You can have more than one on a page at a time.</tspan>
+            </text>
+        </g>
+        <g id="Button-/-02-Standard-/-Small-/-01-Default" transform="translate(887.000000, 995.000000)">
+            <g id="Group-7">
+                <rect id="Rectangle" fill="#6AA68A" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="OpenSans, Open Sans" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="18.2033691" y="18">SMALL</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-02-Standard-/-Small-/-01-Default" transform="translate(887.000000, 1175.000000)">
+            <g id="Group-7">
+                <rect id="Rectangle" fill="#6AA68A" opacity="0.65" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="OpenSans, Open Sans" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="18.2033691" y="18">SMALL</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-02-Standard-/-Small-/-01-Default" transform="translate(887.000000, 1115.000000)">
+            <g id="Group-7">
+                <rect id="Rectangle" fill="#54846E" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="OpenSans, Open Sans" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="18.2033691" y="18">SMALL</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-02-Standard-/-Small-/-01-Default" transform="translate(887.000000, 1055.000000)">
+            <g id="Group-7">
+                <rect id="Rectangle" fill="#5F957C" x="0" y="0" width="77" height="28" rx="14"></rect>
+                <text id="small" font-family="OpenSans, Open Sans" font-size="13" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="18.2033691" y="18">SMALL</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Title">
+            <rect id="Rectangle" fill="#6AA68A" x="0" y="0" width="720" height="159" rx="2"></rect>
+            <text id="Styleguide" font-family="OpenSans-Semibold, Open Sans" font-size="24" font-weight="500" fill="#F2E6D8">
+                <tspan x="50" y="125">Styleguide</tspan>
+            </text>
+            <text id="ROVER" font-family="MarketDeco, Market Deco" font-size="75" font-weight="normal" fill="#F2E6D8">
+                <tspan x="50" y="96">ROVER</tspan>
+            </text>
+            <rect id="Rectangle" fill="#F29829" x="720" y="0" width="720" height="159" rx="2"></rect>
+            <text id="Styleguide" transform="translate(1317.000000, 115.500000) scale(-1, 1) translate(-1317.000000, -115.500000) " font-family="OpenSans-Semibold, Open Sans" font-size="24" font-weight="500" fill="#8C322A">
+                <tspan x="1246" y="125">Styleguide</tspan>
+            </text>
+            <text id="ROVER" transform="translate(1272.500000, 71.500000) scale(-1, 1) translate(-1272.500000, -71.500000) " font-family="MarketDeco, Market Deco" font-size="75" font-weight="normal" fill="#8C322A">
+                <tspan x="1157" y="99">ROVER</tspan>
+            </text>
+        </g>
+        <text id="Radio" font-family="Helvetica" font-size="24" font-weight="normal" fill="#696969">
+            <tspan x="102" y="1454">Radio</tspan>
+        </text>
+        <text id="Inactive" font-family="Helvetica" font-size="18" font-weight="normal" fill="#A3A3A3">
+            <tspan x="102" y="1532">INACTIV</tspan>
+            <tspan x="102" y="1554">E</tspan>
+        </text>
+        <g id="Button-/-Radio-/-01-Inactive" transform="translate(102.000000, 1569.000000)">
+            <g id="Group">
+                <ellipse id="Oval" stroke="#6AA68A" stroke-width="2" fill="#FFFFFF" cx="10.15625" cy="10" rx="10.15625" ry="10"></ellipse>
+                <text id="Label" font-family="Helvetica" font-size="13" font-weight="normal" fill="#696969">
+                    <tspan x="31.484375" y="14">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Radio-/-02-Active" transform="translate(296.000000, 1569.000000)">
+            <g id="Group-2">
+                <ellipse id="Oval" stroke="#6AA68A" stroke-width="2" fill="#FFFFFF" cx="10.15625" cy="10" rx="10.15625" ry="10"></ellipse>
+                <ellipse id="Oval" fill="#6AA68A" cx="10.15625" cy="10" rx="6.09375" ry="6"></ellipse>
+                <text id="Label" font-family="Helvetica" font-size="13" font-weight="normal" fill="#696969">
+                    <tspan x="31.484375" y="14">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Active" font-family="Helvetica" font-size="18" font-weight="normal" fill="#A3A3A3">
+            <tspan x="296" y="1532">ACTIV</tspan>
+            <tspan x="296" y="1554">E</tspan>
+        </text>
+        <text id="Disabled" font-family="Helvetica" font-size="18" font-weight="normal" fill="#A3A3A3">
+            <tspan x="472" y="1532">DISABLE</tspan>
+            <tspan x="472" y="1554">D</tspan>
+        </text>
+        <g id="Button-/-Radio-/-03-Disabled" transform="translate(472.000000, 1569.000000)">
+            <g id="Group-3">
+                <ellipse id="Oval" stroke="#6AA68A" stroke-width="2" fill="#FFFFFF" opacity="0.65" cx="10.15625" cy="10" rx="10.15625" ry="10"></ellipse>
+                <text id="Label" fill-opacity="0.65" fill="#696969" font-family="Helvetica" font-size="13" font-weight="normal">
+                    <tspan x="31.484375" y="14">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Checkbox" font-family="Helvetica" font-size="24" font-weight="normal" fill="#696969">
+            <tspan x="732" y="1447">Checkbox</tspan>
+        </text>
+        <text id="Inactive" font-family="Helvetica" font-size="18" font-weight="normal" fill="#A3A3A3">
+            <tspan x="732" y="1532">INACTIV</tspan>
+            <tspan x="732" y="1554">E</tspan>
+        </text>
+        <text id="Active" font-family="Helvetica" font-size="18" font-weight="normal" fill="#A3A3A3">
+            <tspan x="926" y="1532">ACTIV</tspan>
+            <tspan x="926" y="1554">E</tspan>
+        </text>
+        <g id="Button-/-Checkbox-/-01-Inactive" transform="translate(732.000000, 1567.000000)">
+            <g id="Group">
+                <rect id="Rectangle" stroke="#A3A3A3" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="22" height="22" rx="2"></rect>
+                <text id="Label" font-family="Helvetica" font-size="12" font-weight="normal" fill="#696969">
+                    <tspan x="36" y="13">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Checkbox-/-02-Active" transform="translate(926.000000, 1567.000000)">
+            <g id="Group">
+                <g id="Group-3">
+                    <rect id="Rectangle" fill="#6AA68A" x="0" y="0" width="24" height="24" rx="2"></rect>
+                    <g id="ic_check">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Colors/Black" mask="url(#mask-8)">
+                            <g transform="translate(-13.000000, -13.000000)">
+                                <mask id="mask-10" fill="white">
+                                    <use xlink:href="#path-9"></use>
+                                </mask>
+                                <use id="Black" stroke="none" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <text id="Label" font-family="Helvetica" font-size="12" font-weight="normal" fill="#696969">
+                    <tspan x="36" y="13">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Toggle" font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#696969">
+            <tspan x="102" y="1759">Toggle</tspan>
+        </text>
+        <g id="Button-/-Toggle-/-01-Off" transform="translate(102.000000, 1809.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D8D8D8" x="42" y="3" width="36.28125" height="14" rx="7"></rect>
+                <ellipse id="Oval" fill="#6AA68A" cx="74.078125" cy="10" rx="10.078125" ry="10"></ellipse>
+                <text id="Label" font-family="Helvetica" font-size="13" font-weight="normal" fill="#696969">
+                    <tspan x="0" y="13">Label</tspan>
+                </text>
+                <text id="Label" font-family="Helvetica" font-size="13" font-weight="normal" fill="#6AA68A">
+                    <tspan x="94" y="13">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Button-/-Toggle-/-02-On" transform="translate(286.000000, 1809.000000)">
+            <g id="Group">
+                <rect id="Rectangle" fill="#D8D8D8" x="52" y="3" width="36.2727273" height="14" rx="7"></rect>
+                <ellipse id="Oval" fill="#6AA68A" cx="55.0757576" cy="10" rx="10.0757576" ry="10"></ellipse>
+                <text id="Label" font-family="Helvetica" font-size="13" font-weight="normal" fill="#696969">
+                    <tspan x="98" y="13">Label</tspan>
+                </text>
+                <text id="Label" font-family="Helvetica" font-size="13" font-weight="normal" fill="#6AA68A">
+                    <tspan x="0" y="13">Label</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Disabled" font-family="Helvetica" font-size="18" font-weight="normal" fill="#A3A3A3">
+            <tspan x="1102" y="1532">DISABLE</tspan>
+            <tspan x="1102" y="1554">D</tspan>
+        </text>
+        <g id="Button-/-Checkbox-/-03-Disabled" transform="translate(1102.000000, 1567.000000)" opacity="0.65">
+            <g id="Group">
+                <rect id="Rectangle" stroke="#A3A3A3" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="22" height="22" rx="2"></rect>
+                <text id="Label" font-family="Helvetica" font-size="12" font-weight="normal" fill="#696969">
+                    <tspan x="36" y="13">Label</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

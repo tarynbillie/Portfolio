@@ -1,4 +1,5 @@
 @import '../../util/variables.scss';
+@import '../../util//mixin.scss';
 
 @keyframes fadein {
 	from {
@@ -13,113 +14,59 @@
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
+	border-radius: 8px;
 }
 
 .projects {
-	margin: 10rem 0 9.5rem 5rem;
-	animation: fadein 3s;
+	font-family: 'Roboto';
+	z-index: 0;
 	h1 {
-		padding-bottom: 0.5rem;
-		width: 5%;
-		color: $burnt;
-		font-family: 'Open Sans';
-		font-size: 2rem;
+		margin: 8rem 0 0 10rem;
+		font-family: 'Georgia';
+		font-size: 40px;
 		font-weight: normal;
-		border-bottom: 3px solid $secondAccent;
+		&:after {
+			content: '';
+			display: block;
+			width: 7%;
+			padding-top: 0.5rem;
+			border-bottom: 3px solid $accent;
+		}
 	}
-	ul {
-		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
+	.table {
+		margin-top: 3rem;
 		width: 100%;
-		margin-top: 6rem;
-		padding-left: 0;
-		li {
-			transition: opacity 0.5s ease-in-out;
-			list-style-type: none;
-			text-decoration: none;
-			text-align: center;
-			width: 35%;
-			.link {
-				text-decoration: none;
-				color: $well;
-				img {
-					@include image();
-					margin-top: 1rem;
-					width: 100%;
-					&:hover {
-						cursor: pointer;
-					}
-				}
-				.macbook {
-					width: 65%;
-				}
-				.imac {
-					width: 55%;
-				}
-				h2 {
-					font-weight: normal;
-					font-size: 1rem;
-				}
-			}
-			p {
-				color: $well;
-				text-decoration: none;
-				text-align: center;
+		.row {
+			padding-top: 15px;
+		}
+		.view {
+			box-shadow: 0px 0px 30px #696969;
+			border-radius: 4px;
+		}
+		.flex-center {
+			border-radius: 4px;
+		}
+		.rgba-black {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+		.btn-primary {
+			background-color: $primary !important;
+			color: $rare;
+		}
+		.btn-default {
+			background-color: $accent !important;
+			color: $rare;
+		}
+		.btn-secondary {
+			background-color: $mediumRare !important;
+			color: $rare;
+			&:hover {
+				background-color: $mediumWell !important;
 			}
 		}
-	}
-	ul:hover li {
-		opacity: 0.5;
-	}
-	ul li:hover {
-		opacity: 1;
-	}
-}
-
-@media only screen and (min-width: $breakpoint-mobileSM) and (max-width: $breakpoint-phablet) {
-	.projects {
-		margin: 8rem 0 0 1.5rem;
-		ul {
-			display: flex;
-			flex-direction: column;
-			li {
-				width: 95%;
-				.link {
-					.macbook {
-						width: 80%;
-					}
-					.imac {
-						width: 75%;
-					}
-					h2 {
-						font-weight: normal;
-						font-size: 1rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media only screen and (min-width: $breakpoint-phablet) and (max-width: $breakpoint-desktop) {
-	.projects {
-		margin-left: 1.5rem;
-		ul {
-			li {
-				width: 55%;
-				.link {
-					.macbook {
-						width: 80%;
-					}
-					.imac {
-						width: 75%;
-					}
-					h2 {
-						font-weight: normal;
-						font-size: 1rem;
-					}
-				}
+		.modal-content {
+			.close {
+				outline: none;
 			}
 		}
 	}

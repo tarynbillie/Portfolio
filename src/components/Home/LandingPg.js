@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import illustration from '../../assets/girl.svg';
 import TopNav from '../Nav/Top/TopNav';
-import Footer from '../Footer/Footer.js';
+// import Footer from '../Footer/Footer.js';
 import '../Home/home.scss';
 import '../Nav/Top/topNav.scss';
 
@@ -31,8 +31,7 @@ export default class LandingPage extends Component {
 									viewBox='0 0 28 28'
 									version='1.1'
 									xmlns='http://www.w3.org/2000/svg'
-									xlink='http://www.w3.org/1999/xlink'
-								>
+									xlink='http://www.w3.org/1999/xlink'>
 									<title>GitHub</title>
 									<desc>Please visit my GitHub</desc>
 									<path
@@ -48,8 +47,7 @@ export default class LandingPage extends Component {
 									viewBox='0 0 28 28'
 									version='1.1'
 									xmlns='http://www.w3.org/2000/svg'
-									xlink='http://www.w3.org/1999/xlink'
-								>
+									xlink='http://www.w3.org/1999/xlink'>
 									<title>LinkedIn</title>
 									<desc>Please visit my LinkedIn</desc>
 									<path
@@ -58,14 +56,20 @@ export default class LandingPage extends Component {
 									/>
 								</svg>
 							</a>
+							<a href='/assets/Taryn Li Resume.pdf' download>
+								<svg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 28 28'>
+									<path d='M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z' />
+									<path fill='none' d='M0 0h24v24H0z' />
+								</svg>
+							</a>
 						</div>
 					</div>
 					<div>
-						<img className='girl' src={illustration} alt='girl on laptop by bashar bhuiyan' />
+						{/* <img className='girl' src={illustration} alt='girl on laptop by bashar bhuiyan' /> */}
 					</div>
 				</section>
 				<TopNav />
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		);
 	}
