@@ -28,13 +28,13 @@ export default class TopNav extends Component {
 	render () {
 		return (
 			<div className='header'>
-				{!this.state.isAbout && (
-					<div>
-						<NavLink to={'/home'} className='link'>
-							<img src={logo} className='logo' alt='Taryn Li Logo' />
-						</NavLink>
-					</div>
-				)}
+				{/* {!this.state.isAbout && ( */}
+				<div>
+					<NavLink to={'/home'} className='link'>
+						<img src={logo} className='logo' alt='Taryn Li Logo' />
+					</NavLink>
+				</div>
+				{/* )} */}
 				<div className={`nav ${this.state.isAbout && 'isAbout'}`}>
 					<NavLink to={'/home'} className='link' activeClassName='selected'>
 						<h3>Home</h3>

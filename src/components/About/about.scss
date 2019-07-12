@@ -41,14 +41,21 @@
 		display: flex;
 		.portrait {
 			position: fixed;
-			top: 0;
-			left: 5rem;
+			top: 16%;
+			left: 5%;
 			object-fit: cover;
-			height: 100vh;
-			width: 40%;
+			height: 60vh;
+			width: 35%;
 			z-index: 0;
 			-webkit-clip-path: polygon(0 0, 0 180%, 140% 0);
 			clip-path: polygon(0 0, 0 180%, 140% 0);
+		}
+		#shapes {
+			position: fixed;
+			width: 30%;
+			top: 65%;
+			left: 15%;
+			z-index: 10;
 		}
 		.text {
 			display: flex;

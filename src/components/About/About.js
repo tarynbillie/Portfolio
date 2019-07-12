@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import portrait from '../../assets/Taryn-Li-Web-Developer-Toronto.png';
+import shapes from '../../assets/1980-shapes.svg';
 import react from '../../assets/react.svg';
 import html5 from '../../assets/html5-badge.svg';
 import css3 from '../../assets/css3.svg';
@@ -16,7 +17,6 @@ import heroku from '../../assets/heroku.svg';
 import git from '../../assets/git.svg';
 import postman from '../../assets/postman.svg';
 import TopNav from '../Nav/Top/TopNav.js';
-// import Footer from '../Footer/Footer.js';
 import './about.scss';
 
 export default class About extends Component {
@@ -35,6 +35,7 @@ export default class About extends Component {
 							<p className='vh js-loading-spinner-copy'>Content is loading...</p>
 						</div>
 						<img className='portrait' src={portrait} alt='Taryn Li' />
+						<img id='shapes' src={shapes} alt='shapes' />
 						<div className='text'>
 							<h1>About me</h1>
 							<p>
@@ -42,10 +43,10 @@ export default class About extends Component {
 								Design programs. Located in the heart of downtown Toronto. My experience at BrainStation
 								allowed me to grasp new concepts quickly, and effectively adapt to full stack
 								development and design. Graduating with a 90% average I’m well positioned to contribute
-								robust, clean, maintainable code and become an asset to any team. Known as a
-								self-starter with a take-charge attitude; highly motivated to work in a fast-paced,
-								innovative environment. A creative, resourceful developer with good interpersonal and
-								organizational skills.
+								robust, clean, maintainable code, pixel perfect design and become an asset to any team.
+								Known as a self-starter with a take-charge attitude; highly motivated to work in a
+								fast-paced, innovative environment. A creative, resourceful developer with good
+								interpersonal and organizational skills.
 							</p>
 							<p>
 								When I'm not coding or designing, you can find me hiking the Bruce Trail, sailing on

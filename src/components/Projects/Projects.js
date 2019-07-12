@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import farmr from '../../assets/farmr.png';
-import rover from '../../assets/style-guide-buttons.png';
+import rover from '../../assets/Dribbble.png';
 import linqu from '../../assets/linq-u.png';
+import activityfindr from '../../assets/activity-findr.png';
 import {
 	MDBBtn,
 	MDBModal,
@@ -14,7 +15,6 @@ import {
 	MDBRow,
 	MDBCol
 } from 'mdbreact';
-import activityfindr from '../../assets/activity-findr.png';
 import TopNav from '../Nav/Top/TopNav';
 import './projectsLanding.scss';
 
@@ -168,8 +168,6 @@ export default class Projects extends Component {
 										</MDBBtn>
 									</MDBModalFooter>
 								</MDBModal>
-							</MDBRow>
-							<MDBRow>
 								<MDBCol md='4'>
 									<MDBView hover>
 										<img src={rover} className='img-fluid' alt='Rover - UI project' />
@@ -183,18 +181,29 @@ export default class Projects extends Component {
 									</MDBView>
 								</MDBCol>
 								<MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-									<MDBModalHeader toggle={this.toggle(14)}>Rover - Style guide</MDBModalHeader>
+									<MDBModalHeader toggle={this.toggle(14)}>Rover - UI Design</MDBModalHeader>
 									<MDBModalBody>
 										<p>
-											Directly connect to your farm fresh supplier. Making “farm to table” more
-											achievable and less time-consuming!
+											Rover is a User Interface Design project. I created a style guide for this
+											project in order to make the designing seemless and cohesive. The problem
+											that Rover solves is that there is no online travel agency for luxury space
+											travel. Rover is perfect for those who would want to have a stress-free
+											experience planning their trip into the galaxy.
 										</p>
-										<p> Sketch App and Flinto.</p>
+										<p>
+											For the first time, humans will be able to browse and easily book a curated
+											luxury space travel experience online. We would be providing a user-friendly
+											interface to allow space exploration for the elite.
+										</p>
+										<p> Made in Sketch App!</p>
 										<p> Inspo — Carbon Design Systems, Material Design, 1920-1940s Art Deco.</p>
+										<p>
+											<b>Contact me if you'd like to see my style guide!</b>
+										</p>
 									</MDBModalBody>
 									<MDBModalFooter>
 										<MDBBtn
-											href='https://medium.com/@tarynli/farmr-case-study-c359e3fa1701'
+											href='https://dribbble.com/shots/6775335-Rover?utm_source=Clipboard_Shot&utm_campaign=tarynli&utm_content=Rover&utm_medium=Social_Share'
 											target='_blank'>
 											Dribbble
 										</MDBBtn>
