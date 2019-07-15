@@ -19,33 +19,19 @@ import TopNav from '../Nav/Top/TopNav';
 import './projectsLanding.scss';
 
 export default class Projects extends Component {
-	constructor (props) {
-		super(props);
-		this.contactRef = React.createRef();
-
-		this.state = {
-			isOpen: false,
-			modal14: false
-		};
-	}
+	state = {
+		isOpen: false,
+		modal1: false,
+		modal2: false,
+		modal3: false,
+		modal4: false
+	};
 
 	toggle = (nr) => () => {
 		let modalNumber = 'modal' + nr;
 		this.setState({
 			[modalNumber]: !this.state[modalNumber]
 		});
-	};
-
-	showFunction = () => {
-		alert('This event is fired just before the modal is open.');
-	};
-
-	hideFunction = () => {
-		alert('This event is fired just before the modal is hidden.');
-	};
-
-	hiddenFunction = () => {
-		alert('This event is fired after the modal is closed.');
 	};
 
 	showModal = () => {
@@ -74,21 +60,21 @@ export default class Projects extends Component {
 										<img src={farmr} className='img-fluid' alt='farmr project' />
 										<MDBMask className='flex-center' overlay='black'>
 											<p className='white-text'>
-												<MDBBtn color='primary' onClick={this.toggle(14)}>
+												<MDBBtn color='primary' onClick={this.toggle(1)}>
 													Learn more
 												</MDBBtn>
 											</p>
 										</MDBMask>
 									</MDBView>
 								</MDBCol>
-								<MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-									<MDBModalHeader toggle={this.toggle(14)}>Farmr</MDBModalHeader>
+								<MDBModal isOpen={this.state.modal1} toggle={this.toggle(1)} centered>
+									<MDBModalHeader toggle={this.toggle(1)}>Farmr</MDBModalHeader>
 									<MDBModalBody>
 										<p>
 											Directly connect to your farm fresh supplier. Making “farm to table” more
 											achievable and less time-consuming!
 										</p>
-										<p> MERN Stack — MongoDB, Express, React, Node.</p>
+										<p> MERN Stack — MongoDB, Express, React, Node, JavaScript, SASS.</p>
 										<p> NPM packages — JWT, bcrypt, cors, sendgrid/mail, mongoose.</p>
 									</MDBModalBody>
 									<MDBModalFooter>
@@ -97,7 +83,7 @@ export default class Projects extends Component {
 											target='_blank'>
 											Case study
 										</MDBBtn>
-										<MDBBtn color='secondary' onClick={this.toggle(14)}>
+										<MDBBtn color='secondary' onClick={this.toggle(1)}>
 											Close
 										</MDBBtn>
 									</MDBModalFooter>
@@ -107,22 +93,27 @@ export default class Projects extends Component {
 										<img src={activityfindr} className='img-fluid' alt='activity findr project' />
 										<MDBMask className='flex-center' overlay='black'>
 											<p className='white-text'>
-												<MDBBtn color='primary' onClick={this.toggle(14)}>
+												<MDBBtn color='primary' onClick={this.toggle(2)}>
 													Learn more
 												</MDBBtn>
 											</p>
 										</MDBMask>
 									</MDBView>
 								</MDBCol>
-								<MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-									<MDBModalHeader toggle={this.toggle(14)}>Activity Findr</MDBModalHeader>
+								<MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)} centered>
+									<MDBModalHeader toggle={this.toggle(2)}>Activity Findr</MDBModalHeader>
 									<MDBModalBody>
 										<p>
-											Directly connect to your farm fresh supplier. Making “farm to table” more
-											achievable and less time-consuming!
+											Go onto Activity Findr, fill in a general idea of what you would like to do,
+											your price range, location/ how far you’re willing to go, and Activity Findr
+											will do the rest for you. Giving you suggestions with ratings, and a
+											convenient map showing you where the establishment is located.
 										</p>
-										<p> MERN Stack — MongoDB, Express, React, Node.</p>
-										<p> NPM packages — JWT, bcrypt, cors, sendgrid/mail, mongoose.</p>
+										<p> Stack — React, JavaScript, HTML5, SASS, Express, Node.</p>
+										<p>
+											NPM packages — cors, rapidapi-connect, apollo-boost, graphql,
+											google-maps-react, react-star-rating-component, react-router-dom.
+										</p>
 									</MDBModalBody>
 									<MDBModalFooter>
 										<MDBBtn
@@ -130,40 +121,40 @@ export default class Projects extends Component {
 											target='_blank'>
 											Case study
 										</MDBBtn>
-										<MDBBtn color='secondary' onClick={this.toggle(14)}>
+										<MDBBtn color='secondary' onClick={this.toggle(2)}>
 											Close
 										</MDBBtn>
 									</MDBModalFooter>
 								</MDBModal>
 								<MDBCol md='4'>
 									<MDBView hover>
-										<img src={linqu} className='img-fluid' alt='farmr project' />
+										<img src={linqu} className='img-fluid' alt='linq-u' />
 										<MDBMask className='flex-center' overlay='black'>
 											<p className='white-text'>
-												<MDBBtn color='primary' onClick={this.toggle(14)}>
+												<MDBBtn color='primary' onClick={this.toggle(3)}>
 													Learn more
 												</MDBBtn>
 											</p>
 										</MDBMask>
 									</MDBView>
 								</MDBCol>
-								<MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-									<MDBModalHeader toggle={this.toggle(14)}>Farmr</MDBModalHeader>
+								<MDBModal isOpen={this.state.modal3} toggle={this.toggle(3)} centered>
+									<MDBModalHeader toggle={this.toggle(3)}>LINQ-U</MDBModalHeader>
 									<MDBModalBody>
 										<p>
-											Directly connect to your farm fresh supplier. Making “farm to table” more
-											achievable and less time-consuming!
+											LINQ-U is an early stage Saas start up. Letting clients schedule
+											appointments with a trusted partner in the health and beauty business, and
+											have their technicians come to YOU! This is LINQ-U's basic website that
+											isn't fully functioning yet.
 										</p>
-										<p> MERN Stack — MongoDB, Express, React, Node.</p>
-										<p> NPM packages — JWT, bcrypt, cors, sendgrid/mail, mongoose.</p>
+										<p> Stack - React, JavaScript, HTML5, SASS.</p>
+										<p> NPM packages — react-router-dom, node-sass, mdbreact.</p>
 									</MDBModalBody>
 									<MDBModalFooter>
-										<MDBBtn
-											href='https://medium.com/@tarynli/farmr-case-study-c359e3fa1701'
-											target='_blank'>
-											Case study
+										<MDBBtn href='http://www.nececities.com/#/home' target='_blank'>
+											Website
 										</MDBBtn>
-										<MDBBtn color='secondary' onClick={this.toggle(14)}>
+										<MDBBtn color='secondary' onClick={this.toggle(3)}>
 											Close
 										</MDBBtn>
 									</MDBModalFooter>
@@ -173,15 +164,15 @@ export default class Projects extends Component {
 										<img src={rover} className='img-fluid' alt='Rover - UI project' />
 										<MDBMask className='flex-center' overlay='black'>
 											<p className='white-text'>
-												<MDBBtn color='primary' onClick={this.toggle(14)}>
+												<MDBBtn color='primary' onClick={this.toggle(4)}>
 													Learn more
 												</MDBBtn>
 											</p>
 										</MDBMask>
 									</MDBView>
 								</MDBCol>
-								<MDBModal isOpen={this.state.modal14} toggle={this.toggle(14)} centered>
-									<MDBModalHeader toggle={this.toggle(14)}>Rover - UI Design</MDBModalHeader>
+								<MDBModal isOpen={this.state.modal4} toggle={this.toggle(4)} centered>
+									<MDBModalHeader toggle={this.toggle(4)}>Rover - UI Design</MDBModalHeader>
 									<MDBModalBody>
 										<p>
 											Rover is a User Interface Design project. I created a style guide for this
@@ -207,7 +198,7 @@ export default class Projects extends Component {
 											target='_blank'>
 											Dribbble
 										</MDBBtn>
-										<MDBBtn color='secondary' onClick={this.toggle(14)}>
+										<MDBBtn color='secondary' onClick={this.toggle(4)}>
 											Close
 										</MDBBtn>
 									</MDBModalFooter>
