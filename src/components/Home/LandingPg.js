@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import illustration from '../../assets/girl.svg';
 import TopNav from '../Nav/Top/TopNav';
 // import Footer from '../Footer/Footer.js';
 import '../Home/home.scss';
@@ -64,12 +63,9 @@ export default class LandingPage extends Component {
 							</a>
 						</div>
 					</div>
-					<div>
-						{/* <img className='girl' src={illustration} alt='girl on laptop by bashar bhuiyan' /> */}
-					</div>
+					<div />
 				</section>
 				<TopNav />
-				{/* <Footer /> */}
 			</div>
 		);
 	}

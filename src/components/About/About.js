@@ -54,7 +54,7 @@ export default class About extends Component {
 							</p>
 							<div className='about-cta'>
 								<span> Women in Development Scholarship Recipient (2018)</span>
-								<a href='/assets/Taryn Li Resume.pdf' download>
+								<a href='/assets/Taryn Li Resume.pdf' download='Taryn-Li-Resume.pdf'>
 									<button id='resume'>Download Resume</button>
 								</a>
 							</div>

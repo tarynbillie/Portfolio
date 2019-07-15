@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MDBInput } from 'mdbreact';
+import shapes from '../../assets/1980-shapes.svg';
 import './contact.scss';
 
 export default class Contact extends Component {
@@ -76,9 +77,9 @@ export default class Contact extends Component {
 			document.getElementById('contact-form').submit();
 		}
 		return (
-			<div>
-				<section id='contact'>
-					<h1>Get in touch</h1>
+			<section id='contact'>
+				<h1>Get in touch</h1>
+				<div className='container'>
 					<div className='row'>
 						<div className='col-md-9 mb-md-0 mb-5'>
 							<form
@@ -125,15 +126,42 @@ export default class Contact extends Component {
 							</form>
 
 							<div className='text-center text-md-left'>
-								<button className='btn btn-primary' onclick={validateForm}>
+								<button className='btn btn-primary' onClick={validateForm}>
 									Send
 								</button>
 							</div>
 							<div className='status' />
 						</div>
 					</div>
-				</section>
-			</div>
+					<div className='details'>
+						<h3>
+							If you want to collaborate or hire me, please get in touch! I'd love to hear from you.
+							<span role='img' aria-label='peace'>
+								✌️
+							</span>
+						</h3>
+						<h5>
+							<span role='img' aria-label='mail'>
+								✉️
+							</span>{' '}
+							tarynbillie@gmail.com
+						</h5>
+						<h5>
+							<span role='img' aria-label='phone'>
+								📞
+							</span>{' '}
+							519-212-2052
+						</h5>
+						<h5>
+							<span role='img' aria-label='location pin'>
+								📍
+							</span>{' '}
+							Toronto, ON.
+						</h5>
+					</div>
+					<img className='shapes' src={shapes} alt='shapes' />
+				</div>
+			</section>
 		);
 	}
 }
