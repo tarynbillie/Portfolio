@@ -103,20 +103,16 @@
 			.social-media {
 				display: flex;
 				justify-content: space-between;
-				width: 25%;
+				width: 30%;
 				margin-top: 1rem;
-
+				svg {
+					fill: #000;
+				}
 				a svg:hover {
 					fill: $accent;
 					transition: transform 0.5s ease-in-out, fill 0.5s;
 				}
 			}
-		}
-		.girl {
-			width: 53%;
-			position: absolute;
-			top: 20%;
-			left: 46%;
 		}
 	}
 }
