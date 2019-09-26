@@ -3,6 +3,7 @@ import farmr from '../../assets/farmr.png';
 import rover from '../../assets/Dribbble.png';
 import linqu from '../../assets/linq-u.png';
 import activityfindr from '../../assets/activity-findr.png';
+import thisDot from '../../assets/this-dot.svg';
 import {
 	MDBBtn,
 	MDBModal,
@@ -24,7 +25,9 @@ export default class Projects extends Component {
 		modal1: false,
 		modal2: false,
 		modal3: false,
-		modal4: false
+		modal4: false,
+		modal5: false,
+
 	};
 
 	toggle = (nr) => () => {
@@ -46,7 +49,7 @@ export default class Projects extends Component {
 		});
 	};
 
-	render () {
+	render() {
 		return (
 			<section>
 				<TopNav />
@@ -199,6 +202,44 @@ export default class Projects extends Component {
 											Dribbble
 										</MDBBtn>
 										<MDBBtn color='secondary' onClick={this.toggle(4)}>
+											Close
+										</MDBBtn>
+									</MDBModalFooter>
+								</MDBModal>
+								<MDBCol md='4'>
+									<MDBView hover>
+										<img src={thisDot} className='img-fluid' alt='Open Source Software Contributions' />
+										<MDBMask className='flex-center' overlay='black'>
+											<p className='white-text'>
+												<MDBBtn color='primary' onClick={this.toggle(5)}>
+													Learn more
+												</MDBBtn>
+											</p>
+										</MDBMask>
+									</MDBView>
+								</MDBCol>
+								<MDBModal isOpen={this.state.modal5} toggle={this.toggle(5)} centered>
+									<MDBModalHeader toggle={this.toggle(5)}>Software Engineer Apprentice</MDBModalHeader>
+									<MDBModalBody>
+										<p>
+											As a software eningeer apprentice at This Dot Inc, I was tasked with integrating a visual regression testing framework called Applitools that utilizes Storybook -
+											an open source tool for developing UI components in isolation for React. The integration was for an open-source software called Daedalus, which is a cryptocurrency wallet.
+										</p>
+										<p>
+											Stack - React, JavaScript, Node, HTML5, Yarn, Git.
+										</p>
+										<p>
+											Please check out my contribution on GitHub!
+										</p>
+
+									</MDBModalBody>
+									<MDBModalFooter>
+										<MDBBtn
+											href='https://github.com/input-output-hk/daedalus/pull/1571'
+											target='_blank'>
+											GitHub
+										</MDBBtn>
+										<MDBBtn color='secondary' onClick={this.toggle(5)}>
 											Close
 										</MDBBtn>
 									</MDBModalFooter>
