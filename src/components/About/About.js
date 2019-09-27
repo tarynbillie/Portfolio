@@ -16,6 +16,7 @@ import github from '../../assets/github-icon.svg';
 import heroku from '../../assets/heroku.svg';
 import git from '../../assets/git.svg';
 import postman from '../../assets/postman.svg';
+import applitools from '../../assets/applitools-storybook.svg';
 import TopNav from '../Nav/Top/TopNav.js';
 import './about.scss';
 
@@ -43,10 +44,10 @@ export default class About extends Component {
 								<span role='img' aria-label='hand-wave'>
 									👋
 								</span>{' '}
-								I'm a graduate of BrainStation's Full stack Web Development and User Interface Design
-								programs. Located in the heart of downtown Toronto. My experience at BrainStation
+								Currently a Software Engineer Apprentice at This Dot Inc., and a graduate of BrainStation's Full stack Web Development and User Interface Design
+								programs, located in the heart of downtown Toronto. My experience at BrainStation and This Dot has
 								allowed me to grasp new concepts quickly, and effectively adapt to full stack
-								development and design. Graduating with a 90% average I’m well positioned to contribute
+								development, design, and regression testing. Graduating with a 90% average I’m well positioned to contribute
 								robust, clean, maintainable code, pixel perfect design and become an asset to any team.
 								Known as a self-starter with a take-charge attitude; highly motivated to work in a
 								fast-paced, innovative environment. A creative, resourceful developer with good
@@ -61,7 +62,7 @@ export default class About extends Component {
 							</p>
 							<p>
 								When I'm not coding or designing, you can find me hiking the Bruce Trail, sailing on
-								Humber bay, or at the gym.
+								Humber bay, painting, or at the gym!
 							</p>
 							<span> Women in Development Scholarship Recipient (2018)</span>
 
@@ -130,6 +131,16 @@ export default class About extends Component {
 									<h5>MySql</h5>
 								</div>
 							</div>
+							<div className='text__header'>
+								<h4>Testing</h4>
+							</div>
+							<div className='text__skill'>
+								<div className='column'>
+									<img src={applitools} alt='applitools x storybook logo' className='badge--large' />
+									<h5>Applitools x Storybook</h5>
+								</div>
+							</div>
+
 							<div className='text__header'>
 								<h4>Other</h4>
 							</div>

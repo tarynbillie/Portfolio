@@ -223,8 +223,9 @@ export default class Projects extends Component {
 									<MDBModalBody>
 										<p>
 											As a software eningeer apprentice at This Dot Inc, I was tasked with integrating a visual regression testing framework called Applitools that utilizes Storybook -
-											an open source tool for developing UI components in isolation for React. The integration was for an open-source software called Daedalus, which is a cryptocurrency wallet.
+											an open source tool for developing UI components in isolation for React. The integration was for an open-source software called Daedalus (a cryptocurrency wallet) for cross-browser, and UI component visual testing.
 										</p>
+					
 										<p>
 											Stack - React, JavaScript, Node, HTML5, Yarn, Git.
 										</p>
